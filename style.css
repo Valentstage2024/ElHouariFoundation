@@ -1,0 +1,348 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; /* Zet het logo en de navigatie op één lijn */
+    align-items: center; /* Zorgt ervoor dat alles in het midden van de header staat, verticaal gezien */
+    padding: 10px 20px; /* Voeg wat ruimte toe aan de binnenkant van de header */
+    background-color: #6a9a806b; /* Achtergrondkleur van de header */
+    height: 120px; /* Stel een vaste hoogte voor de header in */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px; /* Zorgt ervoor dat het logo naar rechts wordt verplaatst */
+}
+
+nav {
+    margin-left: auto; /* Verplaatst de navigatie naar de rechterkant van de header */
+}
+
+nav ul {
+    list-style: none; /* Verwijdert standaard opsommingstekens */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Zorgt ervoor dat de links naast elkaar komen te staan */
+}
+
+nav ul li {
+    margin-left: 20px; /* Voeg ruimte toe tussen de navigatielinks */
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* Logo on the left */
+header .logo h1 {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px; /* Add some left margin to the logo */
+    text-align: left;
+}
+
+/* Navigation styling */
+header nav {
+    margin-right: 10px; /* Add some space to the right of the nav */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Make sure the text is positioned higher inside the header */
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar .logo h1 {
+    display: inline-block;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    float: right;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    width: 100vw; /* Full width of the viewport */
+    height: 80vh; /* Height of the viewport */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove padding */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-image: url('https://www.gifs.nl//media/waterval-gifs-xnFQ9S.gif'); /* Background ige */
+    background-size: cover; /* Ensure image covers the full section */
+    background-position: center; /* Center the background image */
+    position: relative; /* Position relative for the overlay */
+    z-index: 1;
+}
+
+/* Overlay for the background */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(5, 28, 2, 0.24); /* Increased opacity for better visibility */
+    z-index: -1; /* Overlay behind content */
+}
+
+/* Text Styling (optional) */
+.hero h1, .hero p {
+    position: relative; /* Position relative to keep it above the overlay */
+    color: white; /* Change this to another color if needed */
+    text-align: center; /* Center the text */
+    z-index: 1; /* Ensure text is above the overlay */
+}
+
+
+.hero-text {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px; 
+}
+
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+/* Photo Section */
+.photo-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.photo-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Small Photos and Text */
+.small-photos-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.small-photo-block {
+    width: 30%;
+    text-align: center;
+}
+
+.small-photo-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+.small-photo-block p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Three Inline Photos */
+.three-inline-photos {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.inline-photo {
+    width: 30%;
+    text-align: center;
+}
+
+.inline-photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.inline-photo p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.smaller-photo {
+    width: 750px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.text-box {
+    width: 200px; /* Breedte van het tekstvak */
+    padding: 20px;
+    background-color: #f0f0f0; /* Achtergrondkleur voor contrast */
+    border: 1px solid #ccc; /* Optionele rand */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optionele schaduw voor visuele diepte */
+}
+.image-button {
+    display: inline-block; /* Zorgt ervoor dat de knop zich gedraagt als een inline element */
+    border: none; /* Geen rand */
+    background: transparent; /* Transparante achtergrond */
+    cursor: pointer; /* Wijzigt de cursor naar een handje bij hover */
+}
+  /* Add any additional styles for the back-to-top button */
+  #backToTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    bottom: 20px; /* Place at the bottom of the page */
+    right: 30px; /* Place to the right */
+    background-color: #2980b9; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    z-index: 1000; /* On top of other content */
+}
+
+#backToTop:hover {
+    background-color: #1a5276; /* Darker color on hover */
+}
+
+.image-button:hover .smaller-photo {
+    transform: scale(1.05); /* Vergroot de afbeelding een beetje bij hover */
+}
+.waterwell-content {
+    max-width: 800px; /* Set a maximum width for better readability */
+    margin: 20px auto; /* Center the content with auto left and right margins */
+    padding: 20px; /* Add some padding around the content */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Font family for the text */
+    line-height: 1.6; /* Improved line height for better readability */
+}
+
+.waterwell-content h2, .waterwell-content h3 {
+    color: #2c3e50; /* Darker color for headings */
+}
+
+.waterwell-content p {
+    color: #34495e; /* Darker color for paragraphs */
+}
+
+.waterwell-content ul {
+    margin-left: 20px; /* Indent unordered list */
+    color: #34495e; /* Darker color for list items */
+}
+
+.waterwell-content li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Footer */
+footer {
+    background-color: #083812b5;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-text {
+    margin-bottom: 20px;
+}
+
+.footer-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-text p {
+    font-size: 1.2em;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-photos img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
