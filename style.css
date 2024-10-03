@@ -303,6 +303,330 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+/* project pagina */
+/* Projecten Sectie */
+.projects-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.projects-section h2 {
+    color: #009688;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #009688;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.view-details {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: #00796b;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraal uitlijnen */
+    gap: 35px; /* Ruimte tussen projectcards */
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 300px; /* Breedte van nieuwsitems */
+    transition: transform 0.2s; /* Voor een kleine schaling bij hover */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Klein effect bij hover */
+}
+
+.project-link {
+    text-decoration: none; /* Verwijder onderlijning van de link */
+    color: inherit; /* Zorg ervoor dat de tekst dezelfde kleur heeft als het omhulsel */
+}
+
+.project-image {
+    width: 100%; /* Zorg ervoor dat de afbeelding binnen het item past */
+    border-radius: 5px;
+    position: center    ;
+}
+
+
+
+/* nieuws pagina */
+.newsletter-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.news-feed {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; /* Weergave als kolom */
+    align-items: center;
+}
+
+.news-item {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px; /* Breedte van nieuwsitems */
+}
+
+.news-item img {
+    width: 100%; /* Zorg ervoor dat de afbeelding binnen het item past */
+    border-radius: 5px;
+}
+
+.news-detail-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.detail-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+/* Main section */
+main {
+    max-width: 1200px; /* Set max width for better readability */
+    margin: 0 auto; /* Center main content */
+    padding: 20px; /* Add some padding */
+}
+
+.project-detail h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.project-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.detail-image {
+    flex: 1;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.sponsor-section {
+    flex: 1;
+    max-width: 350px;
+}
+
+.sponsor-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sponsor-list li {
+    margin-bottom: 10px;
+}
+
+.sponsor-list li img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+    margin-top: 40px;
+}
+.sponsor-list li img {
+    width: 150px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: contain; /* Ensures the image fits inside the box while maintaining aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Space between images */
+}
+
+.sponsor-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+    gap: 20px; /* Add space between items */
+    list-style: none;
+    padding: 0;
+}
+
+.sponsor-list li {
+    display: flex;
+    justify-content: center; /* Center images inside the grid cells */
+}
+
+.sponsor-list li img {
+    width: 150px; /* Set the width for images */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.detail-image {
+    max-width: 600px; /* Set max width for the project image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Spacing above and below the image */
+}
+
+.project-description, .project-info, .project-updates, .community-involvement {
+    margin-bottom: 30px; /* Spacing between sections */
+}
+
+.project-info ul {
+    list-style: none; /* Remove bullets */
+}
+
+.project-info li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.fundraising-info {
+    background-color: #f9f9f9; /* Achtergrondkleur voor contrast */
+    padding: 20px;
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+    margin: 20px 0; /* Ruimte rondom het element */
+}
+
+.fundraising-details {
+    display: flex;
+    justify-content: space-between; /* Zorgt voor ruimte tussen de items */
+    margin-bottom: 15px; /* Ruimte onder de details */
+}
+
+.amount {
+    color: #009688; /* Kleur voor het ingezamelde bedrag */
+    font-weight: bold; /* Maak het vetgedrukt */
+}
+
+.goal {
+    color: #d9534f; /* Kleur voor het doelbedrag */
+    font-weight: bold; /* Maak het vetgedrukt */
+}
+
+.progress-bar {
+    background-color: #e0e0e0; /* Achtergrondkleur voor de voortgangsbalk */
+    border-radius: 5px; /* Ronde hoeken */
+    height: 20px; /* Hoogte van de balk */
+    overflow: hidden; /* Verberg wat buiten de balk valt */
+}
+
+.progress {
+    background-color: #009688; /* Kleur van de voortgang */
+    height: 100%; /* Volledige hoogte van de balk */
+    border-radius: 5px; /* Ronde hoeken voor de voortgang */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
 /* Footer */
 footer {
     background-color: #083812b5;

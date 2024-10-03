@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieuwsbrief - Elhouri Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="elhouarifoundation.jpeg" alt="Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="project.html">Projecten</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="newsletter.html" class="active">Nieuwsbrief</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="newsletter-section">
+            <h1>Nieuwsbrief</h1>
+            <p class="intro-text">
+                Welkom bij de nieuwsbrief van de Elhouri Foundation! Hier vind je de laatste updates en belangrijke informatie over onze projecten en evenementen.
+            </p>
+            <div class="news-feed" id="news-feed">
+                <!-- Hier worden de nieuwsitems toegevoegd -->
+                <div class="news-item">
+                    <a href="test.html">
+                        <img src="https://www.silhouette-winkel.com/Files/2/79000/79511/ProductPhotos/MaxContent/1917006405.jpg" alt="Nieuws Item 1">
+                    </a>
+                    <h3>Nieuws Item 1</h3>
+                    <p>Klik op de afbeelding om meer te lezen over ons recente project.</p>
+                </div>
+                <div class="news-item">
+                    <a href="test.html">
+                        <img src="news2.jpg" alt="Nieuws Item 2">
+                    </a>
+                    <h3>Nieuws Item 2</h3>
+                    <p>Klik op de afbeelding om meer te lezen over ons evenement.</p>
+                </div>
+                <div class="news-item">
+                    <a href="test.html">
+                        <img src="news3.jpg" alt="Nieuws Item 3">
+                    </a>
+                    <h3>Nieuws Item 3</h3>
+                    <p>Klik op de afbeelding om meer te lezen over onze nieuwe initiatieven.</p>
+                </div>
+            </div>
+            <button id="load-more" onclick="loadNews()">Laad Meer Nieuws</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+            <h2>Footer Titel</h2>
+            <p>Hier kun je wat tekst toevoegen voor de footer.</p>
+        </div>
+        
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-photos">
+            <img src="photo1.jpg" alt="Photo 1">
+            <img src="photo2.jpg" alt="Photo 2">
+            <img src="photo3.jpg" alt="Photo 3">
+        </div>
+        
+        <div class="footer-copyright">
+            <p>&copy; 2024 Elhouri Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function loadNews() {
+            const newsFeed = document.getElementById("news-feed");
+
+            // Simuleer een nieuwsitem
+            const newsItem = document.createElement("div");
+            newsItem.className = "news-item";
+            newsItem.innerHTML = `
+                <a href="test.html">
+                    <img src="news4.jpg" alt="Nieuws Item 4">
+                </a>
+                <h3>Nieuws Item 4</h3>
+                <p>Klik op de afbeelding om meer te lezen over ons laatste evenement.</p>
+            `
+
+            newsFeed.appendChild(newsItem);
+        }
+    </script>
+</body>
+</html>

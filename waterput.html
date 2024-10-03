@@ -47,6 +47,8 @@
         <p>Het bouwen van waterputten in Marokko is een noodzakelijke stap in de richting van een duurzame oplossing voor de watercrisis. Het biedt niet alleen directe voordelen voor de gezondheid en het welzijn van de bewoners, maar het ondersteunt ook de economische ontwikkeling van de regio. Door te investeren in waterputten, investeren we in een betere toekomst voor de gemeenschappen in Marokko.</p>
     </div>
     
+
+    
     <footer>
         <div class="footer-text">
             <h2>Footer Titel</h2>
@@ -94,3 +96,48 @@
     </script>
 </body>
 </html>
+ <script>
+    const modal = document.getElementById('projectModal');
+const closeBtn = document.querySelector('.close');
+const modalTitle = document.getElementById('modalTitle');
+const modalDescription = document.getElementById('modalDescription');
+
+// Project Data (Later kun je dit vervangen door dynamische data)
+const projectDetails = {
+    1: {
+        title: 'Waterput in Oplevering',
+        description: 'Dit project richt zich op het bouwen van een waterput in een droog gebied van Marokko om de lokale bevolking van schoon water te voorzien.'
+    },
+    2: {
+        title: 'Planning Fase Project',
+        description: 'Dit project is in de planningsfase. We werken samen met lokale gemeenschappen om de bouw van toekomstige waterputten voor te bereiden.'
+    }
+};
+
+// Open modal met projectdetails
+document.querySelectorAll('.view-details').forEach(button => {
+    button.addEventListener('click', function() {
+        const projectId = this.getAttribute('data-project');
+        const project = projectDetails[projectId];
+        
+        // Vul modal met de juiste gegevens
+        modalTitle.innerText = project.title;
+        modalDescription.innerText = project.description;
+
+        // Toon de modal
+        modal.style.display = 'block';
+    });
+});
+
+// Sluit de modal wanneer op de "x" wordt geklikt
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
+};
+
+// Sluit de modal als je ergens buiten de modal klikt
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+};
+ </script>
