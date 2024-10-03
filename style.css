@@ -22,7 +22,6 @@ header {
 
 nav {
     margin-left: auto; /* Verplaatst de navigatie naar de rechterkant van de header */
-    position: relative; /* Maak de nav positioneel relatief voor het hamburger menu */
 }
 
 nav ul {
@@ -30,50 +29,70 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex; /* Zorgt ervoor dat de links naast elkaar komen te staan */
-    transition: max-height 0.3s ease-out; /* Animatie voor het openen/sluiten van het menu */
-    max-height: 100px; /* Max hoogte voor het menu als het geopend is */
 }
 
-nav ul.hidden {
-    max-height: 0; /* Verberg het menu wanneer het gesloten is */
-    overflow: hidden; /* Verberg de inhoud die buiten de max hoogte valt */
+nav ul li {
+    margin-left: 10px; /* Voeg ruimte toe tussen de navigatielinks */
 }
 
-/* Hamburger menu styling */
-.hamburger {
-    display: none; /* Verberg de hamburger menu standaard */
-    flex-direction: column; /* Zorg dat de balken onder elkaar staan */
-    cursor: pointer; /* Maak de cursor een pointer */
-}
-
-.bar {
-    height: 4px; /* Dikte van de hamburger balken */
-    width: 30px; /* Breedte van de hamburger balken */
-    background-color: white; /* Kleur van de balken */
-    margin: 4px; /* Ruimte tussen de balken */
+nav ul li a {
+    color: rgb(255, 255, 255); /* Kleur van de tekst */
+    text-decoration: none;
+    font-size: 16px;
 }
 
 /* Media Query voor kleinere schermen (max-width: 768px) */
 @media (max-width: 768px) {
     nav ul {
-        display: none; /* Verberg het menu standaard op kleinere schermen */
-        flex-direction: column; /* Zorg ervoor dat de links onder elkaar staan */
-        width: 100%; /* Zorg dat het menu 100% breed is */
-        position: absolute; /* Maak het menu absoluut gepositioneerd */
-        top: 100%; /* Plaats het net onder de header */
+        flex-direction: column; /* Zorg dat de links onder elkaar staan op kleinere schermen */
+        padding: 0; /* Verwijder de padding */
+        width: 100%; /* Laat de navigatiebalk 100% van de breedte innemen */
+        background-color: rgba(82, 76, 73, 0.681); /* Achtergrondkleur van de navbar voor responsieve weergave */
+        position: absolute; /* Maak de navigatie absoluut gepositioneerd */
+        top: 120px; /* Zet de navbar 120px onder de header (pas dit aan voor de juiste afstand) */
         left: 0; /* Zorg dat het links begint */
-        background-color: #6a9a806b; /* Achtergrondkleur van het menu */
+        z-index: 10; /* Zorg ervoor dat de nav-balk boven andere elementen staat */
     }
 
-    nav ul.active {
-        display: flex; /* Toon het menu als het actief is */
+    nav ul li {
+        margin-left: 0; /* Verwijder de ruimte tussen de links voor een compactere weergave */
+        padding: 8px 0; /* Voeg verticale padding toe voor spacing */
     }
 
-    .hamburger {
-        display: flex; /* Toon de hamburger menu op kleinere schermen */
-        margin-left: auto; /* Zorg dat het hamburger menu naar rechts gaat */
+    nav ul li a {
+        font-size: 14px; /* Maak het lettertype kleiner voor een compacte weergave */
+        color: rgb(255, 255, 255); /* Kleur van de tekst */
+    }
+
+    /* Optioneel: Maak de hoogte van de navigatiebalk zelf kleiner */
+    nav {
+        padding: 0; /* Verklein de padding boven en onder de navigatiebalk voor een kleinere hoogte */
+    }
+
+    /* Maak het hamburgermenu (als je dat hebt) kleiner */
+    .hamburger .bar {
+        width: 25px; /* Maak de hamburger-balkjes smaller */
+        height: 3px; /* Maak de balkjes dunner */
     }
 }
+
+@media (max-width: 768px) {
+    .project-detail h1 {
+        text-align: right; /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: 100px; /* Verhoog de ruimte aan de rechterkant */
+        margin-top: -50px; /* Verplaats de tekst iets naar boven */
+    }
+}
+
+
+/* Media Query voor kleinere schermen (max-width: 768px) */
+@media (max-width: 768px) {
+    .project-detail h1 {
+        text-align: right; /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: -30px; /* Optioneel: Voeg wat ruimte toe aan de rechterkant */
+    }
+}
+
 
 
 /* Logo on the left */
