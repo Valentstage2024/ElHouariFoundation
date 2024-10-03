@@ -22,6 +22,7 @@ header {
 
 nav {
     margin-left: auto; /* Verplaatst de navigatie naar de rechterkant van de header */
+    position: relative; /* Maak de nav positioneel relatief voor het hamburger menu */
 }
 
 nav ul {
@@ -29,16 +30,49 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex; /* Zorgt ervoor dat de links naast elkaar komen te staan */
+    transition: max-height 0.3s ease-out; /* Animatie voor het openen/sluiten van het menu */
+    max-height: 100px; /* Max hoogte voor het menu als het geopend is */
 }
 
-nav ul li {
-    margin-left: 20px; /* Voeg ruimte toe tussen de navigatielinks */
+nav ul.hidden {
+    max-height: 0; /* Verberg het menu wanneer het gesloten is */
+    overflow: hidden; /* Verberg de inhoud die buiten de max hoogte valt */
 }
 
-nav ul li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 16px;
+/* Hamburger menu styling */
+.hamburger {
+    display: none; /* Verberg de hamburger menu standaard */
+    flex-direction: column; /* Zorg dat de balken onder elkaar staan */
+    cursor: pointer; /* Maak de cursor een pointer */
+}
+
+.bar {
+    height: 4px; /* Dikte van de hamburger balken */
+    width: 30px; /* Breedte van de hamburger balken */
+    background-color: white; /* Kleur van de balken */
+    margin: 4px; /* Ruimte tussen de balken */
+}
+
+/* Media Query voor kleinere schermen (max-width: 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Verberg het menu standaard op kleinere schermen */
+        flex-direction: column; /* Zorg ervoor dat de links onder elkaar staan */
+        width: 100%; /* Zorg dat het menu 100% breed is */
+        position: absolute; /* Maak het menu absoluut gepositioneerd */
+        top: 100%; /* Plaats het net onder de header */
+        left: 0; /* Zorg dat het links begint */
+        background-color: #6a9a806b; /* Achtergrondkleur van het menu */
+    }
+
+    nav ul.active {
+        display: flex; /* Toon het menu als het actief is */
+    }
+
+    .hamburger {
+        display: flex; /* Toon de hamburger menu op kleinere schermen */
+        margin-left: auto; /* Zorg dat het hamburger menu naar rechts gaat */
+    }
 }
 
 
@@ -669,4 +703,53 @@ footer {
     margin: 10px;
     border-radius: 5px;
     object-fit: cover;
+}
+
+
+
+@media (max-width: 768px) {
+    .sponsor-list {
+        justify-content: flex-start; /* Zorg ervoor dat de items aan de linkerkant beginnen */
+    }
+
+    .sponsor-list li {
+        flex: 1 1 30%; /* Maak de lijstitems 30% breed op tablets */
+        margin: 10px 5px; /* Voeg verticale ruimte toe tussen items */
+    }
+
+    .sponsor-list li img {
+        max-width: 80%; /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
+    }
+}
+
+/* Media Query voor smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .sponsor-list li {
+        flex: 1 1 45%; /* Maak de lijstitems 45% breed op smartphones */
+        margin: 5px 2.5%; /* Verminder de ruimte tussen items */
+    }
+    
+    .sponsor-list li img {
+        max-width: 100%; /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
+    }
+
+    .sponsor-section {
+        text-align: center; /* Center de tekst in de sectie */
+    }
+}
+
+
+/* Media Query voor tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .detail-image {
+        max-width: 80%; /* Verklein de afbeelding tot 80% van de breedte op tablets */
+    }
+}
+
+/* Media Query voor smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .detail-image {
+        max-width: 100%; /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
+        height: auto; /* Houd de hoogte in verhouding tot de breedte */
+    }
 }
