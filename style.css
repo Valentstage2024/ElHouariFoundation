@@ -670,3 +670,176 @@ footer {
     border-radius: 5px;
     object-fit: cover;
 }
+
+
+/* styling voor agenda pagina */
+
+.agenda {
+    background: linear-gradient(135deg, #bcd6b6, #074b16b5); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.agenda h2 {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.agenda-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Flex-wrap zorgt ervoor dat items netjes doorlopen als er meerdere zijn */
+    gap: 20px; /* Ruimte tussen de items */
+    justify-content: space-between; /* Zorgt dat de items verspreid worden */
+    align-items: flex-start; /* Items uitlijnen aan de bovenkant */
+}
+
+.agenda-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: calc(33.333% - 20px); /* Drie items naast elkaar */
+    box-sizing: border-box; /* Inclusief padding en margin in breedte */
+    flex: 1 1  auto; /* Laat de items hun eigen hoogte behouden */
+}
+
+.agenda-item:hover {
+    transform: scale(1.02);
+}
+
+.agenda-title {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.agenda-description {
+    font-size: 1em;
+    color: #666666;
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Zorgt dat lange woorden worden afgebroken en binnen het blok blijven */
+}
+
+.agenda-date {
+    font-size: 0.9em;
+    color: #388E3C;
+}
+
+.event-container {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-wrap: break-word;
+}
+
+#event-title {
+    font-size: 1.8em;
+    color: #4CAF50;
+    text-wrap: break-word;
+}
+
+#event-description {
+    font-size: 1.2em;
+    color: #666666;
+    text-wrap: break-word;
+}
+
+#event-date {
+    font-size: 1em;
+    color: #388E3C;
+    text-wrap: break-word;
+}
+
+#event-status {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-wrap: break-word;
+}
+
+.agenda .event-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agenda .event-container button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* add event pagina styling */
+
+.add-event-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-event-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.add-event-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-event-form label {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.add-event-form input, .add-event-form textarea, .add-event-form select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.add-event-form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #00796b;
+}
