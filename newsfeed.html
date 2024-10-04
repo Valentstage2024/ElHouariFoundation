@@ -43,14 +43,14 @@
                 </div>
                 <div class="news-item">
                     <a href="test.html">
-                        <img src="news2.jpg" alt="Nieuws Item 2">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-849132190-65522041b574c.jpg?crop=1.00xw:0.847xh;0,0.153xh&resize=640:*" alt="Nieuws Item 2">
                     </a>
                     <h3>Nieuws Item 2</h3>
                     <p>Klik op de afbeelding om meer te lezen over ons evenement.</p>
                 </div>
                 <div class="news-item">
                     <a href="test.html">
-                        <img src="news3.jpg" alt="Nieuws Item 3">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-849132190-65522041b574c.jpg?crop=1.00xw:0.847xh;0,0.153xh&resize=640:*    " alt="Nieuws Item 3">
                     </a>
                     <h3>Nieuws Item 3</h3>
                     <p>Klik op de afbeelding om meer te lezen over onze nieuwe initiatieven.</p>
@@ -98,10 +98,39 @@
                 </a>
                 <h3>Nieuws Item 4</h3>
                 <p>Klik op de afbeelding om meer te lezen over ons laatste evenement.</p>
-            `
+            `;	
 
             newsFeed.appendChild(newsItem);
         }
     </script>
 </body>
 </html>
+
+<script>
+    let newsCount = 3; // Aantal nieuwsitems die er al zijn
+const maxNewsItems = 4; // Maximum aantal nieuwsitems dat geladen kan worden
+
+function loadNews() {
+    const newsFeed = document.getElementById("news-feed");
+
+    if (newsCount >= maxNewsItems) {
+        alert("Geen nieuws meer om te laden!"); // Popup als er geen nieuws meer is
+        return;
+    }
+
+    // Voeg een nieuw nieuwsitem toe
+    const newsItem = document.createElement("div");
+    newsItem.className = "news-item";
+    newsItem.innerHTML = `
+        <a href="test.html">
+            <img src="news${newsCount + 1}.jpg" alt="Nieuws Item ${newsCount + 1}">
+        </a>
+        <h3>Nieuws Item ${newsCount + 1}</h3>
+        <p>Klik op de afbeelding om meer te lezen over ons laatste evenement.</p>
+    `;
+
+    newsFeed.appendChild(newsItem);
+    newsCount++; // Verhoog het aantal geladen nieuwsitems
+}
+
+</script>

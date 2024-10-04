@@ -32,14 +32,67 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px; /* Voeg ruimte toe tussen de navigatielinks */
+    margin-left: 10px; /* Voeg ruimte toe tussen de navigatielinks */
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); /* Kleur van de tekst */
     text-decoration: none;
     font-size: 16px;
 }
+
+/* Media Query voor kleinere schermen (max-width: 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Zorg dat de links onder elkaar staan op kleinere schermen */
+        padding: 0; /* Verwijder de padding */
+        width: 100%; /* Laat de navigatiebalk 100% van de breedte innemen */
+        background-color: rgba(127, 178, 120, 0.427); /* Achtergrondkleur van de navbar voor responsieve weergave */
+        position: absolute; /* Maak de navigatie absoluut gepositioneerd */
+        top: 120px; /* Zet de navbar 120px onder de header (pas dit aan voor de juiste afstand) */
+        left: 0; /* Zorg dat het links begint */
+        z-index: 10; /* Zorg ervoor dat de nav-balk boven andere elementen staat */
+    }
+
+    nav ul li {
+        margin-left: 0; /* Verwijder de ruimte tussen de links voor een compactere weergave */
+        padding: 8px 0; /* Voeg verticale padding toe voor spacing */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Maak het lettertype kleiner voor een compacte weergave */
+        color: rgb(255, 255, 255); /* Kleur van de tekst */
+    }
+
+    /* Optioneel: Maak de hoogte van de navigatiebalk zelf kleiner */
+    nav {
+        padding: 0; /* Verklein de padding boven en onder de navigatiebalk voor een kleinere hoogte */
+    }
+
+    /* Maak het hamburgermenu (als je dat hebt) kleiner */
+    .hamburger .bar {
+        width: 25px; /* Maak de hamburger-balkjes smaller */
+        height: 3px; /* Maak de balkjes dunner */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-detail h1 {
+        text-align: right; /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: 100px; /* Verhoog de ruimte aan de rechterkant */
+        margin-top: -50px; /* Verplaats de tekst iets naar boven */
+    }
+}
+
+
+/* Media Query voor kleinere schermen (max-width: 768px) */
+@media (max-width: 768px) {
+    .project-detail h1 {
+        text-align: right; /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: -30px; /* Optioneel: Voeg wat ruimte toe aan de rechterkant */
+    }
+}
+
 
 
 /* Logo on the left */
@@ -434,6 +487,199 @@ h3 {
 
 
 
+.detail-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+/* Main section */
+main {
+    max-width: 1200px; /* Set max width for better readability */
+    margin: 0 auto; /* Center main content */
+    padding: 20px; /* Add some padding */
+}
+
+.project-detail h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.project-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.detail-image {
+    flex: 1;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.sponsor-section {
+    flex: 1;
+    max-width: 350px;
+}
+
+.sponsor-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sponsor-list li {
+    margin-bottom: 10px;
+}
+
+.sponsor-list li img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+    margin-top: 40px;
+}
+.sponsor-list li img {
+    width: 150px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: contain; /* Ensures the image fits inside the box while maintaining aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Space between images */
+}
+
+.sponsor-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+    gap: 20px; /* Add space between items */
+    list-style: none;
+    padding: 0;
+}
+
+.sponsor-list li {
+    display: flex;
+    justify-content: center; /* Center images inside the grid cells */
+}
+
+.sponsor-list li img {
+    width: 150px; /* Set the width for images */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.detail-image {
+    max-width: 600px; /* Set max width for the project image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Spacing above and below the image */
+}
+
+.project-description, .project-info, .project-updates, .community-involvement {
+    margin-bottom: 30px; /* Spacing between sections */
+}
+
+.project-info ul {
+    list-style: none; /* Remove bullets */
+}
+
+.project-info li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.fundraising-info {
+    background-color: #f9f9f9; /* Achtergrondkleur voor contrast */
+    padding: 20px;
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+    margin: 20px 0; /* Ruimte rondom het element */
+}
+
+.fundraising-details {
+    display: flex;
+    justify-content: space-between; /* Zorgt voor ruimte tussen de items */
+    margin-bottom: 15px; /* Ruimte onder de details */
+}
+
+.amount {
+    color: #009688; /* Kleur voor het ingezamelde bedrag */
+    font-weight: bold; /* Maak het vetgedrukt */
+}
+
+.goal {
+    color: #d9534f; /* Kleur voor het doelbedrag */
+    font-weight: bold; /* Maak het vetgedrukt */
+}
+
+.progress-bar {
+    background-color: #e0e0e0; /* Achtergrondkleur voor de voortgangsbalk */
+    border-radius: 5px; /* Ronde hoeken */
+    height: 20px; /* Hoogte van de balk */
+    overflow: hidden; /* Verberg wat buiten de balk valt */
+}
+
+.progress {
+    background-color: #009688; /* Kleur van de voortgang */
+    height: 100%; /* Volledige hoogte van de balk */
+    border-radius: 5px; /* Ronde hoeken voor de voortgang */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+/* Stijl voor de nieuwsitems */
+.news-feed {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Maakt het responsief, zodat de items naar beneden verplaatsen op kleinere schermen */
+    gap: 20px; /* Ruimte tussen de items */
+    margin: 20px 0;
+}
+
+.news-item {
+    flex: 1 1 calc(33.333% - 20px); /* Elk item neemt 1/3 van de breedte in, met ruimte voor de gap */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box; /* Zorgt ervoor dat padding en borders binnen de breedte blijven */
+    text-align: center;
+}
+
+.news-item img {
+    max-width: 100%; /* Zorgt ervoor dat de afbeelding responsief blijft */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Stijl voor de button */
+#load-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
 /* nieuws pagina */
 .newsletter-section {
     padding: 40px;
@@ -446,31 +692,626 @@ h3 {
     margin-bottom: 20px;
 }
 
-.news-feed {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column; /* Weergave als kolom */
-    align-items: center;
+
+/* Footer */
+footer {
+    background-color: #083812b5;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
 }
 
-.news-item {
+.footer-text {
+    margin-bottom: 20px;
+}
+
+.footer-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-text p {
+    font-size: 1.2em;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-photos img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 768px) {
+    .sponsor-list {
+        justify-content: flex-start; /* Zorg ervoor dat de items aan de linkerkant beginnen */
+    }
+
+    .sponsor-list li {
+        flex: 1 1 30%; /* Maak de lijstitems 30% breed op tablets */
+        margin: 10px 5px; /* Voeg verticale ruimte toe tussen items */
+    }
+
+    .sponsor-list li img {
+        max-width: 80%; /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
+    }
+}
+
+/* Media Query voor smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .sponsor-list li {
+        flex: 1 1 45%; /* Maak de lijstitems 45% breed op smartphones */
+        margin: 5px 2.5%; /* Verminder de ruimte tussen items */
+    }
+    
+    .sponsor-list li img {
+        max-width: 100%; /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
+    }
+
+    .sponsor-section {
+        text-align: center; /* Center de tekst in de sectie */
+    }
+}
+
+
+/* Media Query voor tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .detail-image {
+        max-width: 80%; /* Verklein de afbeelding tot 80% van de breedte op tablets */
+    }
+}
+
+/* Media Query voor smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .detail-image {
+        max-width: 100%; /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
+        height: auto; /* Houd de hoogte in verhouding tot de breedte */
+    }
+}
+@media (max-width: 768px) {
+    .project-content {
+        margin-top: 20px; /* Voeg wat extra ruimte boven de content toe */
+    }
+}
+
+/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
+@media (max-width: 480px) {
+    .project-content {
+        margin-top: 40px; /* Nog meer ruimte voor kleinere schermen */
+    }
+}
+/* Media query voor schermen kleiner dan 768px (bijvoorbeeld tablets en telefoons) */
+@media (max-width: 768px) {
+    .projects-section h2 {
+        margin-left: 20px; /* Verschuift de h2 een stukje naar rechts */
+    }
+}
+
+/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
+@media (max-width: 480px) {
+    .projects-section h2 {
+        margin-left: 40px; /* Nog meer naar rechts op zeer kleine schermen */
+    }
+}   
+
+
+#load-more:hover {
+    background-color: #0056b3; /* Donkerdere kleur bij hover */
+}
+
+/* Responsief gedrag voor kleinere schermen */
+@media (max-width: 768px) {
+    .news-item {
+        width: 45%; /* Breedte van elk nieuwsitem op kleinere schermen */
+    }
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; /* Zet het logo en de navigatie op één lijn */
+    align-items: center; /* Zorgt ervoor dat alles in het midden van de header staat, verticaal gezien */
+    padding: 10px 20px; /* Voeg wat ruimte toe aan de binnenkant van de header */
+    background-color: #6a9a806b; /* Achtergrondkleur van de header */
+    height: 120px; /* Stel een vaste hoogte voor de header in */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px; /* Zorgt ervoor dat het logo naar rechts wordt verplaatst */
+}
+
+nav {
+    margin-left: auto; /* Verplaatst de navigatie naar de rechterkant van de header */
+}
+
+nav ul {
+    list-style: none; /* Verwijdert standaard opsommingstekens */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Zorgt ervoor dat de links naast elkaar komen te staan */
+}
+
+nav ul li {
+    margin-left: 10px; /* Voeg ruimte toe tussen de navigatielinks */
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255); /* Kleur van de tekst */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Media Query voor kleinere schermen (max-width: 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Zorg dat de links onder elkaar staan op kleinere schermen */
+        padding: 0; /* Verwijder de padding */
+        width: 100%; /* Laat de navigatiebalk 100% van de breedte innemen */
+        background-color: rgba(127, 178, 120, 0.427); /* Achtergrondkleur van de navbar voor responsieve weergave */
+        position: absolute; /* Maak de navigatie absoluut gepositioneerd */
+        top: 120px; /* Zet de navbar 120px onder de header (pas dit aan voor de juiste afstand) */
+        left: 0; /* Zorg dat het links begint */
+        z-index: 10; /* Zorg ervoor dat de nav-balk boven andere elementen staat */
+    }
+
+    nav ul li {
+        margin-left: 0; /* Verwijder de ruimte tussen de links voor een compactere weergave */
+        padding: 8px 0; /* Voeg verticale padding toe voor spacing */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Maak het lettertype kleiner voor een compacte weergave */
+        color: rgb(255, 255, 255); /* Kleur van de tekst */
+    }
+
+    /* Optioneel: Maak de hoogte van de navigatiebalk zelf kleiner */
+    nav {
+        padding: 0; /* Verklein de padding boven en onder de navigatiebalk voor een kleinere hoogte */
+    }
+
+    /* Maak het hamburgermenu (als je dat hebt) kleiner */
+    .hamburger .bar {
+        width: 25px; /* Maak de hamburger-balkjes smaller */
+        height: 3px; /* Maak de balkjes dunner */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-detail h1 {
+        text-align: right; /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: 100px; /* Verhoog de ruimte aan de rechterkant */
+        margin-top: -50px; /* Verplaats de tekst iets naar boven */
+    }
+}
+
+
+/* Media Query voor kleinere schermen (max-width: 768px) */
+@media (max-width: 768px) {
+    .project-detail h1 {
+        text-align: right; /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: -30px; /* Optioneel: Voeg wat ruimte toe aan de rechterkant */
+    }
+}
+
+
+
+/* Logo on the left */
+header .logo h1 {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px; /* Add some left margin to the logo */
+    text-align: left;
+}
+
+/* Navigation styling */
+header nav {
+    margin-right: 10px; /* Add some space to the right of the nav */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Make sure the text is positioned higher inside the header */
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar .logo h1 {
+    display: inline-block;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    float: right;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    width: 100vw; /* Full width of the viewport */
+    height: 80vh; /* Height of the viewport */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove padding */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-image: url('https://www.gifs.nl//media/waterval-gifs-xnFQ9S.gif'); /* Background ige */
+    background-size: cover; /* Ensure image covers the full section */
+    background-position: center; /* Center the background image */
+    position: relative; /* Position relative for the overlay */
+    z-index: 1;
+}
+
+/* Overlay for the background */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(5, 28, 2, 0.24); /* Increased opacity for better visibility */
+    z-index: -1; /* Overlay behind content */
+}
+
+/* Text Styling (optional) */
+.hero h1, .hero p {
+    position: relative; /* Position relative to keep it above the overlay */
+    color: white; /* Change this to another color if needed */
+    text-align: center; /* Center the text */
+    z-index: 1; /* Ensure text is above the overlay */
+}
+
+
+.hero-text {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px; 
+}
+
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+/* Photo Section */
+.photo-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.photo-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Small Photos and Text */
+.small-photos-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.small-photo-block {
+    width: 30%;
+    text-align: center;
+}
+
+.small-photo-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+.small-photo-block p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Three Inline Photos */
+.three-inline-photos {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.inline-photo {
+    width: 30%;
+    text-align: center;
+}
+
+.inline-photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.inline-photo p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.smaller-photo {
+    width: 750px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.text-box {
+    width: 200px; /* Breedte van het tekstvak */
+    padding: 20px;
+    background-color: #f0f0f0; /* Achtergrondkleur voor contrast */
+    border: 1px solid #ccc; /* Optionele rand */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optionele schaduw voor visuele diepte */
+}
+.image-button {
+    display: inline-block; /* Zorgt ervoor dat de knop zich gedraagt als een inline element */
+    border: none; /* Geen rand */
+    background: transparent; /* Transparante achtergrond */
+    cursor: pointer; /* Wijzigt de cursor naar een handje bij hover */
+}
+  /* Add any additional styles for the back-to-top button */
+  #backToTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    bottom: 20px; /* Place at the bottom of the page */
+    right: 30px; /* Place to the right */
+    background-color: #2980b9; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    z-index: 1000; /* On top of other content */
+}
+
+#backToTop:hover {
+    background-color: #1a5276; /* Darker color on hover */
+}
+
+.image-button:hover .smaller-photo {
+    transform: scale(1.05); /* Vergroot de afbeelding een beetje bij hover */
+}
+.waterwell-content {
+    max-width: 800px; /* Set a maximum width for better readability */
+    margin: 20px auto; /* Center the content with auto left and right margins */
+    padding: 20px; /* Add some padding around the content */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Font family for the text */
+    line-height: 1.6; /* Improved line height for better readability */
+}
+
+.waterwell-content h2, .waterwell-content h3 {
+    color: #2c3e50; /* Darker color for headings */
+}
+
+.waterwell-content p {
+    color: #34495e; /* Darker color for paragraphs */
+}
+
+.waterwell-content ul {
+    margin-left: 20px; /* Indent unordered list */
+    color: #34495e; /* Darker color for list items */
+}
+
+.waterwell-content li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* project pagina */
+/* Projecten Sectie */
+.projects-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.projects-section h2 {
+    color: #009688;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #009688;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.view-details {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: #00796b;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraal uitlijnen */
+    gap: 35px; /* Ruimte tussen projectcards */
+}
+
+.project-card {
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
-    margin: 10px;
+    text-align: center;
     width: 300px; /* Breedte van nieuwsitems */
+    transition: transform 0.2s; /* Voor een kleine schaling bij hover */
 }
 
-.news-item img {
+.project-card:hover {
+    transform: scale(1.05); /* Klein effect bij hover */
+}
+
+.project-link {
+    text-decoration: none; /* Verwijder onderlijning van de link */
+    color: inherit; /* Zorg ervoor dat de tekst dezelfde kleur heeft als het omhulsel */
+}
+
+.project-image {
     width: 100%; /* Zorg ervoor dat de afbeelding binnen het item past */
     border-radius: 5px;
+    position: center    ;
 }
 
-.news-detail-section {
-    padding: 40px;
-    text-align: center;
-}
+
+
 
 .detail-image {
     max-width: 100%;
@@ -626,6 +1467,7 @@ main {
 .back-button:hover {
     background-color: #0056b3;
 }
+
 
 /* Footer */
 footer {
@@ -843,3 +1685,104 @@ footer {
 .submit-btn:hover {
     background-color: #00796b;
 }
+
+
+
+@media (max-width: 768px) {
+    .sponsor-list {
+        justify-content: flex-start; /* Zorg ervoor dat de items aan de linkerkant beginnen */
+    }
+
+    .sponsor-list li {
+        flex: 1 1 30%; /* Maak de lijstitems 30% breed op tablets */
+        margin: 10px 5px; /* Voeg verticale ruimte toe tussen items */
+    }
+
+    .sponsor-list li img {
+        max-width: 80%; /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
+    }
+}
+
+/* Media Query voor smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .sponsor-list li {
+        flex: 1 1 45%; /* Maak de lijstitems 45% breed op smartphones */
+        margin: 5px 2.5%; /* Verminder de ruimte tussen items */
+    }
+    
+    .sponsor-list li img {
+        max-width: 100%; /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
+    }
+
+    .sponsor-section {
+        text-align: center; /* Center de tekst in de sectie */
+    }
+}
+
+
+/* Media Query voor tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .detail-image {
+        max-width: 80%; /* Verklein de afbeelding tot 80% van de breedte op tablets */
+    }
+}
+
+/* Media Query voor smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .detail-image {
+        max-width: 100%; /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
+        height: auto; /* Houd de hoogte in verhouding tot de breedte */
+    }
+}
+@media (max-width: 768px) {
+    .project-content {
+        margin-top: 20px; /* Voeg wat extra ruimte boven de content toe */
+    }
+}
+
+/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
+@media (max-width: 480px) {
+    .project-content {
+        margin-top: 40px; /* Nog meer ruimte voor kleinere schermen */
+    }
+}
+/* Media query voor schermen kleiner dan 768px (bijvoorbeeld tablets en telefoons) */
+@media (max-width: 768px) {
+    .projects-section h2 {
+        margin-left: 20px; /* Verschuift de h2 een stukje naar rechts */
+    }
+}
+
+/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
+@media (max-width: 480px) {
+    .projects-section h2 {
+        margin-left: 40px; /* Nog meer naar rechts op zeer kleine schermen */
+    }
+}   
+
+
+#load-more:hover {
+    background-color: #0056b3; /* Donkerdere kleur bij hover */
+}
+
+/* Responsief gedrag voor kleinere schermen */
+@media (max-width: 768px) {
+    .news-item {
+        width: 45%; /* Breedte van elk nieuwsitem op kleinere schermen */
+    }
+}
+
+@media (max-width: 480px) {
+    .news-item {
+        width: 100%; /* Breedte van elk nieuwsitem op heel kleine schermen */
+    }
+}
+
+@media (max-width: 480px) {
+    .news-item {
+        width: 100%; /* Breedte van elk nieuwsitem op heel kleine schermen */
+    }
+}
+
+
+
