@@ -1,65 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nieuws Item - Elhouri Foundation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="elhouarifoundation.jpeg" alt="Logo" class="logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Over ons</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="project.html">Projecten</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="newsletter.html" class="active">Nieuwsbrief</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="nieuws-container">
+    <div class="nieuws-kaart" data-id="1">
+        <img src="https://via.placeholder.com/300" alt="Nieuws Item 1" class="nieuws-afbeelding">
+        <h3>Nieuws Item 1</h3>
+        <p>Korte introductie van het eerste nieuwsitem. Klik om meer te lezen.</p>
+    </div>
+    <!-- andere nieuws-kaarten -->
+</div>
 
-    <main>
-        <section class="news-detail-section">
-            <h1>Titel van het Nieuws Item</h1>
-            <img src="news1.jpg" alt="Nieuws Item 1" class="detail-image">
-            <p>
-                Hier vind je een uitgebreid artikel over het nieuws item. Dit kan informatie bevatten over de achtergrond, details over het project, en hoe mensen kunnen helpen of deelnemen. 
-                Bedankt voor je interesse in onze activiteiten!
-            </p>
-            <a href="newsletter.html" class="back-button">Terug naar Nieuwsbrief</a>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-text">
-            <h2>Footer Titel</h2>
-            <p>Hier kun je wat tekst toevoegen voor de footer.</p>
-        </div>
-        
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-photos">
-            <img src="photo1.jpg" alt="Photo 1">
-            <img src="photo2.jpg" alt="Photo 2">
-            <img src="photo3.jpg" alt="Photo 3">
-        </div>
-        
-        <div class="footer-copyright">
-            <p>&copy; 2024 Elhouri Foundation. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+<div class="nieuws-detail-weergave" id="news-detail">
+    <h2 id="news-title"></h2>
+    <img id="news-image" src="" alt="Nieuws detail afbeelding" class="nieuws-detail-afbeelding">
+    <p id="news-content"></p>
+    <button class="terug-knop" id="back-button">Terug naar de nieuwsbrief</button>
+</div>
