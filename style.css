@@ -693,49 +693,6 @@ main {
 }
 
 
-/* Footer */
-footer {
-    background-color: #083812b5;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.footer-text {
-    margin-bottom: 20px;
-}
-
-.footer-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.footer-text p {
-    font-size: 1.2em;
-}
-
-.footer-links ul {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.footer-links ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.footer-links ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-photos img {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    border-radius: 5px;
-    object-fit: cover;
-}
 
 
 
@@ -1468,6 +1425,71 @@ main {
     background-color: #0056b3;
 }
 
+
+/* Main Content Section */
+.content-section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.text-content h1 {
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.image-content {
+    max-width: 45%;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Back to Newsfeed Button Styling */
+.back-to-newsfeed {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.newsfeed-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.newsfeed-btn:hover {
+    background-color: #45a049;
+}
 
 /* Footer */
 footer {
