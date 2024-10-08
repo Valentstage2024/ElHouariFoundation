@@ -35,26 +35,17 @@
             <div class="news-feed" id="news-feed">
                 <!-- Hier worden de nieuwsitems toegevoegd -->
                 <div class="news-item">
-                    <a href="test.html">
-                        <img src="https://www.silhouette-winkel.com/Files/2/79000/79511/ProductPhotos/MaxContent/1917006405.jpg" alt="Nieuws Item 1">
+                    <a href="Nieuws-test.html">
+                        <img src="https://www.natuurfotografie.nl/wp-content/uploads/2022/08/DSC_0990.jpg" alt="Nieuws Item 1" style="width: 750px; height: auto;">
+
                     </a>
-                    <h3>Nieuws Item 1</h3>
+                    <h3>El</h3>
                     <p>Klik op de afbeelding om meer te lezen over ons recente project.</p>
                 </div>
-                <div class="news-item">
-                    <a href="test.html">
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-849132190-65522041b574c.jpg?crop=1.00xw:0.847xh;0,0.153xh&resize=640:*" alt="Nieuws Item 2">
-                    </a>
-                    <h3>Nieuws Item 2</h3>
-                    <p>Klik op de afbeelding om meer te lezen over ons evenement.</p>
-                </div>
-                <div class="news-item">
-                    <a href="test.html">
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-849132190-65522041b574c.jpg?crop=1.00xw:0.847xh;0,0.153xh&resize=640:*    " alt="Nieuws Item 3">
-                    </a>
-                    <h3>Nieuws Item 3</h3>
-                    <p>Klik op de afbeelding om meer te lezen over onze nieuwe initiatieven.</p>
-                </div>
+                
+                
+                <button id="backToTop">naar boven</button>
+               
             </div>
             <button id="load-more" onclick="loadNews()">Laad Meer Nieuws</button>
         </section>
@@ -85,52 +76,107 @@
         </div>
     </footer>
 
-    <script>
-        function loadNews() {
-            const newsFeed = document.getElementById("news-feed");
 
-            // Simuleer een nieuwsitem
-            const newsItem = document.createElement("div");
-            newsItem.className = "news-item";
-            newsItem.innerHTML = `
-                <a href="test.html">
-                    <img src="news4.jpg" alt="Nieuws Item 4">
-                </a>
-                <h3>Nieuws Item 4</h3>
-                <p>Klik op de afbeelding om meer te lezen over ons laatste evenement.</p>
-            `;	
-
-            newsFeed.appendChild(newsItem);
-        }
-    </script>
 </body>
 </html>
 
 <script>
-    let newsCount = 3; // Aantal nieuwsitems die er al zijn
-const maxNewsItems = 4; // Maximum aantal nieuwsitems dat geladen kan worden
+    let newsCount = 0; // Begin met 0 geladen nieuwsitems
+    const maxNewsItems = 4; // Maximum aantal nieuwsitems dat kan worden geladen
 
-function loadNews() {
-    const newsFeed = document.getElementById("news-feed");
+    function loadNews() {
+        const newsFeed = document.getElementById("news-feed");
 
-    if (newsCount >= maxNewsItems) {
-        alert("Geen nieuws meer om te laden!"); // Popup als er geen nieuws meer is
-        return;
+        // Als het maximum aantal items is bereikt
+        if (newsCount >= maxNewsItems) {
+            alert("Geen nieuws meer om te laden!"); // Popup als er geen nieuws meer is
+            return;
+        }
+
+        // Nieuwsitems array
+        const newsItems = [
+            {
+                title: "Nieuws Item 1",
+                imgSrc: "https://www.natuurfotografie.nl/wp-content/uploads/2022/08/DSC_0990.jpg",
+                link: "nieuws-test.html",
+                date: "8 oktober 2024",
+                category: "Evenementen",
+                description: "Klik op de afbeelding om meer te lezen over ons recente project.",
+                extraParagraph: "Dit is een extra paragraaf met meer informatie over het nieuwsitem."
+            },
+            {
+                title: "Nieuws Item 2",
+                imgSrc: "https://www.natuurfotografie.nl/wp-content/uploads/2022/08/DSC_0990.jpg",
+                link: "nieuws-test.html",
+                date: "9 oktober 2024",
+                category: "Nieuws",
+                description: "Klik op de afbeelding om meer te lezen over ons tweede evenement.",
+                extraParagraph: "Hier is wat meer tekst die uitleg geeft over dit specifieke evenement."
+            },
+            {
+                title: "Nieuws Item 3",
+                imgSrc: "https://www.natuurfotografie.nl/wp-content/uploads/2022/08/DSC_0990.jpg",
+                link: "nieuws-test.html",
+                date: "10 oktober 2024",
+                category: "Updates",
+                description: "Klik op de afbeelding om meer te lezen over ons derde evenement.",
+                extraParagraph: "Dit nieuwsitem bevat belangrijke updates over ons laatste evenement."
+            },
+            {
+                title: "Nieuws Item ",
+                imgSrc: "https://www.natuurfotografie.nl/wp-content/uploads/2022/08/DSC_0990.jpg",
+                link: "nieuws-test.html",
+                date: "10 oktober 2024",
+                category: "Updates",
+                description: "Klik op de afbeelding om meer te lezen over ons derde evenement.",
+                extraParagraph: "Dit nieuwsitem bevat belangrijke updates over ons laatste evenement."
+            }
+        
+        ];
+
+        // Voeg nieuwsitems toe totdat de limiet bereikt is
+        if (newsCount < maxNewsItems) {
+            const item = newsItems[newsCount];
+            const newsItem = document.createElement("div");
+            newsItem.className = "news-item";
+
+            // Dynamisch de inhoud genereren
+            newsItem.innerHTML = `
+                <a href="${item.link}">
+                    <img src="${item.imgSrc}" alt="${item.title}" style="width: 100; height: auto;">
+                </a>
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+                <p>${item.extraParagraph}</p>
+            `;
+
+            // Voeg het nieuwsitem toe aan de nieuws-feed
+            newsFeed.appendChild(newsItem);
+
+            // Verhoog het aantal geladen nieuwsitems
+            newsCount++;
+        }
     }
 
-    // Voeg een nieuw nieuwsitem toe
-    const newsItem = document.createElement("div");
-    newsItem.className = "news-item";
-    newsItem.innerHTML = `
-        <a href="test.html">
-            <img src="news${newsCount + 1}.jpg" alt="Nieuws Item ${newsCount + 1}">
-        </a>
-        <h3>Nieuws Item ${newsCount + 1}</h3>
-        <p>Klik op de afbeelding om meer te lezen over ons laatste evenement.</p>
-    `;
+    // Laad de eerste nieuwsitems wanneer de pagina geladen is
+    window.onload = loadNews;
 
-    newsFeed.appendChild(newsItem);
-    newsCount++; // Verhoog het aantal geladen nieuwsitems
-}
+    // Scroll to top button functionaliteit
+    const backToTopButton = document.getElementById('backToTop');
 
+    // Laat de knop zien of verberg deze op basis van de scrollpositie
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block"; // Toon de knop
+        } else {
+            backToTopButton.style.display = "none"; // Verberg de knop
+        }
+    };
+
+    // Smooth scroll naar boven bij klikken op de knop
+    backToTopButton.onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 </script>
+
+    

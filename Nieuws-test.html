@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
+
     <title>Nieuws Item - Elhouri Foundation</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,41 +26,9 @@
         </nav>
     </header>
 
-    <main>
-        <section class="news-detail-section">
-            <h1>Titel van het Nieuws Item</h1>
-            <img src="news1.jpg" alt="Nieuws Item 1" class="detail-image">
-            <p>
-                Hier vind je een uitgebreid artikel over het nieuws item. Dit kan informatie bevatten over de achtergrond, details over het project, en hoe mensen kunnen helpen of deelnemen. 
-                Bedankt voor je interesse in onze activiteiten!
-            </p>
-            <a href="newsletter.html" class="back-button">Terug naar Nieuwsbrief</a>
-        </section>
-    </main>
+  
 
-=======
-    <title>Nieuws - Elhouri Foundation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Navbar -->
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="elhouarifoundation.jpeg" alt="Logo" class="logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="project.html">Projecten</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    
 
     <!-- Main Section with Text and Image -->
     <main>
@@ -80,8 +48,9 @@
     <div class="back-to-newsfeed">
         <a href="newsfeed.html" class="newsfeed-btn">Terug naar Nieuwsfeed</a>
     </div>
+    
     <!-- Footer -->
->>>>>>> Stashed changes
+    <button id="backToTop">naar boven</button>
     <footer>
         <div class="footer-text">
             <h2>Footer Titel</h2>
@@ -108,25 +77,19 @@
     </footer>
 </body>
 </html>
-<<<<<<< Updated upstream
-=======
+<script>
+    // Scroll to top button
+    const backToTopButton = document.getElementById('backToTop');
 
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block"; // Show the button
+        } else {
+            backToTopButton.style.display = "none"; // Hide the button
+        }
+    };
 
-   <!-- Scroll to Top Script -->
-   <script>
-       // Scroll to top button
-       const backToTopButton = document.getElementById('backToTop');
-
-       window.onscroll = function() {
-           if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-               backToTopButton.style.display = "block"; // Show the button
-           } else {
-               backToTopButton.style.display = "none"; // Hide the button
-           }
-       };
-
-       backToTopButton.onclick = function() {
-           window.scrollTo({top: 0, behavior: 'smooth'}); // Smooth scroll to the top
-       };
-   </script>
->>>>>>> Stashed changes
+    backToTopButton.onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'}); // Smooth scroll to the top
+    };
+</script>
