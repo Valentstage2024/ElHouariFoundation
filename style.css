@@ -1478,6 +1478,53 @@ main {
     background-color: #0056b3;
 }
 
+
+/* Footer */
+footer {
+    background-color: #083812b5;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-text {
+    margin-bottom: 20px;
+}
+
+.footer-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-text p {
+    font-size: 1.2em;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-photos img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+
 @media (max-width: 768px) {
     .sponsor-list {
         justify-content: flex-start; /* Zorg ervoor dat de items aan de linkerkant beginnen */
