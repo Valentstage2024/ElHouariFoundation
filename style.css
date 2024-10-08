@@ -699,10 +699,18 @@ footer {
     color: white;
     padding: 50px 0;
     text-align: center;
+    position: relative;
+    bottom: 0;  
+    left: 0;
+    width: 100%;
+    margin-top: 2rem;
+    height: 45vh;
 }
 
 .footer-text {
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: -12rem;
 }
 
 .footer-text h2 {
@@ -717,11 +725,13 @@ footer {
 .footer-links ul {
     list-style: none;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .footer-links ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 .footer-links ul li a {
@@ -1468,53 +1478,6 @@ main {
     background-color: #0056b3;
 }
 
-
-/* Footer */
-footer {
-    background-color: #083812b5;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.footer-text {
-    margin-bottom: 20px;
-}
-
-.footer-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.footer-text p {
-    font-size: 1.2em;
-}
-
-.footer-links ul {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.footer-links ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.footer-links ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-photos img {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-
-
 @media (max-width: 768px) {
     .sponsor-list {
         justify-content: flex-start; /* Zorg ervoor dat de items aan de linkerkant beginnen */
@@ -1611,5 +1574,114 @@ footer {
     }
 }
 
+.a-container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    /* height: 100vh; */
+}
 
+.a-aboutTitle{
+    font-size: 2rem;
+    color: #083812b5;
+    font-weight: bold;
+    margin-top: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
 
+.a-aboutsubTitle{
+    font-weight: normal;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 60em;
+    margin-top: 1rem;
+}
+
+.a-missieTitle{
+    font-size: 2rem;
+    color: #083812b5;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+.a-missieText{
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    max-width: 60em;
+    margin-top: 1rem;
+}
+
+.a-visieTitle{
+    font-size: 2rem;
+    color: #083812b5;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.a-visieText{
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 60em;
+    color: black;
+    margin-top: 1rem;
+}
+
+.a-standTitle{
+    font-size: 2rem;
+    color: #083812b5;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.a-standText{
+    font-weight: normal;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 60em;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#a-imgfooter{
+    display: flex;
+    width: 250px;
+}
+
+.footer-widget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.footer-widget1{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-right: 19rem;
+}
+
+.r-footer-widget1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
