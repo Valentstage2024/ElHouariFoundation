@@ -747,25 +747,25 @@ footer {
     object-fit: cover;
 }
 
-.footer-socials {
-    display: flex;
-    justify-content: center; /* Centreert de iconen horizontaal */
-    margin-top: 20px; /* Voegt wat ruimte boven de iconen toe */
+.terugproject {
+    display: inline-block; /* Zorgt ervoor dat de knop als een blok wordt weergegeven */
+    background-color: #007BFF; /* Hoofdkleur voor de knop */
+    color: white; /* Tekstkleur */
+    padding: 10px 20px; /* Binnenruimte voor de knop */
+    text-decoration: none; /* Verwijder onderlijn van de link */
+    border-radius: 5px; /* Afgeronde hoeken */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Overgangen voor achtergrondkleur en schaling */
 }
 
-.footer-socials a {
-    margin: 0 10px; /* Voegt ruimte tussen de iconen toe */
+.terugproject:hover {
+    background-color: #0056b3; /* Donkere tint voor hover effect */
+    transform: scale(1.05); /* Vergroot de knop iets bij hover */
 }
 
-.footer-socials .social-icon {
-    width: 56px; /* Stel de breedte in op 30px */
-    height: auto; /* Houdt de aspect ratio van de afbeelding */
-    transition: transform 0.3s ease; /* Voegt een overgang toe voor hover effect */
+.terugproject:active {
+    transform: scale(0.95); /* Verklein de knop iets bij klikken */
 }
 
-.footer-socials .social-icon:hover {
-    transform: scale(1.1); /* Vergroot de afbeelding bij hover */
-}
 
 
 @media (max-width: 768px) {
