@@ -1823,7 +1823,6 @@ footer {
     background-color: #004080; /* Nog donkerdere kleur bij klikken */
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Lagere schaduw bij klikken */
 }
-}
 
 /* Responsive styling */
 @media (max-width: 768px) {
