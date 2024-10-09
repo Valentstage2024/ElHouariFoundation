@@ -29,3 +29,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Er is iets misgegaan, probeer het later opnieuw.";
     }
 }
+?>
