@@ -1,68 +1,81 @@
 <?php
+// Start output buffering om problemen met header() te voorkomen
+ob_start();
+
+// Start de sessie
 session_start();
 
-include_once("connect.php");
+// Foutmeldingen weergeven
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = htmlspecialchars($_POST['username']);
+// Verbind met de database
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "houari_foundation";
+
+$conn = new mysqli($host, $user, $password, $database);
+
+// Controleer de verbinding
+if ($conn->connect_error) {
+    die("Verbinding mislukt: " . $conn->connect_error);
+}
+
+// Controleer of het formulier is ingediend
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
     $password = $_POST['password'];
 
-
-
-    if ($conn->connect_error) {
-        die("Database Error: " . $conn->connect_error);
+    // Bereid een veilige SQL-query voor
+    $stmt = $conn->prepare("SELECT id, password FROM user WHERE username = ?");
+    if (!$stmt) {
+        die("Fout bij het voorbereiden van de SQL-query: " . $conn->error);
     }
-                                                            
 
-    $query = "SELECT * FROM gastenboek_users WHERE username = '$username'";
-    $result = $conn->query($query);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $stmt->store_result();
 
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        $hashedPassword = $row['password'];
+    // Controleer of er een gebruiker is gevonden
+    if ($stmt->num_rows > 0) {
+        $stmt->bind_result($userId, $hashedPassword);
+        $stmt->fetch();
 
+        // Vergelijk het ingevoerde wachtwoord met het gehashte wachtwoord in de database
         if (password_verify($password, $hashedPassword)) {
-
+            // Wachtwoord klopt, start een sessie voor de gebruiker
+            $_SESSION['user_id'] = $userId;
             $_SESSION['username'] = $username;
-            $_SESSION['session_id'] = session_id();
 
+            // Stuur door naar de add_event pagina
+            header("Location: add_event.php");
+            exit;
+        } else {
+            // Wachtwoord klopt niet
+            echo "<script>alert('Wachtwoord is onjuist.');</script>";
         }
-        else {
-            echo "<script>alert('Gebruikersnaam of wachtwoord is onjuist');</script>";
-        }
+    } else {
+        // Gebruikersnaam bestaat niet
+        echo "<script>alert('Gebruikersnaam bestaat niet.');</script>";
+    }
 
-}
+    $stmt->close();
 }
 
+$conn->close();
+
+// Sluit output buffering en stuur de buffered inhoud
+ob_end_flush();
 ?>
 
-<!DOCTYPE html>
-<html>
+<!-- HTML-inlogformulier -->
+<form method="post" action="login.php">
+    <label for="username">Gebruikersnaam:</label>
+    <input type="text" name="username" id="username" required><br>
 
-<head>
-    <title>Inloggen</title>
-    <link rel="stylesheet" href="login.css">
-</head>
+    <label for="password">Wachtwoord:</label>
+    <input type="password" name="password" id="password" required><br>
 
-<body>
-    <div class="container">
-        <h2>Inloggen</h2>
-        <?php if (isset($error)) { ?>
-            <p>
-                <?php echo $error; ?>
-            </p>
-        <?php } ?>
-        <form method="post" action="login.php">
-            <label for="username">Gebruikersnaam:</label>
-            <input type="text" id="username" name="username" required autocomplete="on">
-
-            <label for="password">Wachtwoord:</label>
-            <input type="password" id="password" name="password" required autocomplete="current-password">
-
-            <input type="submit" value="Inloggen">
-            <div>Nog geen account? <a href="register.php">Maak een nieuw account aan</a></div>
-        </form>
-    </div>
-</body>
-
-</html>
+    <input type="submit" value="Login">
+</form>

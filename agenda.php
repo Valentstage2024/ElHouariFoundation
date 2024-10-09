@@ -12,7 +12,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 $currentDate = date('Y-m-d');
 $selectedEventIndex = 0;
 
-// Zoek het evenement dat het dichtstbij de huidige datum ligt
+
 foreach ($events as $index => $event) {
     $eventDate = date('Y-m-d', strtotime($event['date']));
     if ($eventDate >= $currentDate) {
@@ -32,24 +32,8 @@ foreach ($events as $index => $event) {
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="elhouarifoundation.jpeg" alt="Logo" class="logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="agenda.php">Agenda</a></li>
-                <li><a href="project.html">Projecten</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include_once 'header.php'; ?>
+
 
     <!-- Hero Section -->
     <section class="hero">
@@ -82,19 +66,19 @@ foreach ($events as $index => $event) {
         const eventDate = new Date(event['date']);
         const today = new Date();
 
-        // Normaliseer de datums door de tijdcomponent te verwijderen
-        today.setHours(0, 0, 0, 0); // Zet tijd naar 00:00:00
-        eventDate.setHours(0, 0, 0, 0); // Zet tijd naar 00:00:00
+       
+        today.setHours(0, 0, 0, 0); 
+        eventDate.setHours(0, 0, 0, 0);
 
         title.innerText = event['title'];
         description.innerText = event['description'];
         date.innerText = new Date(event['date']).toLocaleDateString();
 
-        // Debugging: Log de datums om te zien wat er gebeurt
+   
         console.log("Event Date: " + eventDate);
         console.log("Today: " + today);
 
-        // Status van het evenement op basis van de datum
+    
         if (eventDate < today) {
             status.innerText = 'Dit evenement is al gebeurd.';
             status.style.color = 'red';
@@ -127,7 +111,7 @@ foreach ($events as $index => $event) {
     }
 
     window.onload = function() {
-        updateEvent();  // Toon het eerste evenement bij laden
+        updateEvent();  
     };
 </script>
 
@@ -146,7 +130,7 @@ foreach ($events as $index => $event) {
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer>
         <div class="footer-text">
             <h2>Footer Titel</h2>
@@ -172,12 +156,12 @@ foreach ($events as $index => $event) {
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
+  
     <button id="backToTop">naar boven</button>
 
-    <!-- Scroll to Top Script -->
+
     <script>
-        // Scroll to top button
+
         const backToTopButton = document.getElementById('backToTop');
 
         window.onscroll = function() {

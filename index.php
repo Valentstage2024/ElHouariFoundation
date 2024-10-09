@@ -9,25 +9,8 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="elhouarifoundation.jpeg" alt="Logo" class="logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Aboutus.html">Over ons</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="agenda.php">Agenda</a></li>
-                <li><a href="project.html">Projecten</a></li>
-                <li><a href="doneer.html">Doneer</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include_once 'header.php'; ?>
+
 
     <!-- Hero Section -->
     <section class="hero">
