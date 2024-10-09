@@ -2053,6 +2053,20 @@ main {
     margin-left: 2rem;
 }
 
+.return-button {
+    display: inline-block; /* Zorgt ervoor dat de knop zich als een blok gedraagt */
+    padding: 10px 20px; /* Binnenmarges voor meer ruimte */
+    background-color: #007bff; /* Achtergrondkleur */
+    color: white; /* Tekstkleur */
+    text-decoration: none; /* Geen onderstreping */
+    border-radius: 5px; /* Ronde hoeken */
+    transition: background-color 0.3s; /* Smooth transition voor hover effect */
+    font-weight: bold; /* Vetgedrukte tekst */
+}
+
+.return-button:hover {
+    background-color: #0056b3; /* Donkerdere kleur bij hover */
+}
 
 .footer-socials {
     display: flex;
