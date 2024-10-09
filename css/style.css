@@ -2011,45 +2011,6 @@ main {
     margin-top: 1rem;
 }
 
-.a-missieTitle{
-    font-size: 2rem;
-    color: #083812b5;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4rem;
-}
-.a-missieText{
-    font-weight: normal;
-    font-size: 1.2rem;
-    color: black;
-    text-align: center;
-    max-width: 60em;
-    margin-top: 1rem;
-}
-
-.a-visieTitle{
-    font-size: 2rem;
-    color: #083812b5;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4rem;
-}
-
-.a-visieText{
-    font-weight: normal;
-    font-size: 1.2rem;
-    text-align: center;
-    max-width: 60em;
-    color: black;
-    margin-top: 1rem;
-}
-
 .a-standTitle{
     font-size: 2rem;
     color: #083812b5;
@@ -2134,9 +2095,6 @@ main {
 margin-right: 1erm;
 }
 
-.r-footer-widget1{
-   
-}
 
 .r-footer-widget1{
     display: flex;
@@ -2238,6 +2196,74 @@ footer {
     border-radius: 10px;
     object-fit: cover;
 }
+
+/* Mission en Vision Secties */
+.mission, .vision {
+    background-color: #f9f9f9; /* Lichte achtergrondkleur */
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+    transition: transform 0.3s; /* Voor een animatie-effect */
+}
+
+.mission:hover, .vision:hover {
+    transform: translateY(-5px); /* Licht omhoog bij hover */
+}
+
+.mission h2, .vision h2 {
+    font-size: 28px;
+    color: #2980b9; /* Aangepaste kleur voor de koppen */
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif; /* Geweldig lettertype */
+}
+
+.mission p, .vision p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Call to Action Sectie */
+.call-to-action {
+    background: linear-gradient(to bottom, #2f6b3cb5, #1d4f6b); /* Gradient achtergrond */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 10px; /* Hoek afronding */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Schaduw voor diepte */
+}
+
+.call-to-action h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Hoofdletters voor de titel */
+    letter-spacing: 1px; /* Ruimte tussen letters */
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-style: italic; /* Cursief voor de tekst */
+}
+
+.cta-button {
+    padding: 10px 25px;
+    background-color: white;
+    color: #2980b9;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Voor een animatie-effect */
+}
+
+.cta-button:hover {
+    background-color: #2980b9; /* Achtergrondkleur bij hover */
+    color: white; /* Witte tekst bij hover */
+    transform: translateY(-2px); /* Licht omhoog bij hover */
+}
+
 
 /* Responsiveness */
 @media (max-width: 768px) {

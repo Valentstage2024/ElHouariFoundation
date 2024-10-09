@@ -1,20 +1,18 @@
 <?php
 session_start();
 
-include_once("connect.php");
+include_once("../includes/connect.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = htmlspecialchars($_POST['username']);
     $password = $_POST['password'];
 
-
-
     if ($conn->connect_error) {
         die("Database Error: " . $conn->connect_error);
     }
-                                                            
 
-    $query = "SELECT * FROM gastenboek_users WHERE username = '$username'";
+    // Verander de query om de 'user' tabel te gebruiken
+    $query = "SELECT * FROM user WHERE username = '$username'";
     $result = $conn->query($query);
 
     if ($result->num_rows > 0) {
@@ -22,18 +20,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $hashedPassword = $row['password'];
 
         if (password_verify($password, $hashedPassword)) {
-
             $_SESSION['username'] = $username;
             $_SESSION['session_id'] = session_id();
-
-        }
-        else {
+            // Verwijs naar add_event.php zonder extra paden
+            header("Location: add_event.php");
+            exit(); // Zorg ervoor dat je de scriptuitvoering stopt na een redirect
+        } else {
             echo "<script>alert('Gebruikersnaam of wachtwoord is onjuist');</script>";
         }
-
+    } else {
+        echo "<script>alert('Gebruikersnaam of wachtwoord is onjuist');</script>";
+    }
 }
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <head>
     <title>Inloggen</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -60,7 +58,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="password" id="password" name="password" required autocomplete="current-password">
 
             <input type="submit" value="Inloggen">
-            <div>Nog geen account? <a href="register.php">Maak een nieuw account aan</a></div>
         </form>
     </div>
 </body>

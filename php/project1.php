@@ -4,31 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 - Waterput in Oplevering</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="elhouarifoundation.jpeg" alt="Logo" class="logo">
-            </a>
-        </div>
-        <nav>
-            <div class="hamburger" id="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul id="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Over ons</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="agenda.php">Agenda</a></li>
-                <li><a href="project.html">Projecten</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+
+<?php include_once '../includes/header.php'; ?>
+
     
 
     <main>
@@ -131,45 +113,19 @@
                 <h2>Gemeenschapsdeelname</h2>
                 <p>De lokale bevolking wordt actief betrokken bij dit project. Ze hebben zelf al ervaring met waterputten en spelen een cruciale rol in de aanleg en het onderhoud.</p>
             </div>
-            <a href="project.html" class="terugproject">Terug naar Projecten</a>
+            <a href="../php/project.php" class="terugproject">Terug naar Projecten</a>
 
         </section>
     </main>
 
-    <footer>
-        <div class="footer-text">
-            <h2>Footer Titel</h2>
-            <p>Hier kun je wat tekst toevoegen voor de footer.</p>
-        </div>
-        
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-photos">
-            <img src="photo1.jpg" alt="Photo 1">
-            <img src="photo2.jpg" alt="Photo 2">
-            <img src="photo3.jpg" alt="Photo 3">
-        </div>
-        
-        <div class="footer-copyright">
-            <p>&copy; 2024 Elhouri Foundation. All rights reserved.</p>
-        </div>
-    </footer>
+
+
+    <?php include_once '../includes/footer.php'; ?>
+
+
+    <button id="backToTop">naar boven</button>
+
+<script src="../js/scrollToTop.js"></script>
+
 </body>
 </html>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const hamburger = document.getElementById("hamburger");
-        const navList = document.getElementById("nav-list");
-
-        hamburger.addEventListener("click", function() {
-            navList.classList.toggle("active"); // Toggle de 'active' class om het menu te openen/sluiten
-            navList.classList.toggle("hidden"); // Toggle de 'hidden' class om de animatie toe te passen
-        });
-    });
-</script>

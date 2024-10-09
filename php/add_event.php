@@ -1,13 +1,16 @@
 <?php
-// session_start();
-include_once 'connect.php';
+session_start();
 
-// if (!isset($_SESSION["username"]) || !(isset($_SESSION['session_id']) && ($_SESSION['session_id'] === session_id()))) {
-//     header("Location: login.php");
-//     exit();
-// }
 
-// $username = $_SESSION["username"];
+include_once("../includes/connect.php");
+
+// Controleer of de gebruiker is ingelogd
+if (!isset($_SESSION["username"])) {
+    header("Location: login.php");
+    exit();
+}
+
+$username = $_SESSION["username"];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = mysqli_real_escape_string($conn, $_POST['title']);
@@ -23,15 +26,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evenement Toevoegen - Elhouri Foundation</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <button class="logout-btn" onclick="window.location.href='logout.php'">Uitloggen</button>
+    
 </head>
 <body>
+    
 
     <div class="add-event-container">
         <h2 class="add-event-header">Evenement Toevoegen</h2>

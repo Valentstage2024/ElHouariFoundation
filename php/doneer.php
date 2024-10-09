@@ -5,30 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donatiepagina - Elhouari Foundation</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="elhouarifoundation.jpeg" alt="Logo" class="logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="agenda.php">Agenda</a></li>
-                <li><a href="project.html">Projecten</a></li>
-                <li><a href="doneer.html">Doneer</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include_once '../includes/header.php'; ?>
+
 
     <div class="donatie-achtergrond">
         <div class="donatie-container">
@@ -98,36 +81,19 @@
                         <p><strong>IBAN NLXX XXXX XXXX</strong> t.n.v. Elhouari Foundation.</p>
                     </aside>
 
-                    <img src="kinderen.webp" alt="">
+                    <img src="../img/kinderen.png">
                 </div>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div class="footer-text">
-            <h2>Footer Titel</h2>
-            <p>Hier kun je wat tekst toevoegen voor de footer.</p>
-        </div>
+    <?php include_once '../includes/footer.php'; ?>
 
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
-        </div>
+    <button id="backToTop">naar boven</button>
 
-        <div class="footer-photos">
-            <img src="photo1.jpg" alt="Photo 1">
-            <img src="photo2.jpg" alt="Photo 2">
-            <img src="photo3.jpg" alt="Photo 3">
-        </div>
+<script src="../js/scrollToTop.js"></script>
 
-        <div class="footer-copyright">
-            <p>&copy; 2024 Elhouri Foundation. All rights reserved.</p>
-        </div>
-    </footer>
+
 </body>
 
 </html>
