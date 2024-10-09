@@ -747,6 +747,25 @@ footer {
     object-fit: cover;
 }
 
+.footer-socials {
+    display: flex;
+    justify-content: center; /* Centreert de iconen horizontaal */
+    margin-top: 20px; /* Voegt wat ruimte boven de iconen toe */
+}
+
+.footer-socials a {
+    margin: 0 10px; /* Voegt ruimte tussen de iconen toe */
+}
+
+.footer-socials .social-icon {
+    width: 56px; /* Stel de breedte in op 30px */
+    height: auto; /* Houdt de aspect ratio van de afbeelding */
+    transition: transform 0.3s ease; /* Voegt een overgang toe voor hover effect */
+}
+
+.footer-socials .social-icon:hover {
+    transform: scale(1.1); /* Vergroot de afbeelding bij hover */
+}
 
 
 @media (max-width: 768px) {
