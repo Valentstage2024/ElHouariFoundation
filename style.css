@@ -1732,3 +1732,103 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.content-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.image-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .text-content, .image-content {
+        padding: 10px;
+    }
+
+    .text-content h1 {
+        font-size: 2em;
+    }
+
+    .text-content p {
+        font-size: 1.1em;
+    }
+}
+/* Button container styling */
+.back-to-newsfeed {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Button styling */
+.newsfeed-btn {
+    display: inline-block;
+    padding: 10px 20px; /* Iets kleinere padding */
+    background-color: #007BFF; /* Primaire kleur voor de knop */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em; /* Iets kleinere tekstgrootte */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Iets kleinere schaduw */
+}
+
+/* Hover effect */
+.newsfeed-btn:hover {
+    background-color: #0056b3; /* Donkerdere kleur bij hover */
+}
+
+/* Active state for button */
+.newsfeed-btn:active {
+    background-color: #004080; /* Nog donkerdere kleur bij klikken */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Lagere schaduw bij klikken */
+}
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .newsfeed-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
