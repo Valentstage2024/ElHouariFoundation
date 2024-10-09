@@ -1832,3 +1832,73 @@ footer {
         padding: 10px 20px;
     }
 }
+/* Basis layout voor nieuwsitems */
+.news-feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.news-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* Paginering styling */
+.pagination {
+    display: flex;
+    justify-content: center; /* Zorgt voor horizontale centrering */
+    align-items: center; /* Zorgt voor verticale uitlijning */
+    margin: 20px auto; /* Centrerende marge voor de paginering */
+    width: 100%; /* Neem de volledige breedte in beslag */
+    max-width: 600px; /* Optioneel: Limiteer de maximale breedte voor paginering */
+}
+
+.pagination button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsiviteit voor kleinere schermen */
+@media (max-width: 768px) {
+    .news-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pagination span {
+        display: block;
+        margin-top: 10px;
+    }
+}
