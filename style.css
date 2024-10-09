@@ -693,62 +693,6 @@ main {
 }
 
 
-/* Footer */
-footer {
-    background-color: #083812b5;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;  
-    left: 0;
-    width: 100%;
-    margin-top: 2rem;
-    height: 45vh;
-}
-
-.footer-text {
-    display: flex;
-    justify-content: center;
-    margin-left: -12rem;
-}
-
-.footer-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.footer-text p {
-    font-size: 1.2em;
-}
-
-.footer-links ul {
-    list-style: none;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.footer-links ul li {
-    display: inline;
-}
-
-.footer-links ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-photos img {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-
-
 @media (max-width: 768px) {
     .sponsor-list {
         justify-content: flex-start; /* Zorg ervoor dat de items aan de linkerkant beginnen */
@@ -1479,52 +1423,6 @@ main {
 }
 
 
-/* Footer */
-footer {
-    background-color: #083812b5;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.footer-text {
-    margin-bottom: 20px;
-}
-
-.footer-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.footer-text p {
-    font-size: 1.2em;
-}
-
-.footer-links ul {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.footer-links ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.footer-links ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-photos img {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-
-
 @media (max-width: 768px) {
     .sponsor-list {
         justify-content: flex-start; /* Zorg ervoor dat de items aan de linkerkant beginnen */
@@ -1628,6 +1526,10 @@ footer {
     /* height: 100vh; */
 }
 
+.a-kopjeoverons{
+    font-weight: bold;
+}
+
 .a-aboutTitle{
     font-size: 2rem;
     color: #083812b5;
@@ -1707,28 +1609,127 @@ footer {
     margin-left: 2rem;
 }
 
-#a-imgfooter{
+.a-testoTitle{
+    font-size: 2rem;
+    color: #083812b5;
+    font-weight: bold;
+    text-align: center;
     display: flex;
-    width: 250px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.a-testoText{
+    font-weight: normal;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 60em;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+
+.footer-socials {
+    display: flex;
+    justify-content: flex-start; /* Zorgt ervoor dat de iconen naar links worden uitgelijnd */
+    margin-top: 10px;
+    margin-left: 8rem;
+}
+
+.footer-socials a {
+    margin: 0 10px;
+}
+
+.footer-socials .social-icon {
+    width: 46px; /* Stel de breedte in op 30px */
+    height: auto; /* Houdt de aspect ratio van de afbeelding */
+    transition: transform 0.3s ease; /* Voegt een overgang toe voor hover effect */
+}
+
+.footer-socials .social-icon:hover {
+    transform: scale(1.1); /* Vergroot de afbeelding bij hover */
+}
+
+.a-aboutusEnd{
+    font-weight: bold;
+    margin: 5px;
+}
+
+#a-imgfooter{
+    width: 200px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Voeg wat ruimte toe tussen de afbeelding en de socials */
 }
 
 .footer-widget{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
    
 }
 
 .footer-widget1{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- margin-right: 19rem;
+margin-right: 1erm;
+}
+
+.r-footer-widget1{
+   
 }
 
 .r-footer-widget1{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+footer {
+    background-color: #083812b5;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 0 5%;
+}
+
+.footer-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-text p {
+    font-size: 1.2em;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footer-links ul li {
+    display: inline;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-photos img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    object-fit: cover;
 }
