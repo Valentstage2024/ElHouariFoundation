@@ -20,7 +20,7 @@
         <main>
             <main>
                 <section class="project-detail">
-                    <h1>Project 1: Waterput in Oplevering</h1>
+                    <h1>Project 2: Liefdadigheidspakketten</h1>
                 </section>
             </main>
 

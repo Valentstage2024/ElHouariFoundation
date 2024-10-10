@@ -32,6 +32,8 @@
             <div class="a-testoTitle">Dankwoord
                 <div class="a-testoText">Wij willen iedereen bedanken die de stichting mogelijk maakt omwille van Allah. <br>
                     <div class="a-aboutusEnd">Amin el Houari (11 jaar oud) en Abdelouahed el Houari (28 jaar oud)</div>
+                    <br>
+                    <br>
                 </div>
             </div>
 

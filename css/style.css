@@ -843,54 +843,95 @@ main {
 footer {
     background-color: #083812b5;
     color: white;
-    padding: 50px 0;
+    padding: 30px 0;
     text-align: center;
-    position: relative;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    margin-top: 2rem;
-    height: 45vh;
 }
 
-.footer-text {
+.footer-container {
     display: flex;
-    justify-content: center;
-    margin-left: -12rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 5%;
 }
 
-.footer-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 150px;
+    text-align: left;
 }
 
-.footer-text p {
-    font-size: 1.2em;
+/* Logo Styling */
+.footer-logo img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.footer-links ul {
-    list-style: none;
-    margin-bottom: 30px;
+/* Links and Legal Styling */
+.footer-links, .footer-legal {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.footer-links ul li {
-    display: inline;
-}
-
-.footer-links ul li a {
+.footer-links a, .footer-legal a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.footer-photos img {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    border-radius: 5px;
-    object-fit: cover;
+.footer-links a:hover, .footer-legal a:hover {
+    color: #87CEEB;
+}
+
+/* Social Icons Styling */
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-socials .social-icon {
+    width: 35px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials .social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Styling */
+.footer-contact p {
+    margin: 5px 0;
+}
+
+/* Copyright Styling */
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
 }
 
 
@@ -2418,111 +2459,12 @@ select {
     /* Donkerdere kleur bij hover */
 }
 
-.footer-socials {
-    display: flex;
-    justify-content: flex-start;
-    /* Zorgt ervoor dat de iconen naar links worden uitgelijnd */
-    margin-top: 10px;
-    margin-left: 8rem;
-}
-
-.footer-socials a {
-    margin: 0 10px;
-}
-
-.footer-socials .social-icon {
-    width: 46px;
-    /* Stel de breedte in op 30px */
-    height: auto;
-    /* Houdt de aspect ratio van de afbeelding */
-    transition: transform 0.3s ease;
-    /* Voegt een overgang toe voor hover effect */
-}
-
-.footer-socials .social-icon:hover {
-    transform: scale(1.1);
-    /* Vergroot de afbeelding bij hover */
-}
 
 .a-aboutusEnd {
     font-weight: bold;
     margin: 5px;
 }
 
-#a-imgfooter {
-    width: 200px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    /* Voeg wat ruimte toe tussen de afbeelding en de socials */
-}
-
-.footer-widget {
-    display: flex;
-
-}
-
-.footer-widget1 {
-    margin-right: 1erm;
-}
-
-
-.r-footer-widget1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-}
-
-
-footer {
-    background-color: #083812b5;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-    width: 100%;
-    margin-top: 2rem;
-}
-
-.footer-text {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0 5%;
-}
-
-.footer-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.footer-text p {
-    font-size: 1.2em;
-}
-
-.footer-links ul {
-    list-style: none;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.footer-links ul li {
-    display: inline;
-}
-
-.footer-links ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-photos img {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    border-radius: 5px;
-    object-fit: cover;
-}
 
 .content-section {
     background-color: white;

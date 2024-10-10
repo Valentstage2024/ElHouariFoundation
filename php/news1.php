@@ -34,7 +34,9 @@
         <a href="newsfeed.php" class="newsfeed-btn">Terug naar Nieuwsfeed</a>
     </div>
 
-    <!-- Footer -->
+    <br>
+    <br>
+
     <button id="backToTop">naar boven</button>
 
     <?php include_once '../includes/footer.php'; ?>
