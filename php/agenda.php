@@ -36,18 +36,18 @@ foreach ($events as $index => $event) {
     <script src="../js/eventNavigation.js"></script>
 </head>
 
-<body>
+<body class="agenda-body">
 
     <?php include_once '../includes/header.php'; ?>
 
-    <!-- Hero Section -->
+    <!-- Hero Section
     <section class="hero">
         <div class="hero-text">
             <h2>El Houari Foundation</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
         </div>
-    </section>
+    </section> -->
 
     <section class="agenda">
         <h2>Agenda</h2>

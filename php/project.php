@@ -32,10 +32,10 @@
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <a href="#" class="project-link"> <!-- Link voor het hele projectvak -->
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqtCS2RSgUs5rOpBuAw5q-80l75WvV_U2iVg&s" class="project-image">
+                    <a href="liefpakket.php" class="project-link"> <!-- Link voor het hele projectvak -->
+                        <img src="https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/417691151_814363024070940_3487350996679660474_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KjrUzVNjCmcQ7kNvgHXiKzn&_nc_ht=scontent-ams2-1.xx&_nc_gid=AhBwngdstmiIPZR-a4y1ILw&oh=00_AYDKyfNL9ALlTkkwQkMNgOuyikLpDMR1tH9j67gySc_rBA&oe=670D64AB" class="project-image">
                         <h3>Liefdadigheidspakketten voor behoeftigen</h3>
-                        <p>Voedselpakketten </p>
+                        <p>Afgelopen september hebben wij de inzamelingsactie “Steun Marokko” opgezet om slachtoffers van de hevige aardbeving te helpen.In totaal is er maar liefst €2250 opgehaald alhamdoulillah! </p>
                     </a>
                 </div>
 

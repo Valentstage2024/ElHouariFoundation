@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -1782,6 +1783,7 @@ main {
 }
 
 /* styling voor agenda pagina */
+
 
 .agenda {
     background: linear-gradient(135deg, #bcd6b6, #074b16b5);

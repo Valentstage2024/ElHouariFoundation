@@ -54,7 +54,7 @@
     <section class="small-photos-text">
         <div class="container">
             <div class="small-photo-block">
-                <a href="waterput.html" class="image-button">
+                <a href="php/project1.php" class="image-button">
                     <img src="https://storage.googleapis.com/steunactie-prod/img/actions/23590/md/03cf0aa24cd13ed0e25185f3863b25ca-waterput.png?1690599076" alt="Main Photo" class="smaller-photo">
                 </a>
                 <h1>Waterputten in Marroko</h1>
