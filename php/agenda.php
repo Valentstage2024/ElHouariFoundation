@@ -23,6 +23,7 @@ foreach ($events as $index => $event) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,39 +33,41 @@ foreach ($events as $index => $event) {
         let events = <?php echo json_encode($events); ?>;
         let currentIndex = <?php echo $selectedEventIndex; ?>;
     </script>
-    <script src="../js/eventNavigation.js"></script> 
+    <script src="../js/eventNavigation.js"></script>
 </head>
+
 <body>
 
-<?php include_once '../includes/header.php'; ?>
+    <?php include_once '../includes/header.php'; ?>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-text">
-        <h2>El Houari Foundation</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-    </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>El Houari Foundation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+    </section>
 
-<section class="agenda">
-    <h2>Agenda</h2>
-    <div class="event-container">
-        <h3 id="event-title"></h3>
-        <p id="event-description"></p>
-        <br>
-        <p id="event-date"></p>
-        <br>
-        <p id="event-status"></p>
-        <button onclick="previousEvent()">Vorige</button>
-        <button onclick="nextEvent()">Volgende</button>
-    </div>
-</section>
+    <section class="agenda">
+        <h2>Agenda</h2>
+        <div class="event-container">
+            <h3 id="event-title"></h3>
+            <p id="event-description"></p>
+            <br>
+            <p id="event-date"></p>
+            <br>
+            <p id="event-status"></p>
+            <button onclick="previousEvent()">Vorige</button>
+            <button onclick="nextEvent()">Volgende</button>
+        </div>
+    </section>
 
-<?php include_once '../includes/footer.php'; ?>
+    <?php include_once '../includes/footer.php'; ?>
 
-<button id="backToTop">naar boven</button>
-<script src="../js/scrollToTop.js"></script>
+    <button id="backToTop">naar boven</button>
+    <script src="../js/scrollToTop.js"></script>
 
 </body>
+
 </html>

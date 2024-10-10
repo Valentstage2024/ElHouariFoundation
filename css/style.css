@@ -7,36 +7,47 @@
 
 header {
     display: flex;
-    justify-content: flex-start; /* Zet het logo en de navigatie op één lijn */
-    align-items: center; /* Zorgt ervoor dat alles in het midden van de header staat, verticaal gezien */
-    padding: 10px 20px; /* Voeg wat ruimte toe aan de binnenkant van de header */
-    background-color: #6a9a806b; /* Achtergrondkleur van de header */
-    height: 120px; /* Stel een vaste hoogte voor de header in */
+    justify-content: flex-start;
+    /* Zet het logo en de navigatie op één lijn */
+    align-items: center;
+    /* Zorgt ervoor dat alles in het midden van de header staat, verticaal gezien */
+    padding: 10px 20px;
+    /* Voeg wat ruimte toe aan de binnenkant van de header */
+    background-color: #6a9a806b;
+    /* Achtergrondkleur van de header */
+    height: 120px;
+    /* Stel een vaste hoogte voor de header in */
 }
 
 .logo {
     width: 100px;
     height: 100px;
-    margin-left: 20px; /* Zorgt ervoor dat het logo naar rechts wordt verplaatst */
+    margin-left: 20px;
+    /* Zorgt ervoor dat het logo naar rechts wordt verplaatst */
 }
 
 nav {
-    margin-left: auto; /* Verplaatst de navigatie naar de rechterkant van de header */
+    margin-left: auto;
+    /* Verplaatst de navigatie naar de rechterkant van de header */
 }
 
 nav ul {
-    list-style: none; /* Verwijdert standaard opsommingstekens */
+    list-style: none;
+    /* Verwijdert standaard opsommingstekens */
     margin: 0;
     padding: 0;
-    display: flex; /* Zorgt ervoor dat de links naast elkaar komen te staan */
+    display: flex;
+    /* Zorgt ervoor dat de links naast elkaar komen te staan */
 }
 
 nav ul li {
-    margin-left: 10px; /* Voeg ruimte toe tussen de navigatielinks */
+    margin-left: 10px;
+    /* Voeg ruimte toe tussen de navigatielinks */
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255); /* Kleur van de tekst */
+    color: rgb(255, 255, 255);
+    /* Kleur van de tekst */
     text-decoration: none;
     font-size: 16px;
 }
@@ -44,43 +55,61 @@ nav ul li a {
 /* Media Query voor kleinere schermen (max-width: 768px) */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Zorg dat de links onder elkaar staan op kleinere schermen */
-        padding: 0; /* Verwijder de padding */
-        width: 100%; /* Laat de navigatiebalk 100% van de breedte innemen */
-        background-color: rgba(127, 178, 120, 0.427); /* Achtergrondkleur van de navbar voor responsieve weergave */
-        position: absolute; /* Maak de navigatie absoluut gepositioneerd */
-        top: 120px; /* Zet de navbar 120px onder de header (pas dit aan voor de juiste afstand) */
-        left: 0; /* Zorg dat het links begint */
-        z-index: 10; /* Zorg ervoor dat de nav-balk boven andere elementen staat */
+        flex-direction: column;
+        /* Zorg dat de links onder elkaar staan op kleinere schermen */
+        padding: 0;
+        /* Verwijder de padding */
+        width: 100%;
+        /* Laat de navigatiebalk 100% van de breedte innemen */
+        background-color: rgba(127, 178, 120, 0.427);
+        /* Achtergrondkleur van de navbar voor responsieve weergave */
+        position: absolute;
+        /* Maak de navigatie absoluut gepositioneerd */
+        top: 120px;
+        /* Zet de navbar 120px onder de header (pas dit aan voor de juiste afstand) */
+        left: 0;
+        /* Zorg dat het links begint */
+        z-index: 10;
+        /* Zorg ervoor dat de nav-balk boven andere elementen staat */
     }
 
     nav ul li {
-        margin-left: 0; /* Verwijder de ruimte tussen de links voor een compactere weergave */
-        padding: 8px 0; /* Voeg verticale padding toe voor spacing */
+        margin-left: 0;
+        /* Verwijder de ruimte tussen de links voor een compactere weergave */
+        padding: 8px 0;
+        /* Voeg verticale padding toe voor spacing */
     }
 
     nav ul li a {
-        font-size: 14px; /* Maak het lettertype kleiner voor een compacte weergave */
-        color: rgb(255, 255, 255); /* Kleur van de tekst */
+        font-size: 14px;
+        /* Maak het lettertype kleiner voor een compacte weergave */
+        color: rgb(255, 255, 255);
+        /* Kleur van de tekst */
     }
 
     /* Optioneel: Maak de hoogte van de navigatiebalk zelf kleiner */
     nav {
-        padding: 0; /* Verklein de padding boven en onder de navigatiebalk voor een kleinere hoogte */
+        padding: 0;
+        /* Verklein de padding boven en onder de navigatiebalk voor een kleinere hoogte */
     }
 
     /* Maak het hamburgermenu (als je dat hebt) kleiner */
     .hamburger .bar {
-        width: 25px; /* Maak de hamburger-balkjes smaller */
-        height: 3px; /* Maak de balkjes dunner */
+        width: 25px;
+        /* Maak de hamburger-balkjes smaller */
+        height: 3px;
+        /* Maak de balkjes dunner */
     }
 }
 
 @media (max-width: 768px) {
     .project-detail h1 {
-        text-align: right; /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
-        margin-right: 100px; /* Verhoog de ruimte aan de rechterkant */
-        margin-top: -50px; /* Verplaats de tekst iets naar boven */
+        text-align: right;
+        /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: 100px;
+        /* Verhoog de ruimte aan de rechterkant */
+        margin-top: -50px;
+        /* Verplaats de tekst iets naar boven */
     }
 }
 
@@ -88,8 +117,10 @@ nav ul li a {
 /* Media Query voor kleinere schermen (max-width: 768px) */
 @media (max-width: 768px) {
     .project-detail h1 {
-        text-align: right; /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
-        margin-right: -30px; /* Optioneel: Voeg wat ruimte toe aan de rechterkant */
+        text-align: right;
+        /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: -30px;
+        /* Optioneel: Voeg wat ruimte toe aan de rechterkant */
     }
 }
 
@@ -99,13 +130,15 @@ nav ul li a {
 header .logo h1 {
     color: white;
     font-size: 24px;
-    margin-left: 10px; /* Add some left margin to the logo */
+    margin-left: 10px;
+    /* Add some left margin to the logo */
     text-align: left;
 }
 
 /* Navigation styling */
 header nav {
-    margin-right: 10px; /* Add some space to the right of the nav */
+    margin-right: 10px;
+    /* Add some space to the right of the nav */
 }
 
 header nav ul {
@@ -174,17 +207,27 @@ body {
 
 /* Hero Section */
 .hero {
-    width: 100vw; /* Full width of the viewport */
-    height: 80vh; /* Height of the viewport */
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove padding */
+    width: 100vw;
+    /* Full width of the viewport */
+    height: 80vh;
+    /* Height of the viewport */
+    margin: 0;
+    /* Remove any margin */
+    padding: 0;
+    /* Remove padding */
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    background-image: url('https://www.gifs.nl//media/waterval-gifs-xnFQ9S.gif'); /* Background ige */
-    background-size: cover; /* Ensure image covers the full section */
-    background-position: center; /* Center the background image */
-    position: relative; /* Position relative for the overlay */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+    background-image: url('https://www.gifs.nl//media/waterval-gifs-xnFQ9S.gif');
+    /* Background ige */
+    background-size: cover;
+    /* Ensure image covers the full section */
+    background-position: center;
+    /* Center the background image */
+    position: relative;
+    /* Position relative for the overlay */
     z-index: 1;
 }
 
@@ -196,16 +239,23 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(5, 28, 2, 0.24); /* Increased opacity for better visibility */
-    z-index: -1; /* Overlay behind content */
+    background: rgba(5, 28, 2, 0.24);
+    /* Increased opacity for better visibility */
+    z-index: -1;
+    /* Overlay behind content */
 }
 
 /* Text Styling (optional) */
-.hero h1, .hero p {
-    position: relative; /* Position relative to keep it above the overlay */
-    color: white; /* Change this to another color if needed */
-    text-align: center; /* Center the text */
-    z-index: 1; /* Ensure text is above the overlay */
+.hero h1,
+.hero p {
+    position: relative;
+    /* Position relative to keep it above the overlay */
+    color: white;
+    /* Change this to another color if needed */
+    text-align: center;
+    /* Center the text */
+    z-index: 1;
+    /* Ensure text is above the overlay */
 }
 
 
@@ -213,7 +263,7 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    font-size: 22px; 
+    font-size: 22px;
 }
 
 
@@ -289,66 +339,104 @@ body {
 }
 
 .text-box {
-    width: 200px; /* Breedte van het tekstvak */
+    width: 200px;
+    /* Breedte van het tekstvak */
     padding: 20px;
-    background-color: #f0f0f0; /* Achtergrondkleur voor contrast */
-    border: 1px solid #ccc; /* Optionele rand */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optionele schaduw voor visuele diepte */
+    background-color: #f0f0f0;
+    /* Achtergrondkleur voor contrast */
+    border: 1px solid #ccc;
+    /* Optionele rand */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optionele schaduw voor visuele diepte */
 }
+
 .image-button {
-    display: inline-block; /* Zorgt ervoor dat de knop zich gedraagt als een inline element */
-    border: none; /* Geen rand */
-    background: transparent; /* Transparante achtergrond */
-    cursor: pointer; /* Wijzigt de cursor naar een handje bij hover */
+    display: inline-block;
+    /* Zorgt ervoor dat de knop zich gedraagt als een inline element */
+    border: none;
+    /* Geen rand */
+    background: transparent;
+    /* Transparante achtergrond */
+    cursor: pointer;
+    /* Wijzigt de cursor naar een handje bij hover */
 }
-  /* Add any additional styles for the back-to-top button */
-  #backToTop {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    bottom: 20px; /* Place at the bottom of the page */
-    right: 30px; /* Place to the right */
-    background-color: #2980b9; /* Button color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    padding: 10px 15px; /* Some padding */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
-    z-index: 1000; /* On top of other content */
+
+/* Add any additional styles for the back-to-top button */
+#backToTop {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    bottom: 20px;
+    /* Place at the bottom of the page */
+    right: 30px;
+    /* Place to the right */
+    background-color: #2980b9;
+    /* Button color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* No border */
+    padding: 10px 15px;
+    /* Some padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer on hover */
+    z-index: 1000;
+    /* On top of other content */
 }
 
 #backToTop:hover {
-    background-color: #1a5276; /* Darker color on hover */
+    background-color: #1a5276;
+    /* Darker color on hover */
 }
 
 .image-button:hover .smaller-photo {
-    transform: scale(1.05); /* Vergroot de afbeelding een beetje bij hover */
-}
-.waterwell-content {
-    max-width: 800px; /* Set a maximum width for better readability */
-    margin: 20px auto; /* Center the content with auto left and right margins */
-    padding: 20px; /* Add some padding around the content */
-    background-color: #f9f9f9; /* Light background color for contrast */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    font-family: 'Arial', sans-serif; /* Font family for the text */
-    line-height: 1.6; /* Improved line height for better readability */
+    transform: scale(1.05);
+    /* Vergroot de afbeelding een beetje bij hover */
 }
 
-.waterwell-content h2, .waterwell-content h3 {
-    color: #2c3e50; /* Darker color for headings */
+.waterwell-content {
+    max-width: 800px;
+    /* Set a maximum width for better readability */
+    margin: 20px auto;
+    /* Center the content with auto left and right margins */
+    padding: 20px;
+    /* Add some padding around the content */
+    background-color: #f9f9f9;
+    /* Light background color for contrast */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif;
+    /* Font family for the text */
+    line-height: 1.6;
+    /* Improved line height for better readability */
+}
+
+.waterwell-content h2,
+.waterwell-content h3 {
+    color: #2c3e50;
+    /* Darker color for headings */
 }
 
 .waterwell-content p {
-    color: #34495e; /* Darker color for paragraphs */
+    color: #34495e;
+    /* Darker color for paragraphs */
 }
 
 .waterwell-content ul {
-    margin-left: 20px; /* Indent unordered list */
-    color: #34495e; /* Darker color for list items */
+    margin-left: 20px;
+    /* Indent unordered list */
+    color: #34495e;
+    /* Darker color for list items */
 }
 
 .waterwell-content li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 10px;
+    /* Space between list items */
 }
 
 .container {
@@ -356,6 +444,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 /* project pagina */
 /* Projecten Sectie */
 .projects-section {
@@ -456,8 +545,10 @@ h3 {
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraal uitlijnen */
-    gap: 35px; /* Ruimte tussen projectcards */
+    justify-content: center;
+    /* Centraal uitlijnen */
+    gap: 35px;
+    /* Ruimte tussen projectcards */
 }
 
 .project-card {
@@ -466,23 +557,29 @@ h3 {
     border-radius: 5px;
     padding: 15px;
     text-align: center;
-    width: 300px; /* Breedte van nieuwsitems */
-    transition: transform 0.2s; /* Voor een kleine schaling bij hover */
+    width: 300px;
+    /* Breedte van nieuwsitems */
+    transition: transform 0.2s;
+    /* Voor een kleine schaling bij hover */
 }
 
 .project-card:hover {
-    transform: scale(1.05); /* Klein effect bij hover */
+    transform: scale(1.05);
+    /* Klein effect bij hover */
 }
 
 .project-link {
-    text-decoration: none; /* Verwijder onderlijning van de link */
-    color: inherit; /* Zorg ervoor dat de tekst dezelfde kleur heeft als het omhulsel */
+    text-decoration: none;
+    /* Verwijder onderlijning van de link */
+    color: inherit;
+    /* Zorg ervoor dat de tekst dezelfde kleur heeft als het omhulsel */
 }
 
 .project-image {
-    width: 100%; /* Zorg ervoor dat de afbeelding binnen het item past */
+    width: 100%;
+    /* Zorg ervoor dat de afbeelding binnen het item past */
     border-radius: 5px;
-    position: center    ;
+    position: center;
 }
 
 
@@ -491,17 +588,22 @@ h3 {
     max-width: 100%;
     border-radius: 5px;
 }
+
 /* Main section */
 main {
-    max-width: 1200px; /* Set max width for better readability */
-    margin: 0 auto; /* Center main content */
-    padding: 20px; /* Add some padding */
+    max-width: 1200px;
+    /* Set max width for better readability */
+    margin: 0 auto;
+    /* Center main content */
+    padding: 20px;
+    /* Add some padding */
 }
 
 .project-detail h1 {
     font-size: 32px;
     margin-bottom: 20px;
 }
+
 .project-detail {
     max-width: 1200px;
     margin: 0 auto;
@@ -544,52 +646,71 @@ main {
 .project-description {
     margin-top: 40px;
 }
+
 .sponsor-list li img {
-    width: 150px; /* Fixed width */
-    height: 100px; /* Fixed height */
-    object-fit: contain; /* Ensures the image fits inside the box while maintaining aspect ratio */
+    width: 150px;
+    /* Fixed width */
+    height: 100px;
+    /* Fixed height */
+    object-fit: contain;
+    /* Ensures the image fits inside the box while maintaining aspect ratio */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px; /* Space between images */
+    margin: 10px;
+    /* Space between images */
 }
 
 .sponsor-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
-    gap: 20px; /* Add space between items */
+    grid-template-columns: repeat(2, 1fr);
+    /* Create 2 equal-width columns */
+    gap: 20px;
+    /* Add space between items */
     list-style: none;
     padding: 0;
 }
 
 .sponsor-list li {
     display: flex;
-    justify-content: center; /* Center images inside the grid cells */
+    justify-content: center;
+    /* Center images inside the grid cells */
 }
 
 .sponsor-list li img {
-    width: 150px; /* Set the width for images */
+    width: 150px;
+    /* Set the width for images */
     height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .detail-image {
-    max-width: 600px; /* Set max width for the project image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners */
-    margin: 20px 0; /* Spacing above and below the image */
+    max-width: 600px;
+    /* Set max width for the project image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    /* Rounded corners */
+    margin: 20px 0;
+    /* Spacing above and below the image */
 }
 
-.project-description, .project-info, .project-updates, .community-involvement {
-    margin-bottom: 30px; /* Spacing between sections */
+.project-description,
+.project-info,
+.project-updates,
+.community-involvement {
+    margin-bottom: 30px;
+    /* Spacing between sections */
 }
 
 .project-info ul {
-    list-style: none; /* Remove bullets */
+    list-style: none;
+    /* Remove bullets */
 }
 
 .project-info li {
-    margin-bottom: 10px; /* Spacing between list items */
+    margin-bottom: 10px;
+    /* Spacing between list items */
 }
 
 .back-button {
@@ -601,68 +722,92 @@ main {
     border-radius: 5px;
     margin-top: 20px;
 }
+
 .fundraising-info {
-    background-color: #f9f9f9; /* Achtergrondkleur voor contrast */
+    background-color: #f9f9f9;
+    /* Achtergrondkleur voor contrast */
     padding: 20px;
-    border-radius: 8px; /* Ronde hoeken */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
-    margin: 20px 0; /* Ruimte rondom het element */
+    border-radius: 8px;
+    /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Schaduw voor diepte */
+    margin: 20px 0;
+    /* Ruimte rondom het element */
 }
 
 .fundraising-details {
     display: flex;
-    justify-content: space-between; /* Zorgt voor ruimte tussen de items */
-    margin-bottom: 15px; /* Ruimte onder de details */
+    justify-content: space-between;
+    /* Zorgt voor ruimte tussen de items */
+    margin-bottom: 15px;
+    /* Ruimte onder de details */
 }
 
 .amount {
-    color: #009688; /* Kleur voor het ingezamelde bedrag */
-    font-weight: bold; /* Maak het vetgedrukt */
+    color: #009688;
+    /* Kleur voor het ingezamelde bedrag */
+    font-weight: bold;
+    /* Maak het vetgedrukt */
 }
 
 .goal {
-    color: #d9534f; /* Kleur voor het doelbedrag */
-    font-weight: bold; /* Maak het vetgedrukt */
+    color: #d9534f;
+    /* Kleur voor het doelbedrag */
+    font-weight: bold;
+    /* Maak het vetgedrukt */
 }
 
 .progress-bar {
-    background-color: #e0e0e0; /* Achtergrondkleur voor de voortgangsbalk */
-    border-radius: 5px; /* Ronde hoeken */
-    height: 20px; /* Hoogte van de balk */
-    overflow: hidden; /* Verberg wat buiten de balk valt */
+    background-color: #e0e0e0;
+    /* Achtergrondkleur voor de voortgangsbalk */
+    border-radius: 5px;
+    /* Ronde hoeken */
+    height: 20px;
+    /* Hoogte van de balk */
+    overflow: hidden;
+    /* Verberg wat buiten de balk valt */
 }
 
 .progress {
-    background-color: #009688; /* Kleur van de voortgang */
-    height: 100%; /* Volledige hoogte van de balk */
-    border-radius: 5px; /* Ronde hoeken voor de voortgang */
+    background-color: #009688;
+    /* Kleur van de voortgang */
+    height: 100%;
+    /* Volledige hoogte van de balk */
+    border-radius: 5px;
+    /* Ronde hoeken voor de voortgang */
 }
 
 .back-button:hover {
     background-color: #0056b3;
 }
+
 /* Stijl voor de nieuwsitems */
 .news-feed {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Maakt het responsief, zodat de items naar beneden verplaatsen op kleinere schermen */
-    gap: 20px; /* Ruimte tussen de items */
+    flex-wrap: wrap;
+    /* Maakt het responsief, zodat de items naar beneden verplaatsen op kleinere schermen */
+    gap: 20px;
+    /* Ruimte tussen de items */
     margin: 20px 0;
 }
 
 .news-item {
-    flex: 1 1 calc(33.333% - 20px); /* Elk item neemt 1/3 van de breedte in, met ruimte voor de gap */
+    flex: 1 1 calc(33.333% - 20px);
+    /* Elk item neemt 1/3 van de breedte in, met ruimte voor de gap */
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
     margin: 10px;
-    box-sizing: border-box; /* Zorgt ervoor dat padding en borders binnen de breedte blijven */
+    box-sizing: border-box;
+    /* Zorgt ervoor dat padding en borders binnen de breedte blijven */
     text-align: center;
 }
 
 .news-item img {
-    max-width: 100%; /* Zorgt ervoor dat de afbeelding responsief blijft */
+    max-width: 100%;
+    /* Zorgt ervoor dat de afbeelding responsief blijft */
     height: auto;
     border-radius: 5px;
 }
@@ -700,7 +845,7 @@ footer {
     padding: 50px 0;
     text-align: center;
     position: relative;
-    bottom: 0;  
+    bottom: 0;
     left: 0;
     width: 100%;
     margin-top: 2rem;
@@ -751,32 +896,40 @@ footer {
 
 @media (max-width: 768px) {
     .sponsor-list {
-        justify-content: flex-start; /* Zorg ervoor dat de items aan de linkerkant beginnen */
+        justify-content: flex-start;
+        /* Zorg ervoor dat de items aan de linkerkant beginnen */
     }
 
     .sponsor-list li {
-        flex: 1 1 30%; /* Maak de lijstitems 30% breed op tablets */
-        margin: 10px 5px; /* Voeg verticale ruimte toe tussen items */
+        flex: 1 1 30%;
+        /* Maak de lijstitems 30% breed op tablets */
+        margin: 10px 5px;
+        /* Voeg verticale ruimte toe tussen items */
     }
 
     .sponsor-list li img {
-        max-width: 80%; /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
+        max-width: 80%;
+        /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
     }
 }
 
 /* Media Query voor smartphones (max-width: 480px) */
 @media (max-width: 480px) {
     .sponsor-list li {
-        flex: 1 1 45%; /* Maak de lijstitems 45% breed op smartphones */
-        margin: 5px 2.5%; /* Verminder de ruimte tussen items */
+        flex: 1 1 45%;
+        /* Maak de lijstitems 45% breed op smartphones */
+        margin: 5px 2.5%;
+        /* Verminder de ruimte tussen items */
     }
-    
+
     .sponsor-list li img {
-        max-width: 100%; /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
+        max-width: 100%;
+        /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
     }
 
     .sponsor-section {
-        text-align: center; /* Center de tekst in de sectie */
+        text-align: center;
+        /* Center de tekst in de sectie */
     }
 }
 
@@ -784,52 +937,63 @@ footer {
 /* Media Query voor tablets (max-width: 768px) */
 @media (max-width: 768px) {
     .detail-image {
-        max-width: 80%; /* Verklein de afbeelding tot 80% van de breedte op tablets */
+        max-width: 80%;
+        /* Verklein de afbeelding tot 80% van de breedte op tablets */
     }
 }
 
 /* Media Query voor smartphones (max-width: 480px) */
 @media (max-width: 480px) {
     .detail-image {
-        max-width: 100%; /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
-        height: auto; /* Houd de hoogte in verhouding tot de breedte */
+        max-width: 100%;
+        /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
+        height: auto;
+        /* Houd de hoogte in verhouding tot de breedte */
     }
 }
+
 @media (max-width: 768px) {
     .project-content {
-        margin-top: 20px; /* Voeg wat extra ruimte boven de content toe */
+        margin-top: 20px;
+        /* Voeg wat extra ruimte boven de content toe */
     }
 }
 
 /* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
 @media (max-width: 480px) {
     .project-content {
-        margin-top: 40px; /* Nog meer ruimte voor kleinere schermen */
+        margin-top: 40px;
+        /* Nog meer ruimte voor kleinere schermen */
     }
 }
+
 /* Media query voor schermen kleiner dan 768px (bijvoorbeeld tablets en telefoons) */
 @media (max-width: 768px) {
     .projects-section h2 {
-        margin-left: 20px; /* Verschuift de h2 een stukje naar rechts */
+        margin-left: 20px;
+        /* Verschuift de h2 een stukje naar rechts */
     }
 }
 
 /* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
 @media (max-width: 480px) {
     .projects-section h2 {
-        margin-left: 40px; /* Nog meer naar rechts op zeer kleine schermen */
+        margin-left: 40px;
+        /* Nog meer naar rechts op zeer kleine schermen */
     }
-}   
+}
 
 
 #load-more:hover {
-    background-color: #0056b3; /* Donkerdere kleur bij hover */
+    background-color: #0056b3;
+    /* Donkerdere kleur bij hover */
 }
 
 /* Responsief gedrag voor kleinere schermen */
 @media (max-width: 768px) {
     .news-item {
-        width: 45%; /* Breedte van elk nieuwsitem op kleinere schermen */
+        width: 45%;
+        /* Breedte van elk nieuwsitem op kleinere schermen */
     }
 }
 
@@ -842,36 +1006,47 @@ footer {
 
 header {
     display: flex;
-    justify-content: flex-start; /* Zet het logo en de navigatie op één lijn */
-    align-items: center; /* Zorgt ervoor dat alles in het midden van de header staat, verticaal gezien */
-    padding: 10px 20px; /* Voeg wat ruimte toe aan de binnenkant van de header */
-    background-color: #6a9a806b; /* Achtergrondkleur van de header */
-    height: 120px; /* Stel een vaste hoogte voor de header in */
+    justify-content: flex-start;
+    /* Zet het logo en de navigatie op één lijn */
+    align-items: center;
+    /* Zorgt ervoor dat alles in het midden van de header staat, verticaal gezien */
+    padding: 10px 20px;
+    /* Voeg wat ruimte toe aan de binnenkant van de header */
+    background-color: #6a9a806b;
+    /* Achtergrondkleur van de header */
+    height: 120px;
+    /* Stel een vaste hoogte voor de header in */
 }
 
 .logo {
     width: 100px;
     height: 100px;
-    margin-left: 20px; /* Zorgt ervoor dat het logo naar rechts wordt verplaatst */
+    margin-left: 20px;
+    /* Zorgt ervoor dat het logo naar rechts wordt verplaatst */
 }
 
 nav {
-    margin-left: auto; /* Verplaatst de navigatie naar de rechterkant van de header */
+    margin-left: auto;
+    /* Verplaatst de navigatie naar de rechterkant van de header */
 }
 
 nav ul {
-    list-style: none; /* Verwijdert standaard opsommingstekens */
+    list-style: none;
+    /* Verwijdert standaard opsommingstekens */
     margin: 0;
     padding: 0;
-    display: flex; /* Zorgt ervoor dat de links naast elkaar komen te staan */
+    display: flex;
+    /* Zorgt ervoor dat de links naast elkaar komen te staan */
 }
 
 nav ul li {
-    margin-left: 10px; /* Voeg ruimte toe tussen de navigatielinks */
+    margin-left: 10px;
+    /* Voeg ruimte toe tussen de navigatielinks */
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255); /* Kleur van de tekst */
+    color: rgb(255, 255, 255);
+    /* Kleur van de tekst */
     text-decoration: none;
     font-size: 16px;
 }
@@ -879,43 +1054,61 @@ nav ul li a {
 /* Media Query voor kleinere schermen (max-width: 768px) */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Zorg dat de links onder elkaar staan op kleinere schermen */
-        padding: 0; /* Verwijder de padding */
-        width: 100%; /* Laat de navigatiebalk 100% van de breedte innemen */
-        background-color: rgba(127, 178, 120, 0.427); /* Achtergrondkleur van de navbar voor responsieve weergave */
-        position: absolute; /* Maak de navigatie absoluut gepositioneerd */
-        top: 120px; /* Zet de navbar 120px onder de header (pas dit aan voor de juiste afstand) */
-        left: 0; /* Zorg dat het links begint */
-        z-index: 10; /* Zorg ervoor dat de nav-balk boven andere elementen staat */
+        flex-direction: column;
+        /* Zorg dat de links onder elkaar staan op kleinere schermen */
+        padding: 0;
+        /* Verwijder de padding */
+        width: 100%;
+        /* Laat de navigatiebalk 100% van de breedte innemen */
+        background-color: rgba(127, 178, 120, 0.427);
+        /* Achtergrondkleur van de navbar voor responsieve weergave */
+        position: absolute;
+        /* Maak de navigatie absoluut gepositioneerd */
+        top: 120px;
+        /* Zet de navbar 120px onder de header (pas dit aan voor de juiste afstand) */
+        left: 0;
+        /* Zorg dat het links begint */
+        z-index: 10;
+        /* Zorg ervoor dat de nav-balk boven andere elementen staat */
     }
 
     nav ul li {
-        margin-left: 0; /* Verwijder de ruimte tussen de links voor een compactere weergave */
-        padding: 8px 0; /* Voeg verticale padding toe voor spacing */
+        margin-left: 0;
+        /* Verwijder de ruimte tussen de links voor een compactere weergave */
+        padding: 8px 0;
+        /* Voeg verticale padding toe voor spacing */
     }
 
     nav ul li a {
-        font-size: 14px; /* Maak het lettertype kleiner voor een compacte weergave */
-        color: rgb(255, 255, 255); /* Kleur van de tekst */
+        font-size: 14px;
+        /* Maak het lettertype kleiner voor een compacte weergave */
+        color: rgb(255, 255, 255);
+        /* Kleur van de tekst */
     }
 
     /* Optioneel: Maak de hoogte van de navigatiebalk zelf kleiner */
     nav {
-        padding: 0; /* Verklein de padding boven en onder de navigatiebalk voor een kleinere hoogte */
+        padding: 0;
+        /* Verklein de padding boven en onder de navigatiebalk voor een kleinere hoogte */
     }
 
     /* Maak het hamburgermenu (als je dat hebt) kleiner */
     .hamburger .bar {
-        width: 25px; /* Maak de hamburger-balkjes smaller */
-        height: 3px; /* Maak de balkjes dunner */
+        width: 25px;
+        /* Maak de hamburger-balkjes smaller */
+        height: 3px;
+        /* Maak de balkjes dunner */
     }
 }
 
 @media (max-width: 768px) {
     .project-detail h1 {
-        text-align: right; /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
-        margin-right: 100px; /* Verhoog de ruimte aan de rechterkant */
-        margin-top: -50px; /* Verplaats de tekst iets naar boven */
+        text-align: right;
+        /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: 100px;
+        /* Verhoog de ruimte aan de rechterkant */
+        margin-top: -50px;
+        /* Verplaats de tekst iets naar boven */
     }
 }
 
@@ -923,8 +1116,10 @@ nav ul li a {
 /* Media Query voor kleinere schermen (max-width: 768px) */
 @media (max-width: 768px) {
     .project-detail h1 {
-        text-align: right; /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
-        margin-right: -30px; /* Optioneel: Voeg wat ruimte toe aan de rechterkant */
+        text-align: right;
+        /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: -30px;
+        /* Optioneel: Voeg wat ruimte toe aan de rechterkant */
     }
 }
 
@@ -934,13 +1129,15 @@ nav ul li a {
 header .logo h1 {
     color: white;
     font-size: 24px;
-    margin-left: 10px; /* Add some left margin to the logo */
+    margin-left: 10px;
+    /* Add some left margin to the logo */
     text-align: left;
 }
 
 /* Navigation styling */
 header nav {
-    margin-right: 10px; /* Add some space to the right of the nav */
+    margin-right: 10px;
+    /* Add some space to the right of the nav */
 }
 
 header nav ul {
@@ -1009,17 +1206,27 @@ body {
 
 /* Hero Section */
 .hero {
-    width: 100vw; /* Full width of the viewport */
-    height: 80vh; /* Height of the viewport */
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove padding */
+    width: 100vw;
+    /* Full width of the viewport */
+    height: 80vh;
+    /* Height of the viewport */
+    margin: 0;
+    /* Remove any margin */
+    padding: 0;
+    /* Remove padding */
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    background-image: url('https://www.gifs.nl//media/waterval-gifs-xnFQ9S.gif'); /* Background ige */
-    background-size: cover; /* Ensure image covers the full section */
-    background-position: center; /* Center the background image */
-    position: relative; /* Position relative for the overlay */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+    background-image: url('https://www.gifs.nl//media/waterval-gifs-xnFQ9S.gif');
+    /* Background ige */
+    background-size: cover;
+    /* Ensure image covers the full section */
+    background-position: center;
+    /* Center the background image */
+    position: relative;
+    /* Position relative for the overlay */
     z-index: 1;
 }
 
@@ -1031,16 +1238,23 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(5, 28, 2, 0.24); /* Increased opacity for better visibility */
-    z-index: -1; /* Overlay behind content */
+    background: rgba(5, 28, 2, 0.24);
+    /* Increased opacity for better visibility */
+    z-index: -1;
+    /* Overlay behind content */
 }
 
 /* Text Styling (optional) */
-.hero h1, .hero p {
-    position: relative; /* Position relative to keep it above the overlay */
-    color: white; /* Change this to another color if needed */
-    text-align: center; /* Center the text */
-    z-index: 1; /* Ensure text is above the overlay */
+.hero h1,
+.hero p {
+    position: relative;
+    /* Position relative to keep it above the overlay */
+    color: white;
+    /* Change this to another color if needed */
+    text-align: center;
+    /* Center the text */
+    z-index: 1;
+    /* Ensure text is above the overlay */
 }
 
 
@@ -1048,7 +1262,7 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    font-size: 22px; 
+    font-size: 22px;
 }
 
 
@@ -1124,66 +1338,104 @@ body {
 }
 
 .text-box {
-    width: 200px; /* Breedte van het tekstvak */
+    width: 200px;
+    /* Breedte van het tekstvak */
     padding: 20px;
-    background-color: #f0f0f0; /* Achtergrondkleur voor contrast */
-    border: 1px solid #ccc; /* Optionele rand */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optionele schaduw voor visuele diepte */
+    background-color: #f0f0f0;
+    /* Achtergrondkleur voor contrast */
+    border: 1px solid #ccc;
+    /* Optionele rand */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optionele schaduw voor visuele diepte */
 }
+
 .image-button {
-    display: inline-block; /* Zorgt ervoor dat de knop zich gedraagt als een inline element */
-    border: none; /* Geen rand */
-    background: transparent; /* Transparante achtergrond */
-    cursor: pointer; /* Wijzigt de cursor naar een handje bij hover */
+    display: inline-block;
+    /* Zorgt ervoor dat de knop zich gedraagt als een inline element */
+    border: none;
+    /* Geen rand */
+    background: transparent;
+    /* Transparante achtergrond */
+    cursor: pointer;
+    /* Wijzigt de cursor naar een handje bij hover */
 }
-  /* Add any additional styles for the back-to-top button */
-  #backToTop {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    bottom: 20px; /* Place at the bottom of the page */
-    right: 30px; /* Place to the right */
-    background-color: #2980b9; /* Button color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    padding: 10px 15px; /* Some padding */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
-    z-index: 1000; /* On top of other content */
+
+/* Add any additional styles for the back-to-top button */
+#backToTop {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    bottom: 20px;
+    /* Place at the bottom of the page */
+    right: 30px;
+    /* Place to the right */
+    background-color: #2980b9;
+    /* Button color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* No border */
+    padding: 10px 15px;
+    /* Some padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer on hover */
+    z-index: 1000;
+    /* On top of other content */
 }
 
 #backToTop:hover {
-    background-color: #1a5276; /* Darker color on hover */
+    background-color: #1a5276;
+    /* Darker color on hover */
 }
 
 .image-button:hover .smaller-photo {
-    transform: scale(1.05); /* Vergroot de afbeelding een beetje bij hover */
-}
-.waterwell-content {
-    max-width: 800px; /* Set a maximum width for better readability */
-    margin: 20px auto; /* Center the content with auto left and right margins */
-    padding: 20px; /* Add some padding around the content */
-    background-color: #f9f9f9; /* Light background color for contrast */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    font-family: 'Arial', sans-serif; /* Font family for the text */
-    line-height: 1.6; /* Improved line height for better readability */
+    transform: scale(1.05);
+    /* Vergroot de afbeelding een beetje bij hover */
 }
 
-.waterwell-content h2, .waterwell-content h3 {
-    color: #2c3e50; /* Darker color for headings */
+.waterwell-content {
+    max-width: 800px;
+    /* Set a maximum width for better readability */
+    margin: 20px auto;
+    /* Center the content with auto left and right margins */
+    padding: 20px;
+    /* Add some padding around the content */
+    background-color: #f9f9f9;
+    /* Light background color for contrast */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif;
+    /* Font family for the text */
+    line-height: 1.6;
+    /* Improved line height for better readability */
+}
+
+.waterwell-content h2,
+.waterwell-content h3 {
+    color: #2c3e50;
+    /* Darker color for headings */
 }
 
 .waterwell-content p {
-    color: #34495e; /* Darker color for paragraphs */
+    color: #34495e;
+    /* Darker color for paragraphs */
 }
 
 .waterwell-content ul {
-    margin-left: 20px; /* Indent unordered list */
-    color: #34495e; /* Darker color for list items */
+    margin-left: 20px;
+    /* Indent unordered list */
+    color: #34495e;
+    /* Darker color for list items */
 }
 
 .waterwell-content li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 10px;
+    /* Space between list items */
 }
 
 .container {
@@ -1191,6 +1443,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 /* project pagina */
 /* Projecten Sectie */
 .projects-section {
@@ -1291,8 +1544,10 @@ h3 {
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraal uitlijnen */
-    gap: 35px; /* Ruimte tussen projectcards */
+    justify-content: center;
+    /* Centraal uitlijnen */
+    gap: 35px;
+    /* Ruimte tussen projectcards */
 }
 
 .project-card {
@@ -1301,23 +1556,29 @@ h3 {
     border-radius: 5px;
     padding: 15px;
     text-align: center;
-    width: 300px; /* Breedte van nieuwsitems */
-    transition: transform 0.2s; /* Voor een kleine schaling bij hover */
+    width: 300px;
+    /* Breedte van nieuwsitems */
+    transition: transform 0.2s;
+    /* Voor een kleine schaling bij hover */
 }
 
 .project-card:hover {
-    transform: scale(1.05); /* Klein effect bij hover */
+    transform: scale(1.05);
+    /* Klein effect bij hover */
 }
 
 .project-link {
-    text-decoration: none; /* Verwijder onderlijning van de link */
-    color: inherit; /* Zorg ervoor dat de tekst dezelfde kleur heeft als het omhulsel */
+    text-decoration: none;
+    /* Verwijder onderlijning van de link */
+    color: inherit;
+    /* Zorg ervoor dat de tekst dezelfde kleur heeft als het omhulsel */
 }
 
 .project-image {
-    width: 100%; /* Zorg ervoor dat de afbeelding binnen het item past */
+    width: 100%;
+    /* Zorg ervoor dat de afbeelding binnen het item past */
     border-radius: 5px;
-    position: center    ;
+    position: center;
 }
 
 
@@ -1327,17 +1588,22 @@ h3 {
     max-width: 100%;
     border-radius: 5px;
 }
+
 /* Main section */
 main {
-    max-width: 1200px; /* Set max width for better readability */
-    margin: 0 auto; /* Center main content */
-    padding: 20px; /* Add some padding */
+    max-width: 1200px;
+    /* Set max width for better readability */
+    margin: 0 auto;
+    /* Center main content */
+    padding: 20px;
+    /* Add some padding */
 }
 
 .project-detail h1 {
     font-size: 32px;
     margin-bottom: 20px;
 }
+
 .project-detail {
     max-width: 1200px;
     margin: 0 auto;
@@ -1380,52 +1646,71 @@ main {
 .project-description {
     margin-top: 40px;
 }
+
 .sponsor-list li img {
-    width: 150px; /* Fixed width */
-    height: 100px; /* Fixed height */
-    object-fit: contain; /* Ensures the image fits inside the box while maintaining aspect ratio */
+    width: 150px;
+    /* Fixed width */
+    height: 100px;
+    /* Fixed height */
+    object-fit: contain;
+    /* Ensures the image fits inside the box while maintaining aspect ratio */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px; /* Space between images */
+    margin: 10px;
+    /* Space between images */
 }
 
 .sponsor-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
-    gap: 20px; /* Add space between items */
+    grid-template-columns: repeat(2, 1fr);
+    /* Create 2 equal-width columns */
+    gap: 20px;
+    /* Add space between items */
     list-style: none;
     padding: 0;
 }
 
 .sponsor-list li {
     display: flex;
-    justify-content: center; /* Center images inside the grid cells */
+    justify-content: center;
+    /* Center images inside the grid cells */
 }
 
 .sponsor-list li img {
-    width: 150px; /* Set the width for images */
+    width: 150px;
+    /* Set the width for images */
     height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .detail-image {
-    max-width: 600px; /* Set max width for the project image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners */
-    margin: 20px 0; /* Spacing above and below the image */
+    max-width: 600px;
+    /* Set max width for the project image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    /* Rounded corners */
+    margin: 20px 0;
+    /* Spacing above and below the image */
 }
 
-.project-description, .project-info, .project-updates, .community-involvement {
-    margin-bottom: 30px; /* Spacing between sections */
+.project-description,
+.project-info,
+.project-updates,
+.community-involvement {
+    margin-bottom: 30px;
+    /* Spacing between sections */
 }
 
 .project-info ul {
-    list-style: none; /* Remove bullets */
+    list-style: none;
+    /* Remove bullets */
 }
 
 .project-info li {
-    margin-bottom: 10px; /* Spacing between list items */
+    margin-bottom: 10px;
+    /* Spacing between list items */
 }
 
 .back-button {
@@ -1437,41 +1722,59 @@ main {
     border-radius: 5px;
     margin-top: 20px;
 }
+
 .fundraising-info {
-    background-color: #f9f9f9; /* Achtergrondkleur voor contrast */
+    background-color: #f9f9f9;
+    /* Achtergrondkleur voor contrast */
     padding: 20px;
-    border-radius: 8px; /* Ronde hoeken */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
-    margin: 20px 0; /* Ruimte rondom het element */
+    border-radius: 8px;
+    /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Schaduw voor diepte */
+    margin: 20px 0;
+    /* Ruimte rondom het element */
 }
 
 .fundraising-details {
     display: flex;
-    justify-content: space-between; /* Zorgt voor ruimte tussen de items */
-    margin-bottom: 15px; /* Ruimte onder de details */
+    justify-content: space-between;
+    /* Zorgt voor ruimte tussen de items */
+    margin-bottom: 15px;
+    /* Ruimte onder de details */
 }
 
 .amount {
-    color: #009688; /* Kleur voor het ingezamelde bedrag */
-    font-weight: bold; /* Maak het vetgedrukt */
+    color: #009688;
+    /* Kleur voor het ingezamelde bedrag */
+    font-weight: bold;
+    /* Maak het vetgedrukt */
 }
 
 .goal {
-    color: #d9534f; /* Kleur voor het doelbedrag */
-    font-weight: bold; /* Maak het vetgedrukt */
+    color: #d9534f;
+    /* Kleur voor het doelbedrag */
+    font-weight: bold;
+    /* Maak het vetgedrukt */
 }
 
 .progress-bar {
-    background-color: #e0e0e0; /* Achtergrondkleur voor de voortgangsbalk */
-    border-radius: 5px; /* Ronde hoeken */
-    height: 20px; /* Hoogte van de balk */
-    overflow: hidden; /* Verberg wat buiten de balk valt */
+    background-color: #e0e0e0;
+    /* Achtergrondkleur voor de voortgangsbalk */
+    border-radius: 5px;
+    /* Ronde hoeken */
+    height: 20px;
+    /* Hoogte van de balk */
+    overflow: hidden;
+    /* Verberg wat buiten de balk valt */
 }
 
 .progress {
-    background-color: #009688; /* Kleur van de voortgang */
-    height: 100%; /* Volledige hoogte van de balk */
-    border-radius: 5px; /* Ronde hoeken voor de voortgang */
+    background-color: #009688;
+    /* Kleur van de voortgang */
+    height: 100%;
+    /* Volledige hoogte van de balk */
+    border-radius: 5px;
+    /* Ronde hoeken voor de voortgang */
 }
 
 .back-button:hover {
@@ -1481,12 +1784,12 @@ main {
 /* styling voor agenda pagina */
 
 .agenda {
-    background: linear-gradient(135deg, #bcd6b6, #074b16b5); 
+    background: linear-gradient(135deg, #bcd6b6, #074b16b5);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
-    max-width: 1200px; 
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1503,10 +1806,14 @@ main {
     list-style-type: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Flex-wrap zorgt ervoor dat items netjes doorlopen als er meerdere zijn */
-    gap: 20px; /* Ruimte tussen de items */
-    justify-content: space-between; /* Zorgt dat de items verspreid worden */
-    align-items: flex-start; /* Items uitlijnen aan de bovenkant */
+    flex-wrap: wrap;
+    /* Flex-wrap zorgt ervoor dat items netjes doorlopen als er meerdere zijn */
+    gap: 20px;
+    /* Ruimte tussen de items */
+    justify-content: space-between;
+    /* Zorgt dat de items verspreid worden */
+    align-items: flex-start;
+    /* Items uitlijnen aan de bovenkant */
 }
 
 .agenda-item {
@@ -1515,9 +1822,12 @@ main {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
-    width: calc(33.333% - 20px); /* Drie items naast elkaar */
-    box-sizing: border-box; /* Inclusief padding en margin in breedte */
-    flex: 1 1  auto; /* Laat de items hun eigen hoogte behouden */
+    width: calc(33.333% - 20px);
+    /* Drie items naast elkaar */
+    box-sizing: border-box;
+    /* Inclusief padding en margin in breedte */
+    flex: 1 1 auto;
+    /* Laat de items hun eigen hoogte behouden */
 }
 
 .agenda-item:hover {
@@ -1535,7 +1845,8 @@ main {
     font-size: 1em;
     color: #666666;
     margin-bottom: 10px;
-    word-wrap: break-word; /* Zorgt dat lange woorden worden afgebroken en binnen het blok blijven */
+    word-wrap: break-word;
+    /* Zorgt dat lange woorden worden afgebroken en binnen het blok blijven */
 }
 
 .agenda-date {
@@ -1622,7 +1933,9 @@ main {
     font-size: 16px;
 }
 
-.add-event-form input, .add-event-form textarea, .add-event-form select {
+.add-event-form input,
+.add-event-form textarea,
+.add-event-form select {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
@@ -1653,8 +1966,8 @@ main {
 
 
 
-.donatie-achtergrond{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.snowleopard.nl/wp-content/uploads/2016/12/marokko-woestijn-1.jpg');
+.donatie-achtergrond {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.snowleopard.nl/wp-content/uploads/2016/12/marokko-woestijn-1.jpg');
     background-size: cover;
     padding: 2rem;
 }
@@ -1667,13 +1980,13 @@ main {
     gap: 2rem;
 }
 
-.doneer{
+.doneer {
     display: flex;
     gap: 2rem;
     justify-content: center;
 }
 
-.donatie{
+.donatie {
     padding: 2rem;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -1682,41 +1995,44 @@ main {
     border-radius: 10px;
 }
 
-.donatie--3{
+.donatie--3 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
 }
 
-.donatie--3 > img {
-    max-width: 100%; /* Zorgt ervoor dat de afbeelding niet breder wordt dan de container */
-    height: 15rem; /* Houdt de verhoudingen van de afbeelding correct */
+.donatie--3>img {
+    max-width: 100%;
+    /* Zorgt ervoor dat de afbeelding niet breder wordt dan de container */
+    height: 15rem;
+    /* Houdt de verhoudingen van de afbeelding correct */
     width: 15rem;
 }
 
 
-.donatie > h1 {
+.donatie>h1 {
     text-align: center;
 }
 
-.donatie > form {
+.donatie>form {
     display: flex;
     flex-direction: column;
 }
 
-.donatie > form > label {
+.donatie>form>label {
     margin-top: 10px;
 }
 
-.donatie > form > input, select {
+.donatie>form>input,
+select {
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-.donatie > form > button {
+.donatie>form>button {
     margin-top: 20px;
     padding: 10px;
     background-color: #4CAF50;
@@ -1726,18 +2042,18 @@ main {
     cursor: pointer;
 }
 
-.donatie > form > button:hover {
+.donatie>form>button:hover {
     background-color: #45a049;
 }
 
-.donatie > aside {
+.donatie>aside {
     margin-top: 20px;
     background-color: #e0f7e9;
     padding: 15px;
     border-radius: 5px;
 }
 
-.donatie > aside h3 {
+.donatie>aside h3 {
     margin-top: 0;
 }
 
@@ -1805,7 +2121,7 @@ main {
     margin-right: 10px;
 }
 
-.contact-info-container{
+.contact-info-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -1875,44 +2191,54 @@ main {
     background-color: #6b5345;
     color: #fff;
     border-radius: 5px;
-    font-size: 1.2rem; /* Increase the font size */
+    font-size: 1.2rem;
+    /* Increase the font size */
     margin: 10px 0;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    }
+}
 
 .back-button:hover {
     background-color: #967f72;
-    transform: scale(1.1); /* Increase the size of the button when hovered */
+    transform: scale(1.1);
+    /* Increase the size of the button when hovered */
 }
 
 @media (max-width: 768px) {
     .sponsor-list {
-        justify-content: flex-start; /* Zorg ervoor dat de items aan de linkerkant beginnen */
+        justify-content: flex-start;
+        /* Zorg ervoor dat de items aan de linkerkant beginnen */
     }
 
     .sponsor-list li {
-        flex: 1 1 30%; /* Maak de lijstitems 30% breed op tablets */
-        margin: 10px 5px; /* Voeg verticale ruimte toe tussen items */
+        flex: 1 1 30%;
+        /* Maak de lijstitems 30% breed op tablets */
+        margin: 10px 5px;
+        /* Voeg verticale ruimte toe tussen items */
     }
 
     .sponsor-list li img {
-        max-width: 80%; /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
+        max-width: 80%;
+        /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
     }
 }
 
 /* Media Query voor smartphones (max-width: 480px) */
 @media (max-width: 480px) {
     .sponsor-list li {
-        flex: 1 1 45%; /* Maak de lijstitems 45% breed op smartphones */
-        margin: 5px 2.5%; /* Verminder de ruimte tussen items */
+        flex: 1 1 45%;
+        /* Maak de lijstitems 45% breed op smartphones */
+        margin: 5px 2.5%;
+        /* Verminder de ruimte tussen items */
     }
-    
+
     .sponsor-list li img {
-        max-width: 100%; /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
+        max-width: 100%;
+        /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
     }
 
     .sponsor-section {
-        text-align: center; /* Center de tekst in de sectie */
+        text-align: center;
+        /* Center de tekst in de sectie */
     }
 }
 
@@ -1920,64 +2246,77 @@ main {
 /* Media Query voor tablets (max-width: 768px) */
 @media (max-width: 768px) {
     .detail-image {
-        max-width: 80%; /* Verklein de afbeelding tot 80% van de breedte op tablets */
+        max-width: 80%;
+        /* Verklein de afbeelding tot 80% van de breedte op tablets */
     }
 }
 
 /* Media Query voor smartphones (max-width: 480px) */
 @media (max-width: 480px) {
     .detail-image {
-        max-width: 100%; /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
-        height: auto; /* Houd de hoogte in verhouding tot de breedte */
+        max-width: 100%;
+        /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
+        height: auto;
+        /* Houd de hoogte in verhouding tot de breedte */
     }
 }
+
 @media (max-width: 768px) {
     .project-content {
-        margin-top: 20px; /* Voeg wat extra ruimte boven de content toe */
+        margin-top: 20px;
+        /* Voeg wat extra ruimte boven de content toe */
     }
 }
 
 /* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
 @media (max-width: 480px) {
     .project-content {
-        margin-top: 40px; /* Nog meer ruimte voor kleinere schermen */
+        margin-top: 40px;
+        /* Nog meer ruimte voor kleinere schermen */
     }
 }
+
 /* Media query voor schermen kleiner dan 768px (bijvoorbeeld tablets en telefoons) */
 @media (max-width: 768px) {
     .projects-section h2 {
-        margin-left: 20px; /* Verschuift de h2 een stukje naar rechts */
+        margin-left: 20px;
+        /* Verschuift de h2 een stukje naar rechts */
     }
 }
 
 /* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
 @media (max-width: 480px) {
     .projects-section h2 {
-        margin-left: 40px; /* Nog meer naar rechts op zeer kleine schermen */
+        margin-left: 40px;
+        /* Nog meer naar rechts op zeer kleine schermen */
     }
-}   
+}
 
 
 #load-more:hover {
-    background-color: #0056b3; /* Donkerdere kleur bij hover */
+    background-color: #0056b3;
+    /* Donkerdere kleur bij hover */
 }
 
 /* Responsief gedrag voor kleinere schermen */
 @media (max-width: 768px) {
     .news-item {
-        width: 45%; /* Breedte van elk nieuwsitem op kleinere schermen */
+        width: 45%;
+        /* Breedte van elk nieuwsitem op kleinere schermen */
     }
 }
 
 @media (max-width: 480px) {
     .news-item {
-        width: 100%; /* Breedte van elk nieuwsitem op heel kleine schermen */
+        width: 100%;
+        /* Breedte van elk nieuwsitem op heel kleine schermen */
     }
 }
 
 @media (max-width: 480px) {
     .news-item {
-        width: 100%; /* Breedte van elk nieuwsitem op heel kleine schermen */
+        width: 100%;
+        /* Breedte van elk nieuwsitem op heel kleine schermen */
     }
 }
 
@@ -1988,11 +2327,11 @@ main {
     /* height: 100vh; */
 }
 
-.a-kopjeoverons{
+.a-kopjeoverons {
     font-weight: bold;
 }
 
-.a-aboutTitle{
+.a-aboutTitle {
     font-size: 2rem;
     color: #083812b5;
     font-weight: bold;
@@ -2002,7 +2341,7 @@ main {
     flex-direction: column;
 }
 
-.a-aboutsubTitle{
+.a-aboutsubTitle {
     font-weight: normal;
     color: black;
     font-size: 1.2rem;
@@ -2011,7 +2350,7 @@ main {
     margin-top: 1rem;
 }
 
-.a-standTitle{
+.a-standTitle {
     font-size: 2rem;
     color: #083812b5;
     font-weight: bold;
@@ -2022,7 +2361,7 @@ main {
     margin-top: 6rem;
 }
 
-.a-standText{
+.a-standText {
     font-weight: normal;
     color: black;
     font-size: 1.2rem;
@@ -2032,7 +2371,7 @@ main {
     margin-left: 2rem;
 }
 
-.a-testoTitle{
+.a-testoTitle {
     font-size: 2rem;
     color: #083812b5;
     font-weight: bold;
@@ -2043,7 +2382,7 @@ main {
     margin-top: 6rem;
 }
 
-.a-testoText{
+.a-testoText {
     font-weight: normal;
     color: black;
     font-size: 1.2rem;
@@ -2054,23 +2393,33 @@ main {
 }
 
 .return-button {
-    display: inline-block; /* Zorgt ervoor dat de knop zich als een blok gedraagt */
-    padding: 10px 20px; /* Binnenmarges voor meer ruimte */
-    background-color: #007bff; /* Achtergrondkleur */
-    color: white; /* Tekstkleur */
-    text-decoration: none; /* Geen onderstreping */
-    border-radius: 5px; /* Ronde hoeken */
-    transition: background-color 0.3s; /* Smooth transition voor hover effect */
-    font-weight: bold; /* Vetgedrukte tekst */
+    display: inline-block;
+    /* Zorgt ervoor dat de knop zich als een blok gedraagt */
+    padding: 10px 20px;
+    /* Binnenmarges voor meer ruimte */
+    background-color: #007bff;
+    /* Achtergrondkleur */
+    color: white;
+    /* Tekstkleur */
+    text-decoration: none;
+    /* Geen onderstreping */
+    border-radius: 5px;
+    /* Ronde hoeken */
+    transition: background-color 0.3s;
+    /* Smooth transition voor hover effect */
+    font-weight: bold;
+    /* Vetgedrukte tekst */
 }
 
 .return-button:hover {
-    background-color: #0056b3; /* Donkerdere kleur bij hover */
+    background-color: #0056b3;
+    /* Donkerdere kleur bij hover */
 }
 
 .footer-socials {
     display: flex;
-    justify-content: flex-start; /* Zorgt ervoor dat de iconen naar links worden uitgelijnd */
+    justify-content: flex-start;
+    /* Zorgt ervoor dat de iconen naar links worden uitgelijnd */
     margin-top: 10px;
     margin-left: 8rem;
 }
@@ -2080,37 +2429,42 @@ main {
 }
 
 .footer-socials .social-icon {
-    width: 46px; /* Stel de breedte in op 30px */
-    height: auto; /* Houdt de aspect ratio van de afbeelding */
-    transition: transform 0.3s ease; /* Voegt een overgang toe voor hover effect */
+    width: 46px;
+    /* Stel de breedte in op 30px */
+    height: auto;
+    /* Houdt de aspect ratio van de afbeelding */
+    transition: transform 0.3s ease;
+    /* Voegt een overgang toe voor hover effect */
 }
 
 .footer-socials .social-icon:hover {
-    transform: scale(1.1); /* Vergroot de afbeelding bij hover */
+    transform: scale(1.1);
+    /* Vergroot de afbeelding bij hover */
 }
 
-.a-aboutusEnd{
+.a-aboutusEnd {
     font-weight: bold;
     margin: 5px;
 }
 
-#a-imgfooter{
+#a-imgfooter {
     width: 200px;
     border-radius: 8px;
-    margin-bottom: 20px; /* Voeg wat ruimte toe tussen de afbeelding en de socials */
+    margin-bottom: 20px;
+    /* Voeg wat ruimte toe tussen de afbeelding en de socials */
 }
 
-.footer-widget{
-   display: flex;
-   
+.footer-widget {
+    display: flex;
+
 }
 
-.footer-widget1{
-margin-right: 1erm;
+.footer-widget1 {
+    margin-right: 1erm;
 }
 
 
-.r-footer-widget1{
+.r-footer-widget1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -2167,6 +2521,7 @@ footer {
     border-radius: 5px;
     object-fit: cover;
 }
+
 .content-section {
     background-color: white;
     border-radius: 10px;
@@ -2212,27 +2567,37 @@ footer {
 }
 
 /* Mission en Vision Secties */
-.mission, .vision {
-    background-color: #f9f9f9; /* Lichte achtergrondkleur */
+.mission,
+.vision {
+    background-color: #f9f9f9;
+    /* Lichte achtergrondkleur */
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
-    transition: transform 0.3s; /* Voor een animatie-effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Schaduw voor diepte */
+    transition: transform 0.3s;
+    /* Voor een animatie-effect */
 }
 
-.mission:hover, .vision:hover {
-    transform: translateY(-5px); /* Licht omhoog bij hover */
+.mission:hover,
+.vision:hover {
+    transform: translateY(-5px);
+    /* Licht omhoog bij hover */
 }
 
-.mission h2, .vision h2 {
+.mission h2,
+.vision h2 {
     font-size: 28px;
-    color: #2980b9; /* Aangepaste kleur voor de koppen */
+    color: #2980b9;
+    /* Aangepaste kleur voor de koppen */
     margin-bottom: 15px;
-    font-family: 'Arial', sans-serif; /* Geweldig lettertype */
+    font-family: 'Arial', sans-serif;
+    /* Geweldig lettertype */
 }
 
-.mission p, .vision p {
+.mission p,
+.vision p {
     font-size: 18px;
     color: #555;
     line-height: 1.6;
@@ -2240,25 +2605,31 @@ footer {
 
 /* Call to Action Sectie */
 .call-to-action {
-    background: linear-gradient(to bottom, #2f6b3cb5, #1d4f6b); /* Gradient achtergrond */
+    background: linear-gradient(to bottom, #2f6b3cb5, #1d4f6b);
+    /* Gradient achtergrond */
     color: white;
     padding: 40px 0;
     text-align: center;
-    border-radius: 10px; /* Hoek afronding */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Schaduw voor diepte */
+    border-radius: 10px;
+    /* Hoek afronding */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Schaduw voor diepte */
 }
 
 .call-to-action h3 {
     font-size: 28px;
     margin-bottom: 15px;
-    text-transform: uppercase; /* Hoofdletters voor de titel */
-    letter-spacing: 1px; /* Ruimte tussen letters */
+    text-transform: uppercase;
+    /* Hoofdletters voor de titel */
+    letter-spacing: 1px;
+    /* Ruimte tussen letters */
 }
 
 .call-to-action p {
     font-size: 18px;
     margin-bottom: 20px;
-    font-style: italic; /* Cursief voor de tekst */
+    font-style: italic;
+    /* Cursief voor de tekst */
 }
 
 .cta-button {
@@ -2269,13 +2640,17 @@ footer {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s; /* Voor een animatie-effect */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Voor een animatie-effect */
 }
 
 .cta-button:hover {
-    background-color: #2980b9; /* Achtergrondkleur bij hover */
-    color: white; /* Witte tekst bij hover */
-    transform: translateY(-2px); /* Licht omhoog bij hover */
+    background-color: #2980b9;
+    /* Achtergrondkleur bij hover */
+    color: white;
+    /* Witte tekst bij hover */
+    transform: translateY(-2px);
+    /* Licht omhoog bij hover */
 }
 
 
@@ -2285,7 +2660,8 @@ footer {
         flex-direction: column;
     }
 
-    .text-content, .image-content {
+    .text-content,
+    .image-content {
         padding: 10px;
     }
 
@@ -2297,6 +2673,7 @@ footer {
         font-size: 1.1em;
     }
 }
+
 /* Button container styling */
 .back-to-newsfeed {
     text-align: center;
@@ -2306,25 +2683,32 @@ footer {
 /* Button styling */
 .newsfeed-btn {
     display: inline-block;
-    padding: 10px 20px; /* Iets kleinere padding */
-    background-color: #007BFF; /* Primaire kleur voor de knop */
+    padding: 10px 20px;
+    /* Iets kleinere padding */
+    background-color: #007BFF;
+    /* Primaire kleur voor de knop */
     color: white;
     text-decoration: none;
-    font-size: 1.1em; /* Iets kleinere tekstgrootte */
+    font-size: 1.1em;
+    /* Iets kleinere tekstgrootte */
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Iets kleinere schaduw */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    /* Iets kleinere schaduw */
 }
 
 /* Hover effect */
 .newsfeed-btn:hover {
-    background-color: #0056b3; /* Donkerdere kleur bij hover */
+    background-color: #0056b3;
+    /* Donkerdere kleur bij hover */
 }
 
 /* Active state for button */
 .newsfeed-btn:active {
-    background-color: #004080; /* Nog donkerdere kleur bij klikken */
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Lagere schaduw bij klikken */
+    background-color: #004080;
+    /* Nog donkerdere kleur bij klikken */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    /* Lagere schaduw bij klikken */
 }
 
 
@@ -2335,6 +2719,7 @@ footer {
         padding: 10px 20px;
     }
 }
+
 /* Basis layout voor nieuwsitems */
 .news-feed {
     display: flex;
@@ -2365,11 +2750,16 @@ p {
 /* Paginering styling */
 .pagination {
     display: flex;
-    justify-content: center; /* Zorgt voor horizontale centrering */
-    align-items: center; /* Zorgt voor verticale uitlijning */
-    margin: 20px auto; /* Centrerende marge voor de paginering */
-    width: 100%; /* Neem de volledige breedte in beslag */
-    max-width: 600px; /* Optioneel: Limiteer de maximale breedte voor paginering */
+    justify-content: center;
+    /* Zorgt voor horizontale centrering */
+    align-items: center;
+    /* Zorgt voor verticale uitlijning */
+    margin: 20px auto;
+    /* Centrerende marge voor de paginering */
+    width: 100%;
+    /* Neem de volledige breedte in beslag */
+    max-width: 600px;
+    /* Optioneel: Limiteer de maximale breedte voor paginering */
 }
 
 .pagination button {

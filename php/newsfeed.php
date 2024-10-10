@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nieuwsbrief - Elhouri Foundation</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
-<?php include_once '../includes/header.php'; ?>
+    <?php include_once '../includes/header.php'; ?>
 
 
     <main>
@@ -44,8 +46,8 @@
                     <h3>Waterzuiveringsproject</h3>
                     <p>Ons nieuwste project richt zich op het verbeteren van toegang tot schoon drinkwater voor landelijke gemeenschappen.</p>
                 </div>
-                   <!-- Nieuwsitem 3 -->
-                   <div class="news-item">
+                <!-- Nieuwsitem 3 -->
+                <div class="news-item">
                     <a href="#">
                         <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" alt="Nieuws Item 3" class="news-img">
                     </a>
@@ -69,8 +71,9 @@
 
     <button id="backToTop">naar boven</button>
 
-<script src="../js/scrollToTop.js"></script>
+    <script src="../js/scrollToTop.js"></script>
 
 
 </body>
+
 </html>

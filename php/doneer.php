@@ -10,7 +10,7 @@
 
 <body>
 
-<?php include_once '../includes/header.php'; ?>
+    <?php include_once '../includes/header.php'; ?>
 
 
     <div class="donatie-achtergrond">
@@ -91,7 +91,7 @@
 
     <button id="backToTop">naar boven</button>
 
-<script src="../js/scrollToTop.js"></script>
+    <script src="../js/scrollToTop.js"></script>
 
 
 </body>

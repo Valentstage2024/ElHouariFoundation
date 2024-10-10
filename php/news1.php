@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nieuws Item - Elhouri Foundation</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
-  
-<?php include_once '../includes/header.php'; ?>
 
-    
+    <?php include_once '../includes/header.php'; ?>
+
+
 
     <!-- Main Section with Text and Image -->
     <main>
@@ -31,7 +33,7 @@
     <div class="back-to-newsfeed">
         <a href="newsfeed.php" class="newsfeed-btn">Terug naar Nieuwsfeed</a>
     </div>
-    
+
     <!-- Footer -->
     <button id="backToTop">naar boven</button>
 
@@ -40,7 +42,8 @@
 
     <button id="backToTop">naar boven</button>
 
-<script src="../js/scrollToTop.js"></script>
+    <script src="../js/scrollToTop.js"></script>
 
 </body>
+
 </html>

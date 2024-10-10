@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = mysqli_real_escape_string($conn, $_POST['title']);
     $description = mysqli_real_escape_string($conn, $_POST['description']);
     $date = mysqli_real_escape_string($conn, $_POST['date']);
-    
+
     $query = "INSERT INTO agenda (title, description, date) VALUES ('$title', '$description', '$date')";
     if (mysqli_query($conn, $query)) {
         echo "<script>alert('Evenement toegevoegd!');</script>";
@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,10 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="../css/style.css">
 
     <button class="logout-btn" onclick="window.location.href='logout.php'">Uitloggen</button>
-    
+
 </head>
+
 <body>
-    
+
 
     <div class="add-event-container">
         <h2 class="add-event-header">Evenement Toevoegen</h2>
@@ -59,4 +61,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 
 </body>
+
 </html>

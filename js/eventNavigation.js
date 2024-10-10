@@ -16,7 +16,7 @@ function updateEvent() {
     const eventDate = new Date(event['date']);
     const today = new Date();
 
-    today.setHours(0, 0, 0, 0); 
+    today.setHours(0, 0, 0, 0);
     eventDate.setHours(0, 0, 0, 0);
 
     title.innerText = event['title'];
@@ -55,6 +55,6 @@ function nextEvent() {
     }
 }
 
-window.onload = function() {
-    updateEvent();  
+window.onload = function () {
+    updateEvent();
 };
