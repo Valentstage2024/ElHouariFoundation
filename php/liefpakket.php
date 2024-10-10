@@ -15,7 +15,7 @@
 
 
 
-    <main>
+    </main>
 
         <main>
             <main>
@@ -52,7 +52,7 @@
                 </section>
         </main>
 
-        <div class="fundraising-info">
+        <div class="fundraising-info">      
             <h3>Inzamelingsresultaten</h3>
             <div class="fundraising-details">
                 <div class="fundraising-item">
