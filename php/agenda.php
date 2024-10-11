@@ -40,14 +40,13 @@ foreach ($events as $index => $event) {
 
     <?php include_once '../includes/header.php'; ?>
 
-    <!-- Hero Section
     <section class="hero">
-        <div class="hero-text">
-            <h2>El Houari Foundation</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        </div>
-    </section> -->
+    <div class="hero-text">
+        <h2>El Houari Foundation</h2>
+        <p>Bij ons gaat het om geven, delen en helpen.</p>
+    </div>
+</section>
+
 
     <section class="agenda">
         <h2>Agenda</h2>
@@ -55,9 +54,10 @@ foreach ($events as $index => $event) {
             <h3 id="event-title"></h3>
             <p id="event-description"></p>
             <br>
-            <p id="event-date"></p>
+            <p id="event-date"><i class="fa fa-calendar"></i> Event Date</p>
             <br>
-            <p id="event-status"></p>
+            <p id="event-status"><i class="fa fa-info-circle"></i> Event Status</p>
+
             <button onclick="previousEvent()">Vorige</button>
             <button onclick="nextEvent()">Volgende</button>
         </div>
