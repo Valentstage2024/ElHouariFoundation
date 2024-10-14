@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donatiepagina - Elhouari Foundation</title>
+    <title>Donatiepagina - El Houari Foundation</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -17,6 +18,7 @@
         <div class="donatie-container">
             <div class="donatie donatie--1">
                 <h1>Mijn Donatie</h1>
+                <br>
                 <p>Samen kunnen we helpen armoede te bestrijden! Doneer en steun ons bij het helpen van gezinnen in
                     nood.
                 </p>

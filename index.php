@@ -23,8 +23,10 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Elhouri Foundation</title>
+    <title>Home - El Houari Foundation</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
    
 </head>
 <body>
@@ -50,57 +52,14 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     </nav>
 </header>
 
-
-
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
             <h2>El Houari Foundation</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>   
+            <p>Bij ons gaat het om geven, delen en helpen.</p>
         </div>
     </section>
 
-
-<section class="small-photos-text">
-    <div class="container">
-        <div class="small-photo-block">
-            <a href="php/project1.php" class="image-button">
-                <img src="https://storage.googleapis.com/steunactie-prod/img/actions/23590/md/03cf0aa24cd13ed0e25185f3863b25ca-waterput.png?1690599076" alt="Waterputten in Marokko">
-            </a>
-            <h2>Waterputten in Marokko</h2>
-            <p>Waterputten zijn essentieel in Marokko voor schoon drinkwater. Ze verminderen ziektes en besparen tijd. Toegang tot water ondersteunt landbouw en economie.</p>
-        </div>
-        <div class="small-photo-block">
-            <img src="small-photo2.jpg" alt="Small Photo 2">
-            <h2>Titel van de tweede foto</h2>
-            <p>Text about the second image. Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="small-photo-block">
-            <img src="small-photo3.jpg" alt="Small Photo 3">
-            <h2>Titel van de derde foto</h2>
-            <p>Text about the third image. Lorem ipsum dolor sit amet.</p>
-        </div>
-    </div>
-</section>
-
-<section class="three-inline-photos">
-    <div class="container">
-        <div class="inline-photo">
-            <img src="inline-photo1.jpg" alt="Inline Photo 1">
-            <p>Description 1</p>
-        </div>
-        <div class="inline-photo">
-            <img src="inline-photo2.jpg" alt="Inline Photo 2">
-            <p>Description 2</p>
-        </div>
-        <div class="inline-photo">
-            <img src="inline-photo3.jpg" alt="Inline Photo 3">
-            <p>Description 3</p>
-        </div>
-    </div>
-</section>
 
 
     <footer>
@@ -109,16 +68,18 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
             <img id="a-imgfooter" src="img/logo.png" alt="Elhouari Foundation Logo">
         </div>
         <div class="footer-section footer-legal">
-                <a href="php/aboutus.php">Over ons</a>
-                <a href="php/project.php">Projecten</a>
-                <a href="php/doneer.php">Doneren</a>
-                <a href="php/agenda.php">Agenda</a>
-                <a href="php/newsfeed.php">Nieuwsfeed</a>
+            <a href="php/aboutus.php">Over ons</a>
+            <a href="php/project.php">Projecten</a>
+            <a href="php/doneer.php">Doneren</a>
+            <a href="php/agenda.php">Agenda</a>
+                
         </div>
         <div class="footer-section footer-legal">
-            <a href="#">Disclaimer</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Algemene Voorwaarden</a>
+            <a href="php/privacy.php">Privacy Policy</a>
+            <a href="php/voorwaarden.php">Algemene Voorwaarden</a>
+            <a href="php/missievisie.php">Missie & Visie</a>
+            <a href="php/newsfeed.php">Nieuwsfeed</a>
+
         </div>
         <div class="footer-section footer-contact">
             <p>Contact: 06-50405030</p>
@@ -136,10 +97,16 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
         </div>
         <div class="footer-section footer-socials">
             <a href="https://www.instagram.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" class="social-icon">
+            <i class="fab fa-instagram social-icon"></i>
             </a>
             <a href="https://www.tiktok.com" target="_blank">
-                <img src="https://cdn.pixabay.com/photo/2021/01/30/06/42/tiktok-5962992_1280.png" alt="TikTok" class="social-icon">
+            <i class="fab fa-tiktok social-icon"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube social-icon"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook social-icon"></i>
             </a>
         </div>
     </div>

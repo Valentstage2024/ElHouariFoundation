@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projecten - Elhouri Foundation</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <main>
         <section class="projects-section">
             <h2>Onze Projecten</h2>
-            <p>We werken momenteel aan nieuwe projecten die binnenkort beschikbaar zullen zijn. Houd deze pagina in de gaten voor updates.</p>
+            <p class="intro-text">We werken momenteel aan nieuwe projecten die binnenkort beschikbaar zullen zijn. Houd deze pagina in de gaten voor updates.</p>
 
             <div class="projects-grid">
                 <!-- Project 1 -->

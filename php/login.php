@@ -35,31 +35,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 
 <head>
-    <title>Inloggen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inloggen - El Houari Foundation</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body>
-    <div class="container">
-        <h2>Inloggen</h2>
+<body class="login-body">
+    <div class="login-container">
+        <h2 class="login-title">Inloggen</h2>
         <?php if (isset($error)) { ?>
-            <p>
+            <p class="error-message">
                 <?php echo $error; ?>
             </p>
         <?php } ?>
-        <form method="post" action="login.php">
-            <label for="username">Gebruikersnaam:</label>
-            <input type="text" id="username" name="username" required autocomplete="on">
+        <form class="login-form" method="post" action="login.php">
+            <label class="login-label" for="username">Gebruikersnaam:</label>
+            <input class="login-input" type="text" id="username" name="username" required autocomplete="on">
 
-            <label for="password">Wachtwoord:</label>
-            <input type="password" id="password" name="password" required autocomplete="current-password">
+            <label class="login-label" for="password">Wachtwoord:</label>
+            <input class="login-input" type="password" id="password" name="password" required autocomplete="current-password">
 
-            <input type="submit" value="Inloggen">
+            <input class="login-submit" type="submit" value="Inloggen">
         </form>
     </div>
+
+    <a href="javascript:history.back()" class="back-button">⟵ Terug</a>
+    
 </body>
 
 </html>

@@ -36,6 +36,7 @@ header .logo {
     width: 100px;
     height: 100px;
     margin-left: 20px;
+    border-radius: 50px;
 }
 
 header .logo img {
@@ -414,36 +415,10 @@ body {
     /* Wijzigt de cursor naar een handje bij hover */
 }
 
-/* Add any additional styles for the back-to-top button */
-#backToTop {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    bottom: 20px;
-    /* Place at the bottom of the page */
-    right: 30px;
-    /* Place to the right */
-    background-color: #2980b9;
-    /* Button color */
-    color: white;
-    /* Text color */
-    border: none;
-    /* No border */
-    padding: 10px 15px;
-    /* Some padding */
-    border-radius: 5px;
-    /* Rounded corners */
-    cursor: pointer;
-    /* Pointer on hover */
-    z-index: 1000;
-    /* On top of other content */
-}
 
-#backToTop:hover {
+/* #backToTop:hover {
     background-color: #1a5276;
-    /* Darker color on hover */
-}
+} */
 
 .image-button:hover .smaller-photo {
     transform: scale(1.05);
@@ -878,10 +853,36 @@ main {
     margin-top: 20px;
 }
 
+.donatie h1 {
+    color: #009688;
+}
+
+.donatie {
+    display: flex;
+    flex-direction: column; /* Zorg ervoor dat de items onder elkaar staan */
+    align-items: center; /* Dit centreert de items horizontaal */
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.donatie p {
+    text-align: center; /* Dit centreert de tekst binnen de paragraaf */
+    color: #555;
+}
+
+
+
+
 /* nieuws pagina */
 .newsletter-section {
     padding: 40px;
     text-align: center;
+}
+
+.newsletter-section h2 {
+    color: #009688;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .intro-text {
@@ -897,6 +898,7 @@ footer {
     color: #fff;
     padding: 40px 20px;
     text-align: center;
+    bottom: 0;
 }
 
 .footer-container {
@@ -922,9 +924,10 @@ footer {
 
 /* Logo Styling */
 .footer-logo img {
-    width: 120px;
-    height: auto;
-    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    border-radius: 50px;
 }
 
 /* Links and Legal Styling */
@@ -944,22 +947,23 @@ footer {
     color: #87CEEB;
 }
 
-/* Social Icons Styling */
 .footer-socials {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
 }
 
 .footer-socials .social-icon {
-    width: 35px;
-    height: auto;
-    transition: transform 0.3s ease;
+    font-size: 30px; /* Verhoog de grootte van de iconen */
+    color: white; /* Zorg ervoor dat de kleur wit is */
+    transition: transform 0.3s ease; /* Effect bij hover */
 }
 
 .footer-socials .social-icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Vergroot de iconen bij hover */
+    color:#00796b
 }
+
 
 /* Contact Styling */
 .footer-contact p {
@@ -1284,7 +1288,7 @@ body {
 }
 
 #backToTop:hover {
-    background-color: #ff6347;
+    background-color: #00796b;
 }
 
 .image-button:hover .smaller-photo {
@@ -1857,6 +1861,12 @@ main {
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    margin: 100px auto; /* Centraal uitlijnen met marge */
+    padding: 20px;
+    background-color: #fff; /* Witte achtergrond voor het formulier */
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw effect */
 }
 
 .add-event-header {
@@ -1906,6 +1916,22 @@ main {
     background-color: #00796b;
 }
 
+.logout-btn {
+    position: absolute; /* Maak de knop absoluut gepositioneerd */
+    top: 20px; /* Afstand van de bovenkant */
+    left: 20px; /* Afstand van de linkerkant */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c; /* Rode achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    text-decoration: none; /* Geen onderstreping */
+    border-radius: 5px; /* Ronde hoeken */
+    transition: background-color 0.3s ease; /* Animatie voor hover */
+}
+
+.logout-btn:hover {
+    background-color: #c0392b; /* Donkerdere kleur bij hover */
+}
 
 
 
@@ -1978,15 +2004,17 @@ select {
 .donatie>form>button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #557966;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .donatie>form>button:hover {
-    background-color: #45a049;
+    background-color: #00796b;
+    transition: background-color 0.3s;
 }
 
 .donatie>aside {
@@ -2042,11 +2070,13 @@ select {
 
 .contact-form {
     min-height: 500px;
+    margin-bottom: 20px;
 }
 
 .contact-info h2,
 .contact-form h2 {
     color: #6a9a80;
+    margin-bottom: 15px; /* Ruimte onder de h2 */
 }
 
 .contact-info ul {
@@ -2091,7 +2121,7 @@ select {
 }
 
 .contact-form button:hover {
-    background-color: #6a9a80;
+    background-color: #5a8b6b; /* Bijvoorbeeld een iets donkerdere kleur */
 }
 
 .contact-form form {
@@ -2101,11 +2131,12 @@ select {
 }
 
 .contact-form p {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Ruimte onder de paragraaf */
     font-size: 14px;
     color: #555;
     line-height: 1.5;
 }
+
 
 .social-icons {
     margin-top: 15px;
@@ -2267,16 +2298,17 @@ select {
     display: flex;
     justify-content: center;
     align-items: top;
-    /* height: 100vh; */
+    color: #009688;
 }
 
 .a-kopjeoverons {
     font-weight: bold;
+    color: #555;
 }
 
 .a-aboutTitle {
     font-size: 2rem;
-    color: #083812b5;
+    color: #009688; 
     font-weight: bold;
     margin-top: 8rem;
     text-align: center;
@@ -2286,7 +2318,7 @@ select {
 
 .a-aboutsubTitle {
     font-weight: normal;
-    color: black;
+    color: #555;
     font-size: 1.2rem;
     text-align: center;
     max-width: 60em;
@@ -2295,7 +2327,7 @@ select {
 
 .a-standTitle {
     font-size: 2rem;
-    color: #083812b5;
+    color: #009688;
     font-weight: bold;
     text-align: center;
     display: flex;
@@ -2306,17 +2338,18 @@ select {
 
 .a-standText {
     font-weight: normal;
-    color: black;
+    color: #555;
     font-size: 1.2rem;
     text-align: center;
     max-width: 60em;
     margin-top: 1rem;
     margin-left: 2rem;
+    
 }
 
 .a-testoTitle {
     font-size: 2rem;
-    color: #083812b5;
+    color: #009688;
     font-weight: bold;
     text-align: center;
     display: flex;
@@ -2327,7 +2360,7 @@ select {
 
 .a-testoText {
     font-weight: normal;
-    color: black;
+    color: #555;
     font-size: 1.2rem;
     text-align: center;
     max-width: 60em;
@@ -2410,42 +2443,68 @@ select {
     object-fit: cover;
 }
 
+/* Nieuwe class voor content wrapper */
+.content-wrapper {
+    max-width: 800px; /* Maximale breedte voor de secties */
+    margin: 0 auto; /* Center de wrapper horizontaal */
+    padding: 20px; /* Padding binnen de wrapper */
+}
+
 /* Mission en Vision Secties */
 .mission,
 .vision {
-    background-color: #f9f9f9;
-    /* Lichte achtergrondkleur */
-    padding: 40px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Schaduw voor diepte */
-    transition: transform 0.3s;
-    /* Voor een animatie-effect */
+    background-color: #f9f9f9; /* Lichte achtergrondkleur */
+    padding: 40px; /* Padding rondom de sectie */
+    margin: 20px 0; /* Margin boven en onder */
+    border-radius: 10px; /* Ronde hoeken */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+    transition: transform 0.3s; /* Voor een animatie-effect */
+    text-align: center; /* Tekst centreren */
+    justify-content: center;
 }
 
 .mission:hover,
 .vision:hover {
-    transform: translateY(-5px);
-    /* Licht omhoog bij hover */
+    transform: translateY(-5px); /* Licht omhoog bij hover */
 }
 
 .mission h2,
 .vision h2 {
-    font-size: 28px;
-    color: #2980b9;
-    /* Aangepaste kleur voor de koppen */
-    margin-bottom: 15px;
-    font-family: 'Arial', sans-serif;
-    /* Geweldig lettertype */
+    font-size: 28px; /* Grotere koppen */
+ 
+    margin-bottom: 15px; /* Ruimte onder de koppen */
+    font-family: 'Arial', sans-serif; /* Geweldig lettertype */
+    text-align: center; /* Centreer de titels */
+    justify-content: center;
+    color: #009688;
 }
 
 .mission p,
 .vision p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
+    font-size: 18px; /* Grotere tekst */
+    color: #555; /* Donkere kleur voor de tekst */
+    line-height: 1.6; /* Ruimte tussen de regels */
 }
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .text-content,
+    .image-content {
+        padding: 10px;
+    }
+
+    .text-content h1 {
+        font-size: 2em;
+    }
+
+    .text-content p {
+        font-size: 1.1em;
+    }
+}
+
 
 /* Call to Action Sectie */
 .call-to-action {
@@ -2454,8 +2513,6 @@ select {
     color: white;
     padding: 40px 0;
     text-align: center;
-    border-radius: 10px;
-    /* Hoek afronding */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     /* Schaduw voor diepte */
 }
@@ -2464,9 +2521,8 @@ select {
     font-size: 28px;
     margin-bottom: 15px;
     text-transform: uppercase;
-    /* Hoofdletters voor de titel */
     letter-spacing: 1px;
-    /* Ruimte tussen letters */
+    color: white;
 }
 
 .call-to-action p {
@@ -2485,16 +2541,18 @@ select {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    /* Voor een animatie-effect */
+    border-radius: 20px;
+    margin-left: 5%;
 }
 
 .cta-button:hover {
-    background-color: #2980b9;
+    background-color: #00796b;
     /* Achtergrondkleur bij hover */
     color: white;
     /* Witte tekst bij hover */
     transform: translateY(-2px);
-    /* Licht omhoog bij hover */
+    border-radius: 20px;
+
 }
 
 
@@ -2639,7 +2697,7 @@ p {
         margin-top: 10px;
     }
 }
-<<<<<<< Updated upstream
+
 
 .terug-button {
     display: inline-block; /* Zorgt ervoor dat de link zich gedraagt als een blok */
@@ -2695,4 +2753,180 @@ p {
     max-width: 700px; /* Je kunt de grootte aanpassen als dat nodig is */
     margin-left: 20px; /* Verschuift de afbeelding 20px naar rechts */
 }
->>>>>>> Stashed changes
+
+
+
+/* Algemene stijlen voor de privacyverklaring sectie */
+.privacy-box {
+    max-width: 800px; /* Max breedte van de sectie */
+    margin: 20px auto; /* Centeren met een boven- en ondermarge */
+    padding: 20px; /* Binnenmarges voor wat ruimte */
+    background-color: #f9f9f9; /* Lichte achtergrondkleur */
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+
+/* Hoofd titel */
+.privacy-box h1 {
+    font-size: 2.5em; /* Grote tekst voor de hoofdtitel */
+    color: #009688;
+    margin-bottom: 20px; /* Ruimte onder de titel */
+}
+
+/* Paragraaf stijl */
+.privacy-box p {
+    font-size: 1em; /* Normale tekstgrootte */
+    line-height: 1.6; /* Regelhoogte voor leesbaarheid */
+    color: #34495e; /* Donkergrijze kleur voor tekst */
+    margin-bottom: 15px; /* Ruimte onder de paragraaf */
+}
+
+/* Responsive ontwerp */
+@media (max-width: 600px) {
+    .privacy-box {
+        padding: 15px; /* Minder padding op kleinere schermen */
+    }
+
+    .privacy-box h1 {
+        font-size: 2em; /* Kleinere hoofdtitel op kleine schermen */
+    }
+}
+
+
+  /* Algemene stijlen voor de terms sectie */
+.terms {
+    max-width: 800px; /* Max breedte van de sectie */
+    margin: 20px auto; /* Centeren met een boven- en ondermarge */
+    padding: 20px; /* Binnenmarges voor wat ruimte */
+    background-color: #f9f9f9; /* Lichte achtergrondkleur */
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+
+/* Hoofd titel */
+.terms h1 {
+    font-size: 2.5em; /* Grote tekst voor de hoofdtitel */
+    color: #009688;
+    margin-bottom: 20px; /* Ruimte onder de titel */
+}
+
+/* Subtitel stijl */
+.terms h2 {
+    font-size: 1.8em; /* Iets kleinere tekst voor subtitels */
+    color: #009688;
+    margin-top: 30px; /* Ruimte boven de subtitel */
+    margin-bottom: 10px; /* Ruimte onder de subtitel */
+}
+
+/* Paragraaf stijl */
+.terms p {
+    font-size: 1em; /* Normale tekstgrootte */
+    line-height: 1.6; /* Regelhoogte voor leesbaarheid */
+    color: #34495e; /* Donkergrijze kleur voor tekst */
+    margin-bottom: 15px; /* Ruimte onder de paragraaf */
+}
+
+/* Lijst stijl */
+.terms ul {
+    list-style-type: disc; /* Bullet points voor de lijst */
+    padding-left: 20px; /* Ruimte aan de linkerkant */
+}
+
+/* Lijst item stijl */
+.terms ul li {
+    margin-bottom: 10px; /* Ruimte onder de lijstitems */
+}
+
+/* Responsive ontwerp */
+@media (max-width: 600px) {
+    .terms {
+        padding: 15px; /* Minder padding op kleinere schermen */
+    }
+
+    .terms h1 {
+        font-size: 2em; /* Kleinere hoofdtitel op kleine schermen */
+    }
+
+    .terms h2 {
+        font-size: 1.5em; /* Kleinere subtitel op kleine schermen */
+    }
+}
+
+/* Algemene stijlen */
+.login-body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Lichtgrijze achtergrond */
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    max-width: 400px; /* Max breedte voor de container */
+    margin: 100px auto; /* Centraal uitlijnen met marge */
+    padding: 20px;
+    background-color: #fff; /* Witte achtergrond voor het formulier */
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw effect */
+}
+
+.login-title {
+    text-align: center; /* Centreer de titel */
+    color: #009688; /* Groene kleur voor de titel */
+}
+
+.login-label {
+    display: block; /* Zorg ervoor dat labels onder elkaar staan */
+    margin: 15px 0 5px; /* Ruimte boven en onder het label */
+    font-weight: bold; /* Maak het label vet */
+}
+
+.login-input {
+    width: 100%; /* Volledige breedte */
+    padding: 10px; /* Opvulling binnenin de invoervelden */
+    border: 1px solid #ccc; /* Grijze rand */
+    border-radius: 4px; /* Ronde hoeken */
+    font-size: 16px; /* Grotere tekst */
+}
+
+.login-submit {
+    background-color: #009688; /* Groene achtergrond */
+    color: white; /* Witte tekst */
+    border: none; /* Geen rand */
+    border-radius: 4px; /* Ronde hoeken */
+    padding: 10px; /* Opvulling binnenin de knop */
+    font-size: 16px; /* Grotere tekst */
+    cursor: pointer; /* Cursor verandert in handje */
+    transition: background-color 0.3s; /* Animatie voor achtergrondkleur */
+    margin-top: 20px; /* Voeg marge toe boven de knop */
+    display: block; /* Maak de knop een block-element */
+    width: 100%; /* Zorg ervoor dat de knop de volle breedte heeft */
+}
+
+.login-submit:hover {
+    background-color: #00796b; /* Donkerdere kleur bij hover */
+}
+
+.error-message {
+    text-align: center; /* Centreer eventuele foutmeldingen */
+    color: #ff0000; /* Rode kleur voor foutmeldingen */
+}
+
+.back-button {
+    display: inline-block; /* Zorg ervoor dat het een inline-block is voor padding en marge */
+    margin: 20px auto; /* Ruimte boven en onder de knop */
+    text-decoration: none; /* Verwijder de standaard onderstreping van de link */
+    background-color: #009688; /* Groene achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    padding: 10px 15px; /* Opvulling binnen de knop */
+    border-radius: 4px; /* Ronde hoeken */
+    font-weight: bold; /* Vetgedrukte tekst */
+    font-size: 16px; /* Grotere tekst */
+    transition: background-color 0.3s; /* Animatie voor achtergrondkleur */
+    text-align: center; /* Centreer de tekst */
+}
+
+.back-button:hover {
+    background-color: #00796b; /* Donkerdere kleur bij hover */
+}
+
+
