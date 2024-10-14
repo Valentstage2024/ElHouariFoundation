@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Waterput in Oplevering</title>
+    <title>Islamitische begraafplaats</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -14,8 +14,9 @@
         
         <main>
             <main>
-                <section class="project-detail">
-                    </h1>Ondersteunings islamitische begraafplaats</h1>
+            <section class="project-detail">
+                    <h1> Ondersteuning   </h1>
+                    <h1>Islamitiche begraafplaats</h1>
                 </section>
             </main>
             
@@ -23,7 +24,7 @@
                 <div class="project-content">
                
 <div>
-    <img src="" alt=" gestuurd worden" class="detail-image" width="450px" height="auto">
+    <img src="https://www.bibin.nl/wp-content/uploads/2020/11/bib-5.jpg" alt=" gestuurd " class="detail-image" width="450px" height="auto">
 
 </div>
         
@@ -33,12 +34,13 @@
                 <li>
   
               
-                    <a href="https://www.stichtingrizq.nl/" target="_blank">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVIPD-lamTOPAU1TBGaf8tSPdY8Z-LJKzLBQ&s" alt="Sponsor 3">
-                    </a>
-                </li>
-              
-            </ul>
+                <a href="https://www.bibin.nl/" target="_blank">
+                                    <img src="https://www.bibin.nl/wp-content/uploads/2020/04/logo_new3.jpg" alt="Sponsor 3">
+                                </a>
+                            </li>
+     
+    
+                <li>
             
         </div>
     </div>
@@ -51,7 +53,7 @@
                     <div class="fundraising-details">
                         <div class="fundraising-item">
                             <strong>Inzameling:</strong>
-                            <span class="amount">€2250</span>
+                            <span class="amount">€1910</span>
                         </div>
                         <div class="fundraising-item">
                             <strong>Doel:</strong>
@@ -70,16 +72,15 @@
                 <h2>Projectinformatie</h2>
                 <br>
                 <ul>
-                    <li><strong>Locatie:</strong> Getroffen gebieden Marroko</li>
-                    <li><strong>Startdatum:</strong> september 2023</li>
-                    <li><strong>Verwachte Einddatum:</strong> september 2023 </li>
-                    <li><strong>Status:</strong> Afgerond </li>
-                    <li><strong>Projectleider:</strong> Abdelouhed El Houari</li>
-                    <li><strong>Samenwerkingspartners:</strong> Lokale NGO's, dorpsgemeenschappen</li>
-                    <li><strong>Begunstigden:</strong> 22 gezinnen</li>
-                    <li><strong>Impactgebied:</strong> Regio getroffen gebieden Marroko, Noord-Afrika</li>
-                    <li><strong>SDG's:</strong> SDG 2 - Geen honger </li>
-                </ul>
+    <li><strong>Locatie:</strong> Annerweg 27a, 9471 KT, Zuidlaren</li>
+    <li><strong>Samenwerkingspartners:</strong> Gemeenschappen, islamitische organisaties</li>
+    <li><strong>Begunstigden:</strong> De begunstigden van dit project zijn moslims uit onze gemeenschap in Nederland .
+
+
+    <li><strong>SDG's:</strong> SDG 11 - Duurzame Steden en Gemeenschappen, SDG 16 - Vrede, Justitie en Sterke Instellingen</li>
+    <li><strong>Doel:</strong> Het opzetten en onderhouden van een respectvolle, duurzame islamitische begraafplaats voor de gemeenschap.</li>
+</ul>
+
             </div>
           
                 </ul>
@@ -87,24 +88,17 @@
             <div class="project-updates">
                 <h2>Projectupdates</h2>
                 <br>
-                <p>Afgelopen september hebben wij de inzamelingsactie “Steun Marokko” opgezet om slachtoffers van de hevige aardbeving te helpen.<p> Hierbij een update:
-
-                    In totaal is er maar liefst €2250 opgehaald alhamdoulillah!</p>
-                    
-                    De wens was om vanuit de organisatie zelf naar het gebied toe te gaan, maar helaas was dat toch geen mogelijkheid.</p> Daarom zijn wij gaan kijken naar een betrouwbare partner en kwamen natuurlijk uit bij Stichting Rizq!</p>
-                    
-                    Stichting Rizq heeft meerdere kampen opgezet in de rampgebieden en acute hulp geleverd. </p>Aankomende ramadan zullen er daar voedselpakketten uitgedeeld worden aan de behoeftigen.</p> </p> Deze voedselpakketten zijn ter waarde van €100 en zullen vooral bestaan uit houdbaar voedsel, zoals pasta, rijst en olie.</p>
-                    
-                    Dankzij jullie kunnen wij dus 22 gezinnen voorzien van een voedselpakket!</p>
+                <p>De El Houari Foundation speelt een cruciale rol in de ondersteuning van BIBIN door zich in te zetten voor de instandhouding en ontwikkeling van de islamitische begraafplaats. Met een diepgaand begrip van de culturele en spirituele betekenis van deze plek, werkt de stichting samen met lokale gemeenschappen en partners om ervoor te zorgen dat de begraafplaats niet alleen een rustplaats is, maar ook een plek van herinnering en respect voor de overledenen.</p> 
+                <p>De stichting biedt de nodige middelen en expertise om de begraafplaats te onderhouden, inclusief het organiseren van schoonmaakacties, het verzorgen van het groen en het verbeteren van de infrastructuur. Bovendien zet de El Houari Foundation zich in voor educatieve initiatieven die de lokale bevolking bewust maken van het belang van de begraafplaats en de rol die deze speelt in de gemeenschap.</p> <p>Door deze samenwerking met BIBIN hoopt de El Houari Foundation niet alleen de fysieke staat van de begraafplaats te verbeteren, maar ook de sociale cohesie in de gemeenschap te versterken en de culturele identiteit van de islamitische gemeenschap te behouden.</p>
             </div>
             </div>
             <div class="community-involvement">
                 <h2>Gemeenschapsdeelname</h2>
                 <br>
-                <p>  Moge Allah swt alle donateurs rijkelijk belonen en moge Allah swt het vergemakkelijken voor de mensen in de getroffen gebieden. Allahouma ameen!</p>
+                <p>  Moge Allah swt alle donateurs rijkelijk belonen  Allahouma ameen!</p>
             </div>
             <a href="../php/project.php" class="terug-button">Terug naar Projecten</a>
-
+            <a href="https://www.bibin.nl/donations/el-houari-foundation-amersfoort/" target="_blank" class="donate-button">Doneer Nu</a>
         </section>
     </main>
 
