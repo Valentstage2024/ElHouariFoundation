@@ -29,31 +29,9 @@
                     <p>Samen met Dar Al Ousra bieden we ondersteuning aan kwetsbare gezinnen in Marokko.</p>
                 </div>
 
-                <!-- Nieuwsitem 2 -->
-                <div class="news-item">
-                    <a href="#">
-                        <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" alt="Nieuws Item 2" class="news-img">
-                    </a>
-                    <h3>Gezondheidszorg voor Iedereen</h3>
-                    <p>Ontdek hoe we samenwerken met lokale partners om betaalbare gezondheidszorg beschikbaar te maken in achtergestelde regio's.</p>
-                </div>
+             
 
-                <!-- Nieuwsitem 3 -->
-                <div class="news-item">
-                    <a href="#">
-                        <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" alt="Nieuws Item 3" class="news-img">
-                    </a>
-                    <h3>Waterzuiveringsproject</h3>
-                    <p>Ons nieuwste project richt zich op het verbeteren van toegang tot schoon drinkwater voor landelijke gemeenschappen.</p>
-                </div>
-                <!-- Nieuwsitem 3 -->
-                <div class="news-item">
-                    <a href="#">
-                        <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" alt="Nieuws Item 3" class="news-img">
-                    </a>
-                    <h3>Waterzuiveringsproject</h3>
-                    <p>Ons nieuwste project richt zich op het verbeteren van toegang tot schoon drinkwater voor landelijke gemeenschappen.</p>
-                </div>
+           
 
                 <!-- <div class="pagination">
                     <button id="prevPage">Vorige</button>

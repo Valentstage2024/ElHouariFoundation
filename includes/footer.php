@@ -42,13 +42,18 @@ echo '<footer>
             <p>www.elhouarifoundation.nl</p>
         </div>
         <div class="footer-section footer-prayer-times">
-        
-            <p>Fajr: ' . $fajr . ' <span id="fajr-time"></span></p>
-            <p>Dhuhr: ' . $dhuhr . ' <span id="dhuhr-time"></span></p>
-            <p>Asr: ' . $asr . ' <span id="asr-time"></span></p>
-            <p>Maghrib: ' . $maghrib . ' <span id="maghrib-time"></span></p>
-            <p>Isha: ' . $isha . ' <span id="isha-time"></span></p>
+            <p>Fajr: ' . $fajr . '</p>
+            <p>Dhuhr: ' . $dhuhr . '</p>
+            <p>Asr: ' . $asr . '</p>
+            <p>Maghrib: ' . $maghrib . '</p>
+            <p>Isha: ' . $isha . '</p>
             <p>Volgende gebed in: <span id="countdown"></span></p>
+        </div>
+        <div class="footer-section footer-hadith">
+            <blockquote>
+                “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.” 
+                <cite>(Muslim, Iman, 93; Tirmidhī, Sifaat al-Qiyāma, 56.)</cite>
+            </blockquote>
         </div>
         <div class="footer-section footer-socials">
             <a href="https://www.instagram.com" target="_blank">
@@ -65,4 +70,4 @@ echo '<footer>
 </footer>';
 ?>
 
-<script src="../js/prayerTimes.js"></script>
+<script src="../js/gebedstijden.js"></script>

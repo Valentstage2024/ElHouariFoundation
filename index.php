@@ -1,4 +1,5 @@
 <?php
+// Gebedstijden ophalen met de API
 $apiUrl = "http://api.aladhan.com/v1/timingsByCity?city=Amersfoort&country=Netherlands&method=2";
 $prayerTimesJson = file_get_contents($apiUrl);
 $prayerTimesArray = json_decode($prayerTimesJson, true);
@@ -23,9 +24,8 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Elhouri Foundation</title>
+    <title>Home - Elhouari Foundation</title>
     <link rel="stylesheet" href="css/style.css">
-   
 </head>
 <body>
 
@@ -50,70 +50,46 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     </nav>
 </header>
 
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>El Houari Foundation</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    </div>
+</section>
 
+<section class="flex-container">
+    <section class="text-section">
+        <h2 class="section-title">Over El Houari Foundation</h2>
+        <p class="section-description">
+        Wij kregen de vraag waar de naam el Houari Foundation vandaan kwam. Hassan el Houari was een respectvolle, lieve en zorgzame man. Hij wou altijd de kinderen en volwassenen om zich heen gelukkig zien en stond voor iedereen klaar. Als er iemand iets nodig had dan deed hij er alles voor om dit te regelen voor deze persoon.
 
+Deze prachtige man is onze vader, alhamdoulilah.
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h2>El Houari Foundation</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>   
-        </div>
+De stichting is daarom ook opgericht als nagedachte van onze vader Hassan El Houari. De stichting heeft als doel zoveel mogelijk mensen helpen met dezelfde intentie zoals onze behulpzame vader dat deed.
+        </p>
+        <a href="php/aboutus.php" class="read-more-button">Lees ons verhaal</a>
+        <a href="php/project.php" class="indexproduct">Onze Projecten</a>
     </section>
 
-
-<section class="small-photos-text">
-    <div class="container">
-        <div class="small-photo-block">
-            <a href="php/project1.php" class="image-button">
-                <img src="https://storage.googleapis.com/steunactie-prod/img/actions/23590/md/03cf0aa24cd13ed0e25185f3863b25ca-waterput.png?1690599076" alt="Waterputten in Marokko">
-            </a>
-            <h2>Waterputten in Marokko</h2>
-            <p>Waterputten zijn essentieel in Marokko voor schoon drinkwater. Ze verminderen ziektes en besparen tijd. Toegang tot water ondersteunt landbouw en economie.</p>
-        </div>
-        <div class="small-photo-block">
-            <img src="small-photo2.jpg" alt="Small Photo 2">
-            <h2>Titel van de tweede foto</h2>
-            <p>Text about the second image. Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="small-photo-block">
-            <img src="small-photo3.jpg" alt="Small Photo 3">
-            <h2>Titel van de derde foto</h2>
-            <p>Text about the third image. Lorem ipsum dolor sit amet.</p>
-        </div>
+    <div class="image-container">
+        <img src="img/index.jpg" alt="Afbeelding van Stichting RizQ" class="imgrechts" />
     </div>
 </section>
 
-<section class="three-inline-photos">
-    <div class="container">
-        <div class="inline-photo">
-            <img src="inline-photo1.jpg" alt="Inline Photo 1">
-            <p>Description 1</p>
-        </div>
-        <div class="inline-photo">
-            <img src="inline-photo2.jpg" alt="Inline Photo 2">
-            <p>Description 2</p>
-        </div>
-        <div class="inline-photo">
-            <img src="inline-photo3.jpg" alt="Inline Photo 3">
-            <p>Description 3</p>
-        </div>
-    </div>
-</section>
-
-
-    <footer>
+<!-- Footer -->
+<footer>
     <div class="footer-container">
         <div class="footer-section footer-logo">
             <img id="a-imgfooter" src="img/logo.png" alt="Elhouari Foundation Logo">
         </div>
         <div class="footer-section footer-legal">
-                <a href="php/aboutus.php">Over ons</a>
-                <a href="php/project.php">Projecten</a>
-                <a href="php/doneer.php">Doneren</a>
-                <a href="php/agenda.php">Agenda</a>
-                <a href="php/newsfeed.php">Nieuwsfeed</a>
+            <a href="php/aboutus.php">Over ons</a>
+            <a href="php/project.php">Projecten</a>
+            <a href="php/doneer.php">Doneren</a>
+            <a href="php/agenda.php">Agenda</a>
+            <a href="php/newsfeed.php">Nieuwsfeed</a>
         </div>
         <div class="footer-section footer-legal">
             <a href="#">Disclaimer</a>
@@ -126,13 +102,18 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
             <p>www.elhouarifoundation.nl</p>
         </div>
         <div class="footer-section footer-prayer-times">
-        
-            <p>Fajr: <span id="fajr-time"></span></p>
-            <p>Dhuhr: <span id="dhuhr-time"></span></p>
-            <p>Asr: <span id="asr-time"></span></p>
-            <p>Maghrib: <span id="maghrib-time"></span></p>
-            <p>Isha: <span id="isha-time"></span></p>
+            <p>Fajr: <span id="fajr-time"><?php echo $fajr; ?></span></p>
+            <p>Dhuhr: <span id="dhuhr-time"><?php echo $dhuhr; ?></span></p>
+            <p>Asr: <span id="asr-time"><?php echo $asr; ?></span></p>
+            <p>Maghrib: <span id="maghrib-time"><?php echo $maghrib; ?></span></p>
+            <p>Isha: <span id="isha-time"><?php echo $isha; ?></span></p>
             <p>Volgende gebed in: <span id="countdown"></span></p>
+        </div>
+        <div class="footer-section footer-hadith">
+            <blockquote>
+                “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.”
+                <cite>(Muslim, Iman, 93; Tirmidhī, Sifaat al-Qiyāma, 56.)</cite>
+            </blockquote>
         </div>
         <div class="footer-section footer-socials">
             <a href="https://www.instagram.com" target="_blank">
@@ -153,7 +134,61 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 
 <script src="js/hamburgerMenu.js"></script>
 <script src="js/scrollToTop.js"></script>
-<script src="js/prayerTimes.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Gebedstijden ophalen uit de HTML
+    const prayerTimes = {
+        Fajr: document.getElementById('fajr-time').innerText,
+        Dhuhr: document.getElementById('dhuhr-time').innerText,
+        Asr: document.getElementById('asr-time').innerText,
+        Maghrib: document.getElementById('maghrib-time').innerText,
+        Isha: document.getElementById('isha-time').innerText
+    };
 
+    // Functie om de volgende gebedstijd te berekenen
+    function getNextPrayer() {
+        const now = new Date();
+        let nextPrayer = null;
+        let nextPrayerTime = null;
+
+        for (const prayer in prayerTimes) {
+            const prayerTime = new Date(now.toDateString() + ' ' + prayerTimes[prayer]);
+            if (prayerTime > now) {
+                nextPrayer = prayer;
+                nextPrayerTime = prayerTime;
+                break;
+            }
+        }
+
+        if (!nextPrayer) {
+            const tomorrow = new Date(now);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            nextPrayerTime = new Date(tomorrow.toDateString() + ' ' + prayerTimes.Fajr);
+            nextPrayer = 'Fajr';
+        }
+
+        return { nextPrayer, nextPrayerTime };
+    }
+
+    // Countdown functie
+    function updateCountdown() {
+        const { nextPrayer, nextPrayerTime } = getNextPrayer();
+        const now = new Date();
+        const timeDiff = nextPrayerTime - now;
+
+        if (timeDiff > 0) {
+            const hours = Math.floor((timeDiff / 1000 / 60 / 60) % 24);
+            const minutes = Math.floor((timeDiff / 1000 / 60) % 60);
+            const seconds = Math.floor((timeDiff / 1000) % 60);
+            document.getElementById('countdown').innerText = `${hours} uur, ${minutes} min, ${seconds} sec tot ${nextPrayer}`;
+        } else {
+            document.getElementById('countdown').innerText = 'Gebedstijd';
+        }
+    }
+
+    // Elke seconde updaten
+    setInterval(updateCountdown, 1000);
+});
+</script>
 </body>
 </html>

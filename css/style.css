@@ -1116,29 +1116,27 @@ body {
 
 /* Hero Section */
 .hero {
-    width: 100vw;
-    /* Full width of the viewport */
-    height: 80vh;
-    /* Height of the viewport */
-    margin: 0;
-    /* Remove any margin */
-    padding: 0;
-    /* Remove padding */
+    width: 100vw; /* Full width of the viewport */
+    height: 60vh; /* Verminder de hoogte naar 60% van de viewport */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove padding */
     display: flex;
-    align-items: center;
-    /* Center content vertically */
-    justify-content: center;
-    /* Center content horizontally */
-    background-image: url('https://www.gifs.nl//media/waterval-gifs-xnFQ9S.gif');
-    /* Background ige */
-    background-size: cover;
-    /* Ensure image covers the full section */
-    background-position: center;
-    /* Center the background image */
-    position: relative;
-    /* Position relative for the overlay */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-image: url('https://www.rodekruis.nl/wp-content/uploads/2023/09/Marokko-aardbeving-hulpverlening-Rode-Kruis.jpg'); /* Background image */
+    background-size: cover; /* Ensure image covers the full section */
+    background-position: center; /* Center the background image */
+    position: relative; /* Position relative for the overlay */
     z-index: 1;
 }
+
+/* Optionele aanpassing voor responsiviteit */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh; /* Nog verder verlagen voor kleinere schermen */
+    }
+}
+
 
 /* Overlay for the background */
 .hero::before {
@@ -2639,7 +2637,7 @@ p {
         margin-top: 10px;
     }
 }
-<<<<<<< Updated upstream
+
 
 .terug-button {
     display: inline-block; /* Zorgt ervoor dat de link zich gedraagt als een blok */
@@ -2695,4 +2693,136 @@ p {
     max-width: 700px; /* Je kunt de grootte aanpassen als dat nodig is */
     margin-left: 20px; /* Verschuift de afbeelding 20px naar rechts */
 }
->>>>>>> Stashed changes
+
+.donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Groen achtergrond */
+    color: white; /* Witte tekst */
+    text-align: center;
+    text-decoration: none; /* Geen onderstreping */
+    border-radius: 5px; /* Afgeronde hoeken */
+    font-size: 18px; /* Grotere tekst */
+    transition: background-color 0.3s; /* Animatie voor achtergrondkleur */
+}
+
+.donate-button:hover {
+    background-color: #45a049; /* Donkerder groen bij hover */
+}
+@media (max-width: 768px) {
+    .terug-button, .donate-button {
+        font-size: 16px; /* Kleinere tekst op kleinere schermen */
+        padding: 8px 15px; /* Kleiner padding op kleinere schermen */
+    }
+    
+    .donate-button {
+        margin-top: 20px; /* Extra ruimte boven de Doneer knop voor responsieve weergave */
+    }
+}
+.text-section {
+    margin: 20px 0; /* Voegt ruimte boven en onder de sectie toe */
+    padding: 0; /* Verwijder padding binnen de sectie */
+    width: 50%; /* Zorgt ervoor dat de sectie slechts de helft van de breedte van de container gebruikt */
+    max-width: 600px; /* Optionele maximum breedte om de sectie niet te breed te maken */
+    margin-right: auto; /* Laatste marge aan de rechterzijde op automatisch om naar de linkerzijde te verplaatsen */
+    margin-left: 40px; /* Voegt meer ruimte toe aan de linkerzijde */
+}
+
+.section-title {
+    font-size: 30px; /* Grootte van de hoofdtitel */
+    color: #333; /* Kleur van de hoofdtitel */
+    margin-bottom: 10px; /* Ruimte onder de titel */
+}
+
+.section-description {
+    font-size: 20px; /* Vergroot de tekstgrootte */
+    color: #666; /* Kleur van de beschrijving */
+    line-height: 1.5; /* Vergroot de regelhoogte voor betere leesbaarheid */
+}
+.read-more-button {
+    display: inline-block; /* Zorgt ervoor dat de knop zich gedraagt als een inline-element */
+    padding: 10px 20px; /* Voeg padding toe aan de knop */
+    margin-top: 20px; /* Voeg ruimte boven de knop toe */
+    background-color: #007bff; /* Achtergrondkleur van de knop */
+    color: #fff; /* Kleur van de tekst op de knop */
+    text-decoration: none; /* Verwijder de onderlijn van de tekst */
+    border-radius: 5px; /* Ronde hoeken voor de knop */
+    transition: background-color 0.3s; /* Voeg een overgangseffect toe voor hover */
+}
+
+.read-more-button:hover {
+    background-color: #0056b3; /* Donkerdere kleur bij hover */
+}
+
+.flex-container {
+    display: flex; /* Zet de container in flex-modus */
+    align-items: flex-start; /* Zorg ervoor dat de afbeelding en tekst bovenaan uitgelijnd zijn */
+}
+
+.image-container {
+    margin-left: 20px; /* Voeg ruimte toe tussen de afbeelding en de tekst */
+}
+.flex-container {
+    display: flex; /* Zet de container in flex-modus */
+    align-items: flex-start; /* Zorg ervoor dat de afbeelding en tekst bovenaan uitgelijnd zijn */
+    justify-content: center; /* Centreer de inhoud horizontaal */
+    gap: 40px; /* Voeg ruimte toe tussen de afbeelding en de tekstsectie */
+}
+
+.image-container {
+    margin-left: 20px; /* Zorg dat de afbeelding een beetje naar links verschuift */
+    margin-top: 20px; /* Voeg ruimte toe aan de bovenkant */
+    margin-bottom: 20px; /* Voeg ruimte toe aan de onderkant */
+}
+
+.imgrechts {
+    width: 400px; /* Maak de afbeelding breder */
+    height: auto; /* Houd de oorspronkelijke verhouding van de afbeelding */
+    border-radius: 8px; /* Optioneel: ronde hoeken */
+    margin-top: 10px; /* Extra ruimte boven de afbeelding */
+    margin-bottom: 10px; /* Extra ruimte onder de afbeelding */
+}
+
+.text-section {
+    max-width: 50%; /* Zorg ervoor dat de tekstsectie niet te breed is */
+    margin-right: 20px; /* Voeg ruimte toe aan de rechterkant van de tekstsectie */
+}
+     .indexproduct {
+            background-color: #4CAF50; /* Groene achtergrondkleur */
+            color: white; /* Witte tekstkleur */
+            padding: 15px 32px; /* Binnenrand van de knop */
+            text-align: center; /* Tekstuitlijning */
+            text-decoration: none; /* Geen onderstreping */
+            display: inline-block; /* Zorgt ervoor dat de knop zich gedraagt als een blok */
+            font-size: 16px; /* Tekstgrootte */
+            margin: 4px 2px; /* Buitenmarge */
+            cursor: pointer; /* Verandert de cursor naar een pointer bij hover */
+            border-radius: 12px; /* Maakt de hoeken afgerond */
+        }
+        .footer-hadith {
+            font-style: italic;
+            font-size: 16px;
+            margin-top: 20px;
+            color: #fff;
+        }
+        
+        .footer-hadith blockquote {
+            border-left: 5px solid #FFD700;
+            padding-left: 15px;
+        }
+        
+        .footer-hadith cite {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+        
+
+
+
+
+
+
+
+

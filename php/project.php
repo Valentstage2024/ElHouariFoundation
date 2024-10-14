@@ -42,35 +42,13 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <a href="islambegraafplaats.php" class="project-link"> <!-- Link voor het hele projectvak -->
-                        <img src="https://hetweermagazine.nl/sites/default/files/styles/schermbreed/public/field/image/pexels-pixabay-533923.jpg?itok=PpFgWhFm" class="project-image">
+                        <img src="https://www.bibin.nl/wp-content/uploads/2020/11/bib-5.jpg" class="project-image">
                         <h3>Ondersteunings islamitische begraafplaats </h3>
-                        <p>Beschrijving van project </p>
+                        <p>El Houari Foundation speelt een cruciale rol in de ondersteuning van BIBIN door zich in te zetten voor de instandhouding en ontwikkeling van de islamitische begraafplaats.</p>
                     </a>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <a href="#" class="project-link"> <!-- Link voor het hele projectvak -->
-                        <img src="https://assets-willemwever.kro-ncrv.nl/public/styles/social_media/public/photo-1524275804141-5e9f2bc5a71d.jpg?h=cd9e8a72&itok=oQBqZaJY" class="project-image">
-                        <h3>Hier moet nog text komen</h3>
-                        <p>Beschrijving van project </p>
-                    </a>
-                </div>
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <a href="#" class="project-link"> <!-- Link voor het hele projectvak -->
-                        <img src="https://assets-willemwever.kro-ncrv.nl/public/styles/social_media/public/photo-1524275804141-5e9f2bc5a71d.jpg?h=cd9e8a72&itok=oQBqZaJY" alt="Project 4" class="project-image">
-                        <h3>Hier moet nog text komen</h3>
-                        <p>Beschrijving van project </p>
-                    </a>
-                </div>
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <a href="#" class="project-link"> <!-- Link voor het hele projectvak -->
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqtCS2RSgUs5rOpBuAw5q-80l75WvV_U2iVg&s" alt="Project 4" class="project-image">
-                        <h3>Project 4: Schoon Drinkwater Voorziening</h3>
-                        <p>Beschrijving van project 4. Dit project zorgt voor schoon drinkwater in afgelegen gebieden...</p>
-                    </a>
+             
                 </div>
 
             </div>
