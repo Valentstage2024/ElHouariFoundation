@@ -2639,6 +2639,7 @@ p {
         margin-top: 10px;
     }
 }
+<<<<<<< Updated upstream
 
 .terug-button {
     display: inline-block; /* Zorgt ervoor dat de link zich gedraagt als een blok */
@@ -2653,3 +2654,45 @@ p {
 .terug-button:hover {
     background-color: #0056b3; /* Achtergrondkleur bij hover */
 }
+=======
+.sura-container {
+    margin: 20px;
+    max-width: 800px; /* Beperk de breedte voor betere leesbaarheid */
+    margin: 20px auto; /* Center de container */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sura {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.sura:hover {
+    background-color: #e9ecef; /* Hover effect */
+}
+
+.sura h3 {
+    margin: 0 0 10px;
+}
+
+.sura audio {
+    width: 100%;
+    margin-top: 10px;
+}
+.image-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-wrapper img {
+    max-width: 700px; /* Je kunt de grootte aanpassen als dat nodig is */
+    margin-left: 20px; /* Verschuift de afbeelding 20px naar rechts */
+}
+>>>>>>> Stashed changes
