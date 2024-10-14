@@ -62,6 +62,25 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     </section>
 
 
+    <section class="flex-container">
+    <section class="text-section">
+        <h2 class="section-title">Over El Houari Foundation</h2>
+        <p class="section-description">
+        Wij kregen de vraag waar de naam el Houari Foundation vandaan kwam. Hassan el Houari was een respectvolle, lieve en zorgzame man. Hij wou altijd de kinderen en volwassenen om zich heen gelukkig zien en stond voor iedereen klaar. Als er iemand iets nodig had dan deed hij er alles voor om dit te regelen voor deze persoon.
+
+Deze prachtige man is onze vader, alhamdoulilah.
+
+De stichting is daarom ook opgericht als nagedachte van onze vader Hassan El Houari. De stichting heeft als doel zoveel mogelijk mensen helpen met dezelfde intentie zoals onze behulpzame vader dat deed.
+        </p>
+        <a href="php/aboutus.php" class="read-more-button">Lees ons verhaal</a>
+        <a href="php/project.php" class="indexproduct">Onze Projecten</a>
+    </section>
+
+    <div class="image-container">
+        <img src="img/index.jpg" alt="Afbeelding van Stichting RizQ" class="imgrechts" />
+    </div>
+</section>
+
 <!-- Footer -->
 <footer>
     <div class="footer-container">

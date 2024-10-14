@@ -65,11 +65,6 @@
                             <input type="radio" id="ideal" name="betaalmethode" value="ideal" checked>
                             <label for="ideal">iDEAL</label>
 
-                            <input type="radio" id="overboeking" name="betaalmethode" value="overboeking">
-                            <label for="overboeking">Overboeking</label>
-
-                            <input type="radio" id="bancontact" name="betaalmethode" value="bancontact">
-                            <label for="bancontact">Bancontact</label>
                         </div>
 
                         <button type="submit">Doneren</button>
@@ -80,7 +75,7 @@
                     <aside>
                         <h3>Maak je liever direct over?</h3>
                         <p>Je kunt je donatie ook direct overmaken naar:</p>
-                        <p><strong>IBAN NLXX XXXX XXXX</strong> t.n.v. Elhouari Foundation.</p>
+                        <p><strong>IBAN NL95INGB0428109071</strong> t.n.v. Elhouari Foundation.</p>
                     </aside>
 
                     <img src="../img/kinderen.png">

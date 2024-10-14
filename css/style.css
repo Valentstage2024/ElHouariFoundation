@@ -2751,3 +2751,280 @@ p {
     max-width: 700px; /* Je kunt de grootte aanpassen als dat nodig is */
     margin-left: 20px; /* Verschuift de afbeelding 20px naar rechts */
 }
+
+.back-button {
+    display: inline-block; /* Zorg ervoor dat het een inline-block is voor padding en marge */
+    margin: 20px auto; /* Ruimte boven en onder de knop */
+    text-decoration: none; /* Verwijder de standaard onderstreping van de link */
+    background-color: #009688; /* Groene achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    padding: 10px 15px; /* Opvulling binnen de knop */
+    border-radius: 4px; /* Ronde hoeken */
+    font-weight: bold; /* Vetgedrukte tekst */
+    font-size: 16px; /* Grotere tekst */
+    transition: background-color 0.3s; /* Animatie voor achtergrondkleur */
+    text-align: center; /* Centreer de tekst */
+}
+
+.back-button:hover {
+    background-color: #00796b; /* Donkerdere kleur bij hover */
+}
+
+.login-body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Lichtgrijze achtergrond */
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    max-width: 400px; /* Max breedte voor de container */
+    margin: 100px auto; /* Centraal uitlijnen met marge */
+    padding: 20px;
+    background-color: #fff; /* Witte achtergrond voor het formulier */
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw effect */
+}
+
+.login-title {
+    text-align: center; /* Centreer de titel */
+    color: #009688; /* Groene kleur voor de titel */
+}
+
+.login-label {
+    display: block; /* Zorg ervoor dat labels onder elkaar staan */
+    margin: 15px 0 5px; /* Ruimte boven en onder het label */
+    font-weight: bold; /* Maak het label vet */
+}
+
+.login-input {
+    width: 100%; /* Volledige breedte */
+    padding: 10px; /* Opvulling binnenin de invoervelden */
+    border: 1px solid #ccc; /* Grijze rand */
+    border-radius: 4px; /* Ronde hoeken */
+    font-size: 16px; /* Grotere tekst */
+}
+
+.login-submit {
+    background-color: #009688; /* Groene achtergrond */
+    color: white; /* Witte tekst */
+    border: none; /* Geen rand */
+    border-radius: 4px; /* Ronde hoeken */
+    padding: 10px; /* Opvulling binnenin de knop */
+    font-size: 16px; /* Grotere tekst */
+    cursor: pointer; /* Cursor verandert in handje */
+    transition: background-color 0.3s; /* Animatie voor achtergrondkleur */
+    margin-top: 20px; /* Voeg marge toe boven de knop */
+    display: block; /* Maak de knop een block-element */
+    width: 100%; /* Zorg ervoor dat de knop de volle breedte heeft */
+}
+
+.login-submit:hover {
+    background-color: #00796b; /* Donkerdere kleur bij hover */
+}
+
+.error-message {
+    text-align: center; /* Centreer eventuele foutmeldingen */
+    color: #ff0000; /* Rode kleur voor foutmeldingen */
+}
+
+.privacy-box {
+    max-width: 800px; /* Max breedte van de sectie */
+    margin: 20px auto; /* Centeren met een boven- en ondermarge */
+    padding: 20px; /* Binnenmarges voor wat ruimte */
+    background-color: #f9f9f9; /* Lichte achtergrondkleur */
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+
+/* Hoofd titel */
+.privacy-box h1 {
+    font-size: 2.5em; /* Grote tekst voor de hoofdtitel */
+    color: #009688;
+    margin-bottom: 20px; /* Ruimte onder de titel */
+}
+
+/* Paragraaf stijl */
+.privacy-box p {
+    font-size: 1em; /* Normale tekstgrootte */
+    line-height: 1.6; /* Regelhoogte voor leesbaarheid */
+    color: #34495e; /* Donkergrijze kleur voor tekst */
+    margin-bottom: 15px; /* Ruimte onder de paragraaf */
+}
+
+/* Responsive ontwerp */
+@media (max-width: 600px) {
+    .privacy-box {
+        padding: 15px; /* Minder padding op kleinere schermen */
+    }
+
+    .privacy-box h1 {
+        font-size: 2em; /* Kleinere hoofdtitel op kleine schermen */
+    }
+}
+
+
+  /* Algemene stijlen voor de terms sectie */
+.terms {
+    max-width: 800px; /* Max breedte van de sectie */
+    margin: 20px auto; /* Centeren met een boven- en ondermarge */
+    padding: 20px; /* Binnenmarges voor wat ruimte */
+    background-color: #f9f9f9; /* Lichte achtergrondkleur */
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+
+/* Hoofd titel */
+.terms h1 {
+    font-size: 2.5em; /* Grote tekst voor de hoofdtitel */
+    color: #009688;
+    margin-bottom: 20px; /* Ruimte onder de titel */
+}
+
+/* Subtitel stijl */
+.terms h2 {
+    font-size: 1.8em; /* Iets kleinere tekst voor subtitels */
+    color: #009688;
+    margin-top: 30px; /* Ruimte boven de subtitel */
+    margin-bottom: 10px; /* Ruimte onder de subtitel */
+}
+
+/* Paragraaf stijl */
+.terms p {
+    font-size: 1em; /* Normale tekstgrootte */
+    line-height: 1.6; /* Regelhoogte voor leesbaarheid */
+    color: #34495e; /* Donkergrijze kleur voor tekst */
+    margin-bottom: 15px; /* Ruimte onder de paragraaf */
+}
+
+/* Lijst stijl */
+.terms ul {
+    list-style-type: disc; /* Bullet points voor de lijst */
+    padding-left: 20px; /* Ruimte aan de linkerkant */
+}
+
+/* Lijst item stijl */
+.terms ul li {
+    margin-bottom: 10px; /* Ruimte onder de lijstitems */
+}
+
+/* Responsive ontwerp */
+@media (max-width: 600px) {
+    .terms {
+        padding: 15px; /* Minder padding op kleinere schermen */
+    }
+
+    .terms h1 {
+        font-size: 2em; /* Kleinere hoofdtitel op kleine schermen */
+    }
+
+    .terms h2 {
+        font-size: 1.5em; /* Kleinere subtitel op kleine schermen */
+    }
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Groen achtergrond */
+    color: white; /* Witte tekst */
+    text-align: center;
+    text-decoration: none; /* Geen onderstreping */
+    border-radius: 5px; /* Afgeronde hoeken */
+    font-size: 18px; /* Grotere tekst */
+    transition: background-color 0.3s; /* Animatie voor achtergrondkleur */
+}
+
+.donate-button:hover {
+    background-color: #45a049; /* Donkerder groen bij hover */
+}
+@media (max-width: 768px) {
+    .terug-button, .donate-button {
+        font-size: 16px; /* Kleinere tekst op kleinere schermen */
+        padding: 8px 15px; /* Kleiner padding op kleinere schermen */
+    }
+    
+    .donate-button {
+        margin-top: 20px; /* Extra ruimte boven de Doneer knop voor responsieve weergave */
+    }
+}
+.text-section {
+    margin: 20px 0; /* Voegt ruimte boven en onder de sectie toe */
+    padding: 0; /* Verwijder padding binnen de sectie */
+    width: 50%; /* Zorgt ervoor dat de sectie slechts de helft van de breedte van de container gebruikt */
+    max-width: 600px; /* Optionele maximum breedte om de sectie niet te breed te maken */
+    margin-right: auto; /* Laatste marge aan de rechterzijde op automatisch om naar de linkerzijde te verplaatsen */
+    margin-left: 40px; /* Voegt meer ruimte toe aan de linkerzijde */
+}
+
+.section-title {
+    font-size: 30px; /* Grootte van de hoofdtitel */
+    color: #333; /* Kleur van de hoofdtitel */
+    margin-bottom: 10px; /* Ruimte onder de titel */
+}
+
+.section-description {
+    font-size: 20px; /* Vergroot de tekstgrootte */
+    color: #666; /* Kleur van de beschrijving */
+    line-height: 1.5; /* Vergroot de regelhoogte voor betere leesbaarheid */
+}
+.read-more-button {
+    display: inline-block; /* Zorgt ervoor dat de knop zich gedraagt als een inline-element */
+    padding: 10px 20px; /* Voeg padding toe aan de knop */
+    margin-top: 20px; /* Voeg ruimte boven de knop toe */
+    background-color: #007bff; /* Achtergrondkleur van de knop */
+    color: #fff; /* Kleur van de tekst op de knop */
+    text-decoration: none; /* Verwijder de onderlijn van de tekst */
+    border-radius: 5px; /* Ronde hoeken voor de knop */
+    transition: background-color 0.3s; /* Voeg een overgangseffect toe voor hover */
+}
+
+.read-more-button:hover {
+    background-color: #0056b3; /* Donkerdere kleur bij hover */
+}
+
+.flex-container {
+    display: flex; /* Zet de container in flex-modus */
+    align-items: flex-start; /* Zorg ervoor dat de afbeelding en tekst bovenaan uitgelijnd zijn */
+}
+
+.image-container {
+    margin-left: 20px; /* Voeg ruimte toe tussen de afbeelding en de tekst */
+}
+.flex-container {
+    display: flex; /* Zet de container in flex-modus */
+    align-items: flex-start; /* Zorg ervoor dat de afbeelding en tekst bovenaan uitgelijnd zijn */
+    justify-content: center; /* Centreer de inhoud horizontaal */
+    gap: 40px; /* Voeg ruimte toe tussen de afbeelding en de tekstsectie */
+}
+
+.image-container {
+    margin-left: 20px; /* Zorg dat de afbeelding een beetje naar links verschuift */
+    margin-top: 20px; /* Voeg ruimte toe aan de bovenkant */
+    margin-bottom: 20px; /* Voeg ruimte toe aan de onderkant */
+}
+
+.imgrechts {
+    width: 400px; /* Maak de afbeelding breder */
+    height: auto; /* Houd de oorspronkelijke verhouding van de afbeelding */
+    border-radius: 8px; /* Optioneel: ronde hoeken */
+    margin-top: 10px; /* Extra ruimte boven de afbeelding */
+    margin-bottom: 10px; /* Extra ruimte onder de afbeelding */
+}
+
+.text-section {
+    max-width: 50%; /* Zorg ervoor dat de tekstsectie niet te breed is */
+    margin-right: 20px; /* Voeg ruimte toe aan de rechterkant van de tekstsectie */
+}
+     .indexproduct {
+            background-color: #4CAF50; /* Groene achtergrondkleur */
+            color: white; /* Witte tekstkleur */
+            padding: 15px 32px; /* Binnenrand van de knop */
+            text-align: center; /* Tekstuitlijning */
+            text-decoration: none; /* Geen onderstreping */
+            display: inline-block; /* Zorgt ervoor dat de knop zich gedraagt als een blok */
+            font-size: 16px; /* Tekstgrootte */
+            margin: 4px 2px; /* Buitenmarge */
+            cursor: pointer; /* Verandert de cursor naar een pointer bij hover */
+            border-radius: 12px; /* Maakt de hoeken afgerond */
+        }
