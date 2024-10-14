@@ -39,7 +39,7 @@
         <div class="hero-text">
             <h2>El Houari Foundation</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>   
         </div>
     </section>
 
