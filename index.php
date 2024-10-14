@@ -1,3 +1,23 @@
+<?php
+$apiUrl = "http://api.aladhan.com/v1/timingsByCity?city=Amersfoort&country=Netherlands&method=2";
+$prayerTimesJson = file_get_contents($apiUrl);
+$prayerTimesArray = json_decode($prayerTimesJson, true);
+
+if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
+    $timings = $prayerTimesArray['data']['timings'];
+    $fajr = $timings['Fajr'];
+    $dhuhr = $timings['Dhuhr'];
+    $asr = $timings['Asr'];
+    $maghrib = $timings['Maghrib'];
+    $isha = $timings['Isha'];
+} else {
+    $fajr = "N/A";
+    $dhuhr = "N/A";
+    $asr = "N/A";
+    $maghrib = "N/A";
+    $isha = "N/A";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +35,7 @@
             <img src="img/logo.png" alt="Logo" class="logo">
         </a>
     </div>
+    <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
     <nav id="navbar">
         <ul>
             <li><a href="index.php">Home</a></li>
@@ -29,8 +50,6 @@
     </nav>
 </header>
 
-<script src="js/hamburgerMenu.js"></script>
-
 
 
 
@@ -43,17 +62,6 @@
         </div>
     </section>
 
-    <section class="photo-section">
-    <div class="container">
-        <div class="text-box left">
-            <p>Dit is het linker tekstvak. Voeg hier je tekst toe.</p>
-        </div>
-        <img src="https://i0.wp.com/najiba.nl/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-13-at-16.04.59_c09030e1.jpg?fit=768%2C768&ssl=1" alt="Main Photo" class="smaller-photo">
-        <div class="text-box right">
-            <p>Waterputten bouwen in Marokko.</p>
-        </div>
-    </div>
-</section>
 
 <section class="small-photos-text">
     <div class="container">
@@ -117,6 +125,15 @@
             <p>info@elhouarifoundation.nl</p>
             <p>www.elhouarifoundation.nl</p>
         </div>
+        <div class="footer-section footer-prayer-times">
+        
+            <p>Fajr: <span id="fajr-time"></span></p>
+            <p>Dhuhr: <span id="dhuhr-time"></span></p>
+            <p>Asr: <span id="asr-time"></span></p>
+            <p>Maghrib: <span id="maghrib-time"></span></p>
+            <p>Isha: <span id="isha-time"></span></p>
+            <p>Volgende gebed in: <span id="countdown"></span></p>
+        </div>
         <div class="footer-section footer-socials">
             <a href="https://www.instagram.com" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" class="social-icon">
@@ -134,8 +151,9 @@
 <!-- Back to Top Button -->
 <button id="backToTop">naar boven</button>
 
+<script src="js/hamburgerMenu.js"></script>
 <script src="js/scrollToTop.js"></script>
-<script src="js/hamburger.js"></script>
+<script src="js/prayerTimes.js"></script>
 
 </body>
 </html>

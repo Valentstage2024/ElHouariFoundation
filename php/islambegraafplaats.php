@@ -4,28 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 - Waterput in Oplevering</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="elhouarifoundation.jpeg" alt="Logo" class="logo">
-            </a>
-        </div>
-        <nav>
-    
-            <ul id="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Over ons</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="agenda.php">Agenda</a></li>
-                <li><a href="project.html">Projecten</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+
+<?php include_once '../includes/header.php'; ?>
 
     <main>
         
@@ -79,17 +62,13 @@
                         <div class="progress" style="width: 20%;"></div>
                     </div>
                     
-               
-             </div>
-             <div class="project-description">
-                <h2</h2>
-                <p>texttexttext</p>
-            </div>
-            </div>
+<br>
+<br>
             
             <div class="project-info">
            
                 <h2>Projectinformatie</h2>
+                <br>
                 <ul>
                     <li><strong>Locatie:</strong> Getroffen gebieden Marroko</li>
                     <li><strong>Startdatum:</strong> september 2023</li>
@@ -107,6 +86,7 @@
             </div>
             <div class="project-updates">
                 <h2>Projectupdates</h2>
+                <br>
                 <p>Afgelopen september hebben wij de inzamelingsactie “Steun Marokko” opgezet om slachtoffers van de hevige aardbeving te helpen.<p> Hierbij een update:
 
                     In totaal is er maar liefst €2250 opgehaald alhamdoulillah!</p>
@@ -120,37 +100,17 @@
             </div>
             <div class="community-involvement">
                 <h2>Gemeenschapsdeelname</h2>
+                <br>
                 <p>  Moge Allah swt alle donateurs rijkelijk belonen en moge Allah swt het vergemakkelijken voor de mensen in de getroffen gebieden. Allahouma ameen!</p>
             </div>
-            <a href="project.html" class="terugproject">Terug naar Projecten</a>
+            <a href="../php/project.php" class="terug-button">Terug naar Projecten</a>
 
         </section>
     </main>
 
-    <footer>
-        <div class="footer-text">
-            <h2>Footer Titel</h2>
-            <p>Hier kun je wat tekst toevoegen voor de footer.</p>
-        </div>
-        
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-photos">
-            <img src="photo1.jpg" alt="Photo 1">
-            <img src="photo2.jpg" alt="Photo 2">
-            <img src="photo3.jpg" alt="Photo 3">
-        </div>
-        
-        <div class="footer-copyright">
-            <p>&copy; 2024 Elhouri Foundation. All rights reserved.</p>
-        </div>
-    </footer>
+
+    <?php include_once '../includes/footer.php'; ?>
+
 </body>
 </html>
 <script>

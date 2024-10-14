@@ -8,33 +8,48 @@
 
 /* header!!! */
 
+/* Header styling blijft zoals het is */
 header {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav */
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #6a9a80;
     height: 120px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative; /* Set position to relative for absolute positioning of nav */
+    position: relative;
+}
+
+/* Hamburger menu-knop styling */
+.menu-toggle {
+    display: none; /* Verberg de knop standaard */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    justify-content: right;
+}
+
+/* Logo styling */
+header .logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
 }
 
 header .logo img {
-    max-height: 100%; /* Ensure logo fits within the header */
+    max-height: 100%;
 }
 
-/* Hamburger menu styling */
-.hamburger {
-    display: none; /* Hide by default */
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    z-index: 10; /* Ensure it's above other elements */
-}
-
-/* Navigation styling */
 header nav {
     margin-right: 10px;
+    display: flex; /* Zorg ervoor dat het menu wordt weergegeven */
+    opacity: 1; /* Maak het menu zichtbaar */
+    visibility: visible; /* Zorg ervoor dat het zichtbaar is */
+    position: static; /* Pas de positionering aan */
+    background-color: #6a9a80; /* Zorg voor een achtergrondkleur */
+    z-index: 1000; /* Zorg ervoor dat het voor andere elementen staat */
 }
 
 header nav ul {
@@ -58,102 +73,104 @@ header nav ul li a:hover {
     color: #ddd;
 }
 
-/* Responsive styles */
+nav {
+    opacity: 1; /* Maak het menu volledig zichtbaar */
+    visibility: visible; /* Zorg ervoor dat het zichtbaar is */
+    position: static; /* Verander van absolute naar static voor desktop */
+    /* Verwijder max-height, overflow, etc., als ze niet nodig zijn voor desktop */
+    background-color: #6a9a80; /* Voeg achtergrondkleur toe */
+    width: auto; /* Zorg ervoor dat het de breedte van de inhoud volgt */
+    z-index: 1000;
+}
+
+
+/* Pop-up menu voor mobiel */
 @media (max-width: 768px) {
-    header nav {
-        display: none; /* Hide nav by default on mobile */
-        width: 100%;
+    header {
+        flex-direction: row;
+        justify-content: space-between; /* Zorg ervoor dat logo links blijft en menu-knop rechts */
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block; /* Maak de hamburger-knop zichtbaar */
+        justify-content: right;
         position: absolute;
-        background-color: #6a9a80; /* Match the header background */
-        top: 120px; /* Below the header */
-        left: 0;
-        z-index: 9; 
-    }
-
-    header nav.active {
-        display: block; /* Show nav when active */
-    }
-
-    header nav ul {
-        flex-direction: column; /* Stack items vertically */
-    }
-
-    header nav ul li {
-        margin: 10px 0; /* Add space between items */
-        text-align: center; /* Center text */
-    }
-
-
-    nav ul {
-        flex-direction: column; /* Zorg dat de links onder elkaar staan op kleinere schermen */
-        padding: 0; /* Verwijder de padding */
-        width: 100%; /* Laat de navigatiebalk 100% van de breedte innemen */
-        background-color: rgba(127, 178, 120, 0.427); /* Achtergrondkleur van de navbar voor responsieve weergave */
-        position: absolute; /* Maak de navigatie absoluut gepositioneerd */
-        top: 120px; /* Zet de navbar 120px onder de header (pas dit aan voor de juiste afstand) */
-        left: 0; /* Zorg dat het links begint */
-        z-index: 10; /* Zorg ervoor dat de nav-balk boven andere elementen staat */
-    }
-
-    nav ul li {
-        margin-left: 0; /* Verwijder de ruimte tussen de links voor een compactere weergave */
-        padding: 8px 0; /* Voeg verticale padding toe voor spacing */
-    }
-
-    nav ul li a {
-        font-size: 14px; /* Maak het lettertype kleiner voor een compacte weergave */
+        right: 20px; /* Zet de knop rechts van de header */
+        top: 35%;
+        z-index: 1001; /* Zorg ervoor dat de knop boven andere elementen ligt */
     }
 
     nav {
-        padding: 0; /* Verklein de padding boven en onder de navigatiebalk voor een kleinere hoogte */
+        opacity: 0;
+        visibility: hidden; /* Verberg het menu standaard */
+        max-height: 0; /* Voeg max-height toe voor een vloeiende overgang */
+        overflow: hidden; /* Verberg de inhoud buiten de limiet */
+        transition: opacity 0.3s ease, max-height 0.3s ease; /* Voeg een overgang toe */
+        justify-content: center;
+        width: 100%; /* Zorg ervoor dat het hele scherm wordt bedekt */
     }
 
-    /* Maak het hamburgermenu (als je dat hebt) kleiner */
-    .hamburger .bar {
-        width: 25px; /* Maak de hamburger-balkjes smaller */
-        height: 3px; /* Maak de balkjes dunner */
+    nav.open {
+        opacity: 1; /* Maak het menu volledig zichtbaar */
+        visibility: visible; /* Zorg ervoor dat het zichtbaar is */
+        max-height: 500px; /* Geef genoeg ruimte voor de inhoud */
+        background-color: #6a9a80;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%; /* Zorg dat het hele scherm wordt bedekt */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
     }
-}
 
-/* Logo on the left */
-header .logo {
-    width: 100px;
-    height: 100px;
-    margin-left: 20px; /* Zorgt ervoor dat het logo naar rechts wordt verplaatst */
-}
+    nav.open ul {
+        display: flex;
+        flex-direction: column; /* Zorg ervoor dat de links onder elkaar komen */
+        align-items: center; /* Centreer de links horizontaal */
+        padding: 0;
+    }
 
-header .logo h1 {
-    color: white;
-    font-size: 24px;
-    margin-left: 10px; /* Add some left margin to the logo */
-    text-align: left;
-}
+    nav.open ul li {
+        margin: 10px 0; /* Ruimte tussen de links */
+    }
 
-nav {
-    margin-left: auto; /* Verplaatst de navigatie naar de rechterkant van de header */
-}
+    nav.open ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
 
-nav ul {
-    list-style: none; /* Verwijdert standaard opsommingstekens */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Zorgt ervoor dat de links naast elkaar komen te staan */
-}
+    /* Voeg een eenvoudige animatie toe voor een dropdown effect */
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes slideUp {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+    }
 
-nav ul li {
-    margin-left: 10px; /* Voeg ruimte toe tussen de navigatielinks */
-}
-
-nav ul li a {
-    color: rgb(255, 255, 255); /* Kleur van de tekst */
-    text-decoration: none;
-    font-size: 16px;
-}
-
-/* Make sure the text is positioned higher inside the header */
-header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    nav.closing {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0; /* Sluit met max-height */
+        animation: slideUp 0.3s ease forwards; /* Voeg de sluit-animatie toe */
+    }
 }
 
 
@@ -192,32 +209,7 @@ body {
     margin: 0 auto;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-}
 
-.navbar .logo h1 {
-    display: inline-block;
-    color: white;
-}
-
-.nav-links {
-    list-style: none;
-    float: right;
-}
-
-.nav-links li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-}
 
 .hero {
     width: 100%;
@@ -1120,33 +1112,6 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
-}
-
-/* Navbar */
-.navbar {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-}
-
-.navbar .logo h1 {
-    display: inline-block;
-    color: white;
-}
-
-.nav-links {
-    list-style: none;
-    float: right;
-}
-
-.nav-links li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
 }
 
 /* Hero Section */
@@ -2673,4 +2638,18 @@ p {
         display: block;
         margin-top: 10px;
     }
+}
+
+.terug-button {
+    display: inline-block; /* Zorgt ervoor dat de link zich gedraagt als een blok */
+    padding: 10px 20px; /* Voegt wat ruimte binnen de button toe */
+    background-color: #007BFF; /* Achtergrondkleur van de button */
+    color: white; /* Kleur van de tekst */
+    text-decoration: none; /* Verwijdert de onderstreping */
+    border-radius: 5px; /* Maakt de hoeken van de button afgerond */
+    transition: background-color 0.3s; /* Voegt een overgang toe voor de achtergrondkleur */
+}
+
+.terug-button:hover {
+    background-color: #0056b3; /* Achtergrondkleur bij hover */
 }

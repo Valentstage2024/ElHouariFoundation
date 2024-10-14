@@ -115,7 +115,7 @@
             <h2>Gemeenschapsdeelname</h2>
             <p>De lokale bevolking wordt actief betrokken bij dit project. Ze hebben zelf al ervaring met waterputten en spelen een cruciale rol in de aanleg en het onderhoud.</p>
         </div>
-        <a href="../php/project.php" class="terugproject">Terug naar Projecten</a>
+        <a href="../php/project.php" class="terug-button">Terug naar Projecten</a>
 
         </section>
     </main>

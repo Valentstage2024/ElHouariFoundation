@@ -41,9 +41,9 @@
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <a href="#" class="project-link"> <!-- Link voor het hele projectvak -->
+                    <a href="islambegraafplaats.php" class="project-link"> <!-- Link voor het hele projectvak -->
                         <img src="https://hetweermagazine.nl/sites/default/files/styles/schermbreed/public/field/image/pexels-pixabay-533923.jpg?itok=PpFgWhFm" class="project-image">
-                        <h3>Hier moet nog text komen</h3>
+                        <h3>Ondersteunings islamitische begraafplaats </h3>
                         <p>Beschrijving van project </p>
                     </a>
                 </div>
