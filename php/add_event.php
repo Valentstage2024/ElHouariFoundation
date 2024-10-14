@@ -35,15 +35,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evenement Toevoegen - Elhouri Foundation</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <button class="logout-btn" onclick="window.location.href='logout.php'">Uitloggen</button>
 
 </head>
 
-<body>
+<body class="login-body">
 
+    <a href="logout.php" class="logout-btn">Uitloggen</a>
 
     <div class="add-event-container">
+
         <h2 class="add-event-header">Evenement Toevoegen</h2>
 
         <form method="post" action="add_event.php" class="add-event-form">
@@ -60,5 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form>
     </div>
 
+
+
 </body>
+
 </html>

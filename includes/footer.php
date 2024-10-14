@@ -19,22 +19,24 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     $isha = "N/A";
 }
 
+
 echo '<footer>
     <div class="footer-container">
         <div class="footer-section footer-logo">
             <img id="a-imgfooter" src="../img/logo.png" alt="Elhouari Foundation Logo">
         </div>
         <div class="footer-section footer-legal">
-            <a href="aboutus.php">Over ons</a>
-            <a href="project.php">Projecten</a>
-            <a href="doneer.php">Doneren</a>
-            <a href="agenda.php">Agenda</a>
-            <a href="newsfeed.php">Nieuwsfeed</a>
+            <a href="../php/aboutus.php">Over ons</a>
+            <a href="../php/project.php">Projecten</a>
+            <a href="../php/doneer.php">Doneren</a>
+            <a href="../php/agenda.php">Agenda</a>
+            
         </div>
         <div class="footer-section footer-legal">
-            <a href="#">Disclaimer</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Algemene Voorwaarden</a>
+            <a href="../php/privacy.php">Privacy Policy</a>
+            <a href="../php/voorwaarden.php">Algemene Voorwaarden</a>
+            <a href="../php/missievisie.php">Missie & Visie</a>
+            <a href="../php/newsfeed.php">Nieuwsfeed</a>
         </div>
         <div class="footer-section footer-contact">
             <p>Contact: 06-50405030</p>
@@ -57,10 +59,16 @@ echo '<footer>
         </div>
         <div class="footer-section footer-socials">
             <a href="https://www.instagram.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" class="social-icon">
+            <i class="fab fa-instagram social-icon"></i>
             </a>
             <a href="https://www.tiktok.com" target="_blank">
-                <img src="https://cdn.pixabay.com/photo/2021/01/30/06/42/tiktok-5962992_1280.png" alt="TikTok" class="social-icon">
+            <i class="fab fa-tiktok social-icon"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube social-icon"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook social-icon"></i>
             </a>
         </div>
     </div>

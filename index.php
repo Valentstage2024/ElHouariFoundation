@@ -24,8 +24,11 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Elhouari Foundation</title>
+    <title>Home - El Houari Foundation</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   
 </head>
 <body>
 
@@ -50,33 +53,14 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     </nav>
 </header>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-text">
-        <h2>El Houari Foundation</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-    </div>
-</section>
-
-<section class="flex-container">
-    <section class="text-section">
-        <h2 class="section-title">Over El Houari Foundation</h2>
-        <p class="section-description">
-        Wij kregen de vraag waar de naam el Houari Foundation vandaan kwam. Hassan el Houari was een respectvolle, lieve en zorgzame man. Hij wou altijd de kinderen en volwassenen om zich heen gelukkig zien en stond voor iedereen klaar. Als er iemand iets nodig had dan deed hij er alles voor om dit te regelen voor deze persoon.
-
-Deze prachtige man is onze vader, alhamdoulilah.
-
-De stichting is daarom ook opgericht als nagedachte van onze vader Hassan El Houari. De stichting heeft als doel zoveel mogelijk mensen helpen met dezelfde intentie zoals onze behulpzame vader dat deed.
-        </p>
-        <a href="php/aboutus.php" class="read-more-button">Lees ons verhaal</a>
-        <a href="php/project.php" class="indexproduct">Onze Projecten</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>El Houari Foundation</h2>
+            <p>Bij ons gaat het om geven, delen en helpen.</p>
+        </div>
     </section>
 
-    <div class="image-container">
-        <img src="img/index.jpg" alt="Afbeelding van Stichting RizQ" class="imgrechts" />
-    </div>
-</section>
 
 <!-- Footer -->
 <footer>
@@ -89,12 +73,14 @@ De stichting is daarom ook opgericht als nagedachte van onze vader Hassan El Hou
             <a href="php/project.php">Projecten</a>
             <a href="php/doneer.php">Doneren</a>
             <a href="php/agenda.php">Agenda</a>
-            <a href="php/newsfeed.php">Nieuwsfeed</a>
+                
         </div>
         <div class="footer-section footer-legal">
-            <a href="#">Disclaimer</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Algemene Voorwaarden</a>
+            <a href="php/privacy.php">Privacy Policy</a>
+            <a href="php/voorwaarden.php">Algemene Voorwaarden</a>
+            <a href="php/missievisie.php">Missie & Visie</a>
+            <a href="php/newsfeed.php">Nieuwsfeed</a>
+
         </div>
         <div class="footer-section footer-contact">
             <p>Contact: 06-50405030</p>
@@ -117,10 +103,16 @@ De stichting is daarom ook opgericht als nagedachte van onze vader Hassan El Hou
         </div>
         <div class="footer-section footer-socials">
             <a href="https://www.instagram.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" class="social-icon">
+            <i class="fab fa-instagram social-icon"></i>
             </a>
             <a href="https://www.tiktok.com" target="_blank">
-                <img src="https://cdn.pixabay.com/photo/2021/01/30/06/42/tiktok-5962992_1280.png" alt="TikTok" class="social-icon">
+            <i class="fab fa-tiktok social-icon"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube social-icon"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook social-icon"></i>
             </a>
         </div>
     </div>

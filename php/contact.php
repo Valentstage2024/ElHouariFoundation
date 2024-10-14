@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <title>Contact Ons</title>
+    <title>Contact Ons - El Houari Foundation</title>
 </head>
 
 <body>
@@ -55,20 +55,20 @@
             </div>
 
             <div class="contact-form">
-                <h2>Heb je een vraag?</h2>
-                <p>Als je vragen hebt over onze projecten, evenementen of hoe je ons kunt steunen, kun je via het
-                    onderstaande formulier contact met ons opnemen. We beantwoorden je vraag graag zo snel mogelijk!</p>
+    <h2>Heb je een vraag?</h2>
+    <p>Als je vragen hebt over onze projecten, evenementen of hoe je ons kunt steunen, kun je via het
+        onderstaande formulier contact met ons opnemen. We beantwoorden je vraag graag zo snel mogelijk!</p>
 
-                <form action="/submit_form" method="POST">
-                    <input type="text" name="first_name" placeholder="Voornaam" required>
-                    <input type="text" name="last_name" placeholder="Achternaam" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="tel" name="phone" placeholder="Telefoonnummer" required>
-                    <textarea name="message" rows="5" placeholder="Je vraag" required></textarea>
-                    <button type="submit">Verstuur vraag</button>
-                </form>
-            </div>
-        </div>
+    <form action="/submit_form" method="POST">
+        <input type="text" name="first_name" placeholder="Voornaam" required>
+        <input type="text" name="last_name" placeholder="Achternaam" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Telefoonnummer" required>
+        <textarea name="message" rows="5" placeholder="Je vraag" required></textarea>
+        <button type="submit">Verstuur vraag</button>
+    </form>
+</div>
+
     </main>
 
 

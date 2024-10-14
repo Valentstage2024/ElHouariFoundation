@@ -27,8 +27,9 @@ foreach ($events as $index => $event) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onze Agenda - Elhouri Foundation</title>
+    <title>Onze Agenda - El Houari Foundation</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script>
         let events = <?php echo json_encode($events); ?>;
         let currentIndex = <?php echo $selectedEventIndex; ?>;
@@ -39,13 +40,10 @@ foreach ($events as $index => $event) {
 <body class="agenda-body">
 
     <?php include_once '../includes/header.php'; ?>
+<br>
+<br>
+<br>
 
-    <section class="hero">
-    <div class="hero-text">
-        <h2>El Houari Foundation</h2>
-        <p>Bij ons gaat het om geven, delen en helpen.</p>
-    </div>
-</section>
 
 
     <section class="agenda">
@@ -62,6 +60,10 @@ foreach ($events as $index => $event) {
             <button onclick="nextEvent()">Volgende</button>
         </div>
     </section>
+
+    <br>
+    <br>
+    <br>
 
     <?php include_once '../includes/footer.php'; ?>
 

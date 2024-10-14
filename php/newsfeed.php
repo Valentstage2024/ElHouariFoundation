@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nieuwsbrief - Elhouri Foundation</title>
+    <title>Nieuwsbrief - El Houari Foundation</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
 
     <main>
         <section class="newsletter-section">
-            <h1>Nieuwsbrief</h1>
+            <h2>Nieuwsbrief</h2>
             <p class="intro-text">
                 Welkom bij de nieuwsbrief van de Elhouri Foundation! Hier vind je de laatste updates en belangrijke informatie over onze projecten en evenementen.
             </p>
