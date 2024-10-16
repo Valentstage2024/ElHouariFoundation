@@ -21,51 +21,62 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 
 // Footer HTML met gebedstijden
 echo '
-<footer>
-    <div class="footer-container">
-        <div class="footer-section footer-logo">
-            <img id="a-imgfooter" src="../img/logo.png" alt="Elhouari Foundation Logo">
+ <footer>
+        <div class="footer-container">
+            <div class="footer-section footer-logo">
+                <img id="a-imgfooter" src="../img/logo.png" alt="Elhouari Foundation Logo">
+            </div>
+            <div class="footer-section footer-legal">
+                <a href="php/aboutus.php">Over ons</a>
+                <a href="php/project.php">Projecten</a>
+                <a href="php/doneer.php">Doneren</a>
+                <a href="php/agenda.php">Agenda</a>
+            </div>
+            <div class="footer-section footer-legal">
+                <a href="php/privacy.php">Privacy Policy</a>
+                <a href="php/voorwaarden.php">Algemene Voorwaarden</a>
+                <a href="php/missievisie.php">Missie & Visie</a>
+                <a href="php/newsfeed.php">Nieuwsfeed</a>
         </div>
-        <div class="footer-section footer-legal">
-            <a href="../php/aboutus.php">Over ons</a>
-            <a href="../php/project.php">Projecten</a>
-            <a href="../php/doneer.php">Doneren</a>
-            <a href="../php/agenda.php">Agenda</a>
-        </div>
-        <div class="footer-section footer-legal">
-            <a href="../php/privacy.php">Privacy Policy</a>
-            <a href="../php/voorwaarden.php">Algemene Voorwaarden</a>
-            <a href="../php/missievisie.php">Missie & Visie</a>
-            <a href="../php/newsfeed.php">Nieuwsfeed</a>
-        </div>
-        <div class="footer-section footer-contact">             
-          <div class="footer-section footer-contact">
+        <div class="footer-section footer-contact">
         <p><a href="tel:+31650405030">Contact: 06-50405030</a></p>
         <p><a href="mailto:info@elhouarifoundation.nl">info@elhouarifoundation.nl</a></p>
         <p><a href="https://www.elhouarifoundation.nl" target="_blank">www.elhouarifoundation.nl</a></p>
         </div>
+
         <div class="footer-section footer-prayer-times">
-            <p>Fajr: ' . $fajr . '</p>
-            <p>Dhuhr: ' . $dhuhr . '</p>
-            <p>Asr: ' . $asr . '</p>
-            <p>Maghrib: ' . $maghrib . '</p>
-            <p>Isha: ' . $isha . '</p>
-            <p>Volgende gebed in: <span id="countdown"></span></p>
-        </div>
+    <p>Fajr: <span id="fajr-time"><?php echo $fajr; ?></span></p>
+    <p>Dhuhr: <span id="dhuhr-time"><?php echo $dhuhr; ?></span></p>
+    <p>Asr: <span id="asr-time"><?php echo $asr; ?></span></p>
+    <p>Maghrib: <span id="maghrib-time"><?php echo $maghrib; ?></span></p>
+    <p>Isha: <span id="isha-time"><?php echo $isha; ?></span></p>
+    <p>Volgende gebed in: <span id="countdown"></span></p>
+</div>
+
+
         <div class="footer-section footer-hadith">
-            <blockquote>
-                “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.”
-                <cite>(Muslim, Iman, 93; Tirmidhī, Sifaat al-Qiyāma, 56.)</cite>
-            </blockquote>
+                <blockquote>
+                    “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.”
+                    <cite>(Muslim, Iman, 93; Tirmidhī, Sifaat al-Qiyāma, 56.)</cite>
+                </blockquote>
         </div>
+
         <div class="footer-section footer-socials">
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram social-icon"></i></a>
-            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok social-icon"></i></a>
-            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube social-icon"></i></a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook social-icon"></i></a>
+            <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram social-icon"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+            <i class="fab fa-tiktok social-icon"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube social-icon"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook social-icon"></i>
+            </a>
         </div>
     </div>
     <div class="footer-copyright">
         <p>&copy; 2024 Elhouari Foundation. All rights reserved.</p>
-    </div
+    </div>
 </footer>';
