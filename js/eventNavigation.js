@@ -58,3 +58,4 @@ function nextEvent() {
 window.onload = function () {
     updateEvent();
 };
+

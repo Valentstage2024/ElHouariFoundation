@@ -3174,3 +3174,71 @@ h3 {
         /* Nog meer naar rechts op zeer kleine schermen */
     }
 }
+.news-item {
+    position: relative; /* Zorgt ervoor dat de items in positie kunnen worden aangepast */
+    overflow: hidden; /* Zorgt ervoor dat elementen die buiten de grenzen vallen niet zichtbaar zijn */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Voegt een transitie-effect toe */
+}
+
+.news-item:hover {
+    transform: translateY(-5px); /* Tilt het item een beetje omhoog */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Voegt een schaduw toe voor diepte-effect */
+}
+
+.news-img {
+    width: 100%; /* Zorgt ervoor dat de afbeelding responsief is */
+    height: auto; /* Behoudt de aspect ratio van de afbeelding */
+}
+
+
+
+
+
+/* Animatie definities */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animatie definities */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+

@@ -17,12 +17,8 @@
 
   
 <main>
-        <section class="newsletter-section">
-            <h2>Nieuwsbrief</h2>
-            <p class="intro-text">
-                Welkom bij de nieuwsbrief van de El Houari Foundation! Hier vind je de laatste updates en belangrijke informatie over onze projecten en evenementen.
-            </p>
-            
+
+        
             
             <div class="news-feed" id="news-feed">
             <div class="news-feed" id="news-feed">
