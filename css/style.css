@@ -176,31 +176,6 @@ nav {
 
 
 
-
-
-@media (max-width: 768px) {
-    .project-detail h1 {
-        text-align: right;
-        /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
-        margin-right: 100px;
-        /* Verhoog de ruimte aan de rechterkant */
-        margin-top: -50px;
-        /* Verplaats de tekst iets naar boven */
-    }
-}
-
-
-/* Media Query voor kleinere schermen (max-width: 768px) */
-@media (max-width: 768px) {
-    .project-detail h1 {
-        text-align: right;
-        /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
-        margin-right: -30px;
-        /* Optioneel: Voeg wat ruimte toe aan de rechterkant */
-    }
-}
-
-
 body {
     font-family: Arial, sans-serif;
 }
@@ -473,68 +448,7 @@ body {
     align-items: center;
 }
 
-/* project pagina */
-/* Projecten Sectie */
-.projects-section {
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 1200px;
-}
 
-.projects-section h2 {
-    color: #009688;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.project-card {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    text-align: left;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-h3 {
-    color: #009688;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.view-details {
-    background-color: #009688;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.view-details:hover {
-    background-color: #00796b;
-}
 
 /* Modal Styling */
 .modal {
@@ -570,244 +484,7 @@ h3 {
     color: red;
 }
 
-.projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* Centraal uitlijnen */
-    gap: 35px;
-    /* Ruimte tussen projectcards */
-}
 
-.project-card {
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    text-align: center;
-    width: 300px;
-    /* Breedte van nieuwsitems */
-    transition: transform 0.2s;
-    /* Voor een kleine schaling bij hover */
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-    /* Klein effect bij hover */
-}
-
-.project-link {
-    text-decoration: none;
-    /* Verwijder onderlijning van de link */
-    color: inherit;
-    /* Zorg ervoor dat de tekst dezelfde kleur heeft als het omhulsel */
-}
-
-.project-image {
-    width: 100%;
-    /* Zorg ervoor dat de afbeelding binnen het item past */
-    border-radius: 5px;
-    position: center;
-}
-
-
-
-.detail-image {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-/* Main section */
-main {
-    max-width: 1200px;
-    /* Set max width for better readability */
-    margin: 0 auto;
-    /* Center main content */
-    padding: 20px;
-    /* Add some padding */
-}
-
-.project-detail h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.project-detail {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.project-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.detail-image {
-    flex: 1;
-    max-width: 600px;
-    border-radius: 8px;
-}
-
-.sponsor-section {
-    flex: 1;
-    max-width: 350px;
-}
-
-.sponsor-list {
-    list-style: none;
-    padding: 0;
-}
-
-.sponsor-list li {
-    margin-bottom: 10px;
-}
-
-.sponsor-list li img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-description {
-    margin-top: 40px;
-}
-
-.sponsor-list li img {
-    width: 150px;
-    /* Fixed width */
-    height: 100px;
-    /* Fixed height */
-    object-fit: contain;
-    /* Ensures the image fits inside the box while maintaining aspect ratio */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    /* Space between images */
-}
-
-.sponsor-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Create 2 equal-width columns */
-    gap: 20px;
-    /* Add space between items */
-    list-style: none;
-    padding: 0;
-}
-
-.sponsor-list li {
-    display: flex;
-    justify-content: center;
-    /* Center images inside the grid cells */
-}
-
-.sponsor-list li img {
-    width: 150px;
-    /* Set the width for images */
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.detail-image {
-    max-width: 600px;
-    /* Set max width for the project image */
-    height: auto;
-    /* Maintain aspect ratio */
-    border-radius: 8px;
-    /* Rounded corners */
-    margin: 20px 0;
-    /* Spacing above and below the image */
-}
-
-.project-description,
-.project-info,
-.project-updates,
-.community-involvement {
-    margin-bottom: 30px;
-    /* Spacing between sections */
-}
-
-.project-info ul {
-    list-style: none;
-    /* Remove bullets */
-}
-
-.project-info li {
-    margin-bottom: 10px;
-    /* Spacing between list items */
-}
-
-.back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.fundraising-info {
-    background-color: #f9f9f9;
-    /* Achtergrondkleur voor contrast */
-    padding: 20px;
-    border-radius: 8px;
-    /* Ronde hoeken */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* Schaduw voor diepte */
-    margin: 20px 0;
-    /* Ruimte rondom het element */
-}
-
-.fundraising-details {
-    display: flex;
-    justify-content: space-between;
-    /* Zorgt voor ruimte tussen de items */
-    margin-bottom: 15px;
-    /* Ruimte onder de details */
-}
-
-.amount {
-    color: #009688;
-    /* Kleur voor het ingezamelde bedrag */
-    font-weight: bold;
-    /* Maak het vetgedrukt */
-}
-
-.goal {
-    color: #d9534f;
-    /* Kleur voor het doelbedrag */
-    font-weight: bold;
-    /* Maak het vetgedrukt */
-}
-
-.progress-bar {
-    background-color: #e0e0e0;
-    /* Achtergrondkleur voor de voortgangsbalk */
-    border-radius: 5px;
-    /* Ronde hoeken */
-    height: 20px;
-    /* Hoogte van de balk */
-    overflow: hidden;
-    /* Verberg wat buiten de balk valt */
-}
-
-.progress {
-    background-color: #009688;
-    /* Kleur van de voortgang */
-    height: 100%;
-    /* Volledige hoogte van de balk */
-    border-radius: 5px;
-    /* Ronde hoeken voor de voortgang */
-}
-
-.back-button:hover {
-    background-color: #0056b3;
-}
 
 /* Stijl voor de nieuwsitems */
 .news-feed {
@@ -855,6 +532,7 @@ main {
 
 .donatie h1 {
     color: #009688;
+    margin-bottom: 1rem;
 }
 
 .donatie {
@@ -866,7 +544,8 @@ main {
 }
 
 .donatie p {
-    text-align: center; /* Dit centreert de tekst binnen de paragraaf */
+    text-align: center; 
+    margin-bottom: 1rem;
     color: #555;
 }
 
@@ -997,94 +676,7 @@ footer {
 
 
 
-@media (max-width: 768px) {
-    .sponsor-list {
-        justify-content: flex-start;
-        /* Zorg ervoor dat de items aan de linkerkant beginnen */
-    }
 
-    .sponsor-list li {
-        flex: 1 1 30%;
-        /* Maak de lijstitems 30% breed op tablets */
-        margin: 10px 5px;
-        /* Voeg verticale ruimte toe tussen items */
-    }
-
-    .sponsor-list li img {
-        max-width: 80%;
-        /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
-    }
-}
-
-/* Media Query voor smartphones (max-width: 480px) */
-@media (max-width: 480px) {
-    .sponsor-list li {
-        flex: 1 1 45%;
-        /* Maak de lijstitems 45% breed op smartphones */
-        margin: 5px 2.5%;
-        /* Verminder de ruimte tussen items */
-    }
-
-    .sponsor-list li img {
-        max-width: 100%;
-        /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
-    }
-
-    .sponsor-section {
-        text-align: center;
-        /* Center de tekst in de sectie */
-    }
-}
-
-
-/* Media Query voor tablets (max-width: 768px) */
-@media (max-width: 768px) {
-    .detail-image {
-        max-width: 80%;
-        /* Verklein de afbeelding tot 80% van de breedte op tablets */
-    }
-}
-
-/* Media Query voor smartphones (max-width: 480px) */
-@media (max-width: 480px) {
-    .detail-image {
-        max-width: 100%;
-        /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
-        height: auto;
-        /* Houd de hoogte in verhouding tot de breedte */
-    }
-}
-
-@media (max-width: 768px) {
-    .project-content {
-        margin-top: 20px;
-        /* Voeg wat extra ruimte boven de content toe */
-    }
-}
-
-/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
-@media (max-width: 480px) {
-    .project-content {
-        margin-top: 40px;
-        /* Nog meer ruimte voor kleinere schermen */
-    }
-}
-
-/* Media query voor schermen kleiner dan 768px (bijvoorbeeld tablets en telefoons) */
-@media (max-width: 768px) {
-    .projects-section h2 {
-        margin-left: 20px;
-        /* Verschuift de h2 een stukje naar rechts */
-    }
-}
-
-/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
-@media (max-width: 480px) {
-    .projects-section h2 {
-        margin-left: 40px;
-        /* Nog meer naar rechts op zeer kleine schermen */
-    }
-}
 
 
 #load-more:hover {
@@ -1342,144 +934,6 @@ body {
     align-items: center;
 }
 
-/* project pagina */
-/* Projecten Sectie */
-.projects-section {
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 1200px;
-}
-
-.projects-section h2 {
-    color: #009688;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.project-card {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    text-align: left;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-h3 {
-    color: #009688;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.view-details {
-    background-color: #009688;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.view-details:hover {
-    background-color: #00796b;
-}
-
-/* Modal Styling */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    background-color: white;
-    margin: 20% auto;
-    padding: 20px;
-    width: 50%;
-    border-radius: 10px;
-    text-align: left;
-    position: relative;
-}
-
-.close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.close:hover {
-    color: red;
-}
-
-.projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* Centraal uitlijnen */
-    gap: 35px;
-    /* Ruimte tussen projectcards */
-}
-
-.project-card {
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    text-align: center;
-    width: 300px;
-    /* Breedte van nieuwsitems */
-    transition: transform 0.2s;
-    /* Voor een kleine schaling bij hover */
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-    /* Klein effect bij hover */
-}
-
-.project-link {
-    text-decoration: none;
-    /* Verwijder onderlijning van de link */
-    color: inherit;
-    /* Zorg ervoor dat de tekst dezelfde kleur heeft als het omhulsel */
-}
-
-.project-image {
-    width: 100%;
-    /* Zorg ervoor dat de afbeelding binnen het item past */
-    border-radius: 5px;
-    position: center;
-}
-
-
 
 
 .detail-image {
@@ -1497,187 +951,6 @@ main {
     /* Add some padding */
 }
 
-.project-detail h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.project-detail {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.project-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.detail-image {
-    flex: 1;
-    max-width: 600px;
-    border-radius: 8px;
-}
-
-.sponsor-section {
-    flex: 1;
-    max-width: 350px;
-}
-
-.sponsor-list {
-    list-style: none;
-    padding: 0;
-}
-
-.sponsor-list li {
-    margin-bottom: 10px;
-}
-
-.sponsor-list li img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-description {
-    margin-top: 40px;
-}
-
-.sponsor-list li img {
-    width: 150px;
-    /* Fixed width */
-    height: 100px;
-    /* Fixed height */
-    object-fit: contain;
-    /* Ensures the image fits inside the box while maintaining aspect ratio */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    /* Space between images */
-}
-
-.sponsor-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Create 2 equal-width columns */
-    gap: 20px;
-    /* Add space between items */
-    list-style: none;
-    padding: 0;
-}
-
-.sponsor-list li {
-    display: flex;
-    justify-content: center;
-    /* Center images inside the grid cells */
-}
-
-.sponsor-list li img {
-    width: 150px;
-    /* Set the width for images */
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.detail-image {
-    max-width: 600px;
-    /* Set max width for the project image */
-    height: auto;
-    /* Maintain aspect ratio */
-    border-radius: 8px;
-    /* Rounded corners */
-    margin: 20px 0;
-    /* Spacing above and below the image */
-}
-
-.project-description,
-.project-info,
-.project-updates,
-.community-involvement {
-    margin-bottom: 30px;
-    /* Spacing between sections */
-}
-
-.project-info ul {
-    list-style: none;
-    /* Remove bullets */
-}
-
-.project-info li {
-    margin-bottom: 10px;
-    /* Spacing between list items */
-}
-
-.back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.fundraising-info {
-    background-color: #f9f9f9;
-    /* Achtergrondkleur voor contrast */
-    padding: 20px;
-    border-radius: 8px;
-    /* Ronde hoeken */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* Schaduw voor diepte */
-    margin: 20px 0;
-    /* Ruimte rondom het element */
-}
-
-.fundraising-details {
-    display: flex;
-    justify-content: space-between;
-    /* Zorgt voor ruimte tussen de items */
-    margin-bottom: 15px;
-    /* Ruimte onder de details */
-}
-
-.amount {
-    color: #009688;
-    /* Kleur voor het ingezamelde bedrag */
-    font-weight: bold;
-    /* Maak het vetgedrukt */
-}
-
-.goal {
-    color: #d9534f;
-    /* Kleur voor het doelbedrag */
-    font-weight: bold;
-    /* Maak het vetgedrukt */
-}
-
-.progress-bar {
-    background-color: #e0e0e0;
-    /* Achtergrondkleur voor de voortgangsbalk */
-    border-radius: 5px;
-    /* Ronde hoeken */
-    height: 20px;
-    /* Hoogte van de balk */
-    overflow: hidden;
-    /* Verberg wat buiten de balk valt */
-}
-
-.progress {
-    background-color: #009688;
-    /* Kleur van de voortgang */
-    height: 100%;
-    /* Volledige hoogte van de balk */
-    border-radius: 5px;
-    /* Ronde hoeken voor de voortgang */
-}
-
-.back-button:hover {
-    background-color: #0056b3;
-}
 
 /* styling voor agenda pagina */
 
@@ -1962,6 +1235,14 @@ main {
     border-radius: 10px;
 }
 
+.donatie--2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    width: 400px;
+}
+
 .donatie--3 {
     display: flex;
     justify-content: space-evenly;
@@ -1997,6 +1278,7 @@ select {
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    width: 300px;
 }
 
 .donatie>form>button {
@@ -2030,10 +1312,16 @@ select {
     display: flex;
     gap: 20px;
     margin-top: 10px;
+    
 }
 
 .radio-buttons input {
     margin-right: 5px;
+}   
+
+.radio-buttons img {
+    max-width: 40px;
+    height: 40px;
 }
 
 
@@ -2175,95 +1463,6 @@ select {
     /* Increase the size of the button when hovered */
 }
 
-@media (max-width: 768px) {
-    .sponsor-list {
-        justify-content: flex-start;
-        /* Zorg ervoor dat de items aan de linkerkant beginnen */
-    }
-
-    .sponsor-list li {
-        flex: 1 1 30%;
-        /* Maak de lijstitems 30% breed op tablets */
-        margin: 10px 5px;
-        /* Voeg verticale ruimte toe tussen items */
-    }
-
-    .sponsor-list li img {
-        max-width: 80%;
-        /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
-    }
-}
-
-/* Media Query voor smartphones (max-width: 480px) */
-@media (max-width: 480px) {
-    .sponsor-list li {
-        flex: 1 1 45%;
-        /* Maak de lijstitems 45% breed op smartphones */
-        margin: 5px 2.5%;
-        /* Verminder de ruimte tussen items */
-    }
-
-    .sponsor-list li img {
-        max-width: 100%;
-        /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
-    }
-
-    .sponsor-section {
-        text-align: center;
-        /* Center de tekst in de sectie */
-    }
-}
-
-
-/* Media Query voor tablets (max-width: 768px) */
-@media (max-width: 768px) {
-    .detail-image {
-        max-width: 80%;
-        /* Verklein de afbeelding tot 80% van de breedte op tablets */
-    }
-}
-
-/* Media Query voor smartphones (max-width: 480px) */
-@media (max-width: 480px) {
-    .detail-image {
-        max-width: 100%;
-        /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
-        height: auto;
-        /* Houd de hoogte in verhouding tot de breedte */
-    }
-}
-
-@media (max-width: 768px) {
-    .project-content {
-        margin-top: 20px;
-        /* Voeg wat extra ruimte boven de content toe */
-    }
-}
-
-/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
-@media (max-width: 480px) {
-    .project-content {
-        margin-top: 40px;
-        /* Nog meer ruimte voor kleinere schermen */
-    }
-}
-
-/* Media query voor schermen kleiner dan 768px (bijvoorbeeld tablets en telefoons) */
-@media (max-width: 768px) {
-    .projects-section h2 {
-        margin-left: 20px;
-        /* Verschuift de h2 een stukje naar rechts */
-    }
-}
-
-/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
-@media (max-width: 480px) {
-    .projects-section h2 {
-        margin-left: 40px;
-        /* Nog meer naar rechts op zeer kleine schermen */
-    }
-}
-
 
 #load-more:hover {
     background-color: #0056b3;
@@ -2397,6 +1596,7 @@ select {
 }
 
 
+/* Standaard styling voor grotere schermen */
 .content-section {
     background-color: white;
     border-radius: 10px;
@@ -2411,6 +1611,9 @@ select {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .text-content {
@@ -2441,12 +1644,75 @@ select {
     object-fit: cover;
 }
 
-/* Nieuwe class voor content wrapper */
-.content-wrapper {
-    max-width: 800px; /* Maximale breedte voor de secties */
-    margin: 0 auto; /* Center de wrapper horizontaal */
-    padding: 20px; /* Padding binnen de wrapper */
+/* Responsieve aanpassingen voor tablets */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center; /* Zorgt ervoor dat alles gecentreerd wordt */
+    }
+
+    .text-content {
+        padding: 10px;
+    }
+
+    .text-content h1 {
+        font-size: 2em; /* Kleinere koptekst voor tablets */
+    }
+
+    .text-content p {
+        font-size: 1.1em; /* Iets kleinere tekst voor tablets */
+    }
+
+    .image-content {
+        padding: 10px;
+    }
 }
+
+/* Responsieve aanpassingen voor mobiele schermen */
+@media (max-width: 768px) {
+    .text-content h1 {
+        font-size: 1.8em; /* Nog kleinere koptekst voor mobiele schermen */
+    }
+
+    .text-content p {
+        font-size: 1em; /* Tekst nog kleiner maken voor mobiele schermen */
+    }
+
+    .image-content {
+        padding: 0;
+    }
+
+    .image-content img {
+        max-width: 100%;
+        height: auto; /* Zorg ervoor dat het beeld goed schaalt op mobiele apparaten */
+    }
+
+    .back-to-newsfeed {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .newsfeed-btn {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+/* Nog kleinere schermen (mobiel tot 480px) */
+@media (max-width: 480px) {
+    .text-content h1 {
+        font-size: 1.5em; /* Nog kleinere koptekst voor kleine mobiele schermen */
+    }
+
+    .text-content p {
+        font-size: 0.9em; /* Kleinere tekst voor kleine mobiele schermen */
+    }
+
+    .content-wrapper {
+        padding: 0;
+    }
+}
+
 
 /* Mission en Vision Secties */
 .mission,
@@ -2700,7 +1966,7 @@ p {
 .terug-button {
     display: inline-block; /* Zorgt ervoor dat de link zich gedraagt als een blok */
     padding: 10px 20px; /* Voegt wat ruimte binnen de button toe */
-    background-color: #007BFF; /* Achtergrondkleur van de button */
+    background-color: #6a9a80;
     color: white; /* Kleur van de tekst */
     text-decoration: none; /* Verwijdert de onderstreping */
     border-radius: 5px; /* Maakt de hoeken van de button afgerond */
@@ -2708,7 +1974,7 @@ p {
 }
 
 .terug-button:hover {
-    background-color: #0056b3; /* Achtergrondkleur bij hover */
+    background-color: #557d66;
 }
 
 .sura-container {
@@ -2926,7 +2192,7 @@ p {
 .donate-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Groen achtergrond */
+    background-color: #6a9a80;
     color: white; /* Witte tekst */
     text-align: center;
     text-decoration: none; /* Geen onderstreping */
@@ -2936,7 +2202,7 @@ p {
 }
 
 .donate-button:hover {
-    background-color: #45a049; /* Donkerder groen bij hover */
+    background-color: #557d66;
 }
 @media (max-width: 768px) {
     .terug-button, .donate-button {
@@ -2948,83 +2214,929 @@ p {
         margin-top: 20px; /* Extra ruimte boven de Doneer knop voor responsieve weergave */
     }
 }
+
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
 .text-section {
-    margin: 20px 0; /* Voegt ruimte boven en onder de sectie toe */
-    padding: 0; /* Verwijder padding binnen de sectie */
-    width: 50%; /* Zorgt ervoor dat de sectie slechts de helft van de breedte van de container gebruikt */
-    max-width: 600px; /* Optionele maximum breedte om de sectie niet te breed te maken */
-    margin-right: auto; /* Laatste marge aan de rechterzijde op automatisch om naar de linkerzijde te verplaatsen */
-    margin-left: 40px; /* Voegt meer ruimte toe aan de linkerzijde */
+    max-width: 600px;
 }
 
 .section-title {
-    font-size: 30px; /* Grootte van de hoofdtitel */
-    color: #333; /* Kleur van de hoofdtitel */
-    margin-bottom: 10px; /* Ruimte onder de titel */
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-left: 120px;
+    color: #009688; 
 }
 
 .section-description {
-    font-size: 20px; /* Vergroot de tekstgrootte */
-    color: #666; /* Kleur van de beschrijving */
-    line-height: 1.5; /* Vergroot de regelhoogte voor betere leesbaarheid */
-}
-.read-more-button {
-    display: inline-block; /* Zorgt ervoor dat de knop zich gedraagt als een inline-element */
-    padding: 10px 20px; /* Voeg padding toe aan de knop */
-    margin-top: 20px; /* Voeg ruimte boven de knop toe */
-    background-color: #007bff; /* Achtergrondkleur van de knop */
-    color: #fff; /* Kleur van de tekst op de knop */
-    text-decoration: none; /* Verwijder de onderlijn van de tekst */
-    border-radius: 5px; /* Ronde hoeken voor de knop */
-    transition: background-color 0.3s; /* Voeg een overgangseffect toe voor hover */
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.read-more-button:hover {
-    background-color: #0056b3; /* Donkerdere kleur bij hover */
+.read-more-button   {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #6a9a80;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.flex-container {
-    display: flex; /* Zet de container in flex-modus */
-    align-items: flex-start; /* Zorg ervoor dat de afbeelding en tekst bovenaan uitgelijnd zijn */
+
+.indexproduct {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: #6a9a80;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
+.read-more-button:hover,
+.indexproduct:hover {
+    background-color: #527e66;
+}
+
+/* Image styling */
 .image-container {
-    margin-left: 20px; /* Voeg ruimte toe tussen de afbeelding en de tekst */
-}
-.flex-container {
-    display: flex; /* Zet de container in flex-modus */
-    align-items: flex-start; /* Zorg ervoor dat de afbeelding en tekst bovenaan uitgelijnd zijn */
-    justify-content: center; /* Centreer de inhoud horizontaal */
-    gap: 40px; /* Voeg ruimte toe tussen de afbeelding en de tekstsectie */
+    flex-shrink: 0;
+    width: 400px;
 }
 
-.image-container {
-    margin-left: 20px; /* Zorg dat de afbeelding een beetje naar links verschuift */
-    margin-top: 20px; /* Voeg ruimte toe aan de bovenkant */
-    margin-bottom: 20px; /* Voeg ruimte toe aan de onderkant */
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
 }
 
-.imgrechts {
-    width: 400px; /* Maak de afbeelding breder */
-    height: auto; /* Houd de oorspronkelijke verhouding van de afbeelding */
-    border-radius: 8px; /* Optioneel: ronde hoeken */
-    margin-top: 10px; /* Extra ruimte boven de afbeelding */
-    margin-bottom: 10px; /* Extra ruimte onder de afbeelding */
-}
 
-.text-section {
-    max-width: 50%; /* Zorg ervoor dat de tekstsectie niet te breed is */
-    margin-right: 20px; /* Voeg ruimte toe aan de rechterkant van de tekstsectie */
-}
-     .indexproduct {
-            background-color: #4CAF50; /* Groene achtergrondkleur */
-            color: white; /* Witte tekstkleur */
-            padding: 15px 32px; /* Binnenrand van de knop */
-            text-align: center; /* Tekstuitlijning */
-            text-decoration: none; /* Geen onderstreping */
-            display: inline-block; /* Zorgt ervoor dat de knop zich gedraagt als een blok */
-            font-size: 16px; /* Tekstgrootte */
-            margin: 4px 2px; /* Buitenmarge */
-            cursor: pointer; /* Verandert de cursor naar een pointer bij hover */
-            border-radius: 12px; /* Maakt de hoeken afgerond */
+    @media (max-width: 768px) {
+        .flex-container {
+            flex-direction: column;
+            align-items: center;
         }
+    
+        .text-section, .image-container {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .section-description {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-shadow: none;
+            justify-content: center;
+            
+        }
+
+        .read-more-button, .indexproduct {
+            margin-left: 0; /* Center the buttons for mobile screens */
+            margin-right: 0;
+            display: block; /* Ensures buttons are full width if needed */
+            width: 100%; /* Make the buttons take full width on small screens */
+            text-align: center; /* Center the text within the buttons */
+        }
+    }
+
+    .news1-section {
+        background-color: #f9f9f9; /* Lichte achtergrond voor contrast */
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 40px 20px; /* Meer padding voor een open uitstraling */
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .news1-wrapper {
+        display: grid; /* Gebruik een grid-layout voor een betere indeling */
+        grid-template-columns: 3fr 1fr; /* Eerste kolom is 3x zo breed als de tweede kolom */
+        gap: 20px; /* Ruimte tussen de kolommen */
+        max-width: 1200px; /* Hier kun je de maximale breedte aanpassen */
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .news1-content {
+        padding: 20px; /* Padding rondom de tekst */
+        background-color: #ffffff; /* Achtergrond voor tekst */
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtiele schaduw */
+        width: 135%; /* Zorg ervoor dat de content 100% van de kolombreedte gebruikt */
+        box-sizing: border-box; /* Zorg ervoor dat padding en borders in de breedte worden meegerekend */
+    }
+    
+    
+    
+    .news1-content h1 {
+        font-size: 2.8em; /* Iets grotere koptekst */
+        color: #009688;
+        margin-bottom: 20px;
+        font-weight: 700; /* Vetgedrukt voor extra nadruk */
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Subtiele schaduw onder de tekst */
+    }
+    
+    .news1-content p {
+        font-size: 1.15em; /* Iets grotere tekst voor leesbaarheid */
+        margin-bottom: 20px;
+        color: #555; /* Donkere, zachte kleur voor tekst */
+        line-height: 1.6; /* Ruimte tussen tekstregels voor betere leesbaarheid */
+    }
+    
+    .news1-image-content {
+        padding: 20px;
+        text-align: center; /* Afbeelding centreren */
+    }
+    
+    .news1-image-content img {
+        max-width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Animatie bij hover */
+    }
+    
+    .news1-image-content img:hover {
+        transform: scale(1.05); /* Vergroting bij hover voor dynamisch effect */
+    }
+    
+    /* Terug naar Nieuwsfeed knop */
+    .back-to-newsfeed {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .newsfeed-btn {
+        padding: 10px 25px;
+        background-color: #6a9a80;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    .newsfeed-btn:hover {
+        background-color: #557d66;
+    }
+
+/* Responsieve aanpassingen voor tablets (tot 1024px breed) */
+@media (max-width: 1024px) {
+    .news1-wrapper {
+        flex-direction: column; /* Wijziging naar column om afbeelding onder de tekst te plaatsen */
+        text-align: center; /* Centreren van de tekst */
+    }
+
+    .news1-content {
+        padding: 15px;
+    }
+
+    .news1-content h1 {
+        font-size: 2.4em;
+    }
+
+    .news1-content p {
+        font-size: 1.1em;
+    }
+
+    .news1-image-content {
+        padding: 10px;
+    }
+}
+
+/* Responsieve aanpassingen voor mobiele schermen (tot 768px breed) */
+@media (max-width: 768px) {
+    .news1-wrapper {
+        flex-direction: column; /* Zorg ervoor dat de afbeelding onder de tekst staat */
+    }
+
+    .news1-content h1 {
+        font-size: 2em;
+    }
+
+    .news1-content p {
+        font-size: 1em;
+    }
+
+    .news1-image-content {
+        padding: 0;
+    }
+
+    .news1-image-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .back-to-newsfeed {
+        margin-top: 10px;
+    }
+
+    .newsfeed-btn {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+/* Nog kleinere schermen (tot 480px breed) */
+@media (max-width: 480px) {
+    .news1-content h1 {
+        font-size: 1.8em;
+    }
+
+    .news1-content p {
+        font-size: 0.9em;
+    }
+
+    .news1-wrapper {
+        padding: 0;
+    }
+}
+
+
+
+/* PROJECT PAGINA */
+/* PROJECT PAGINA */
+/* PROJECT PAGINA */
+/* PROJECT PAGINA */
+/* PROJECT PAGINA */
+/* PROJECT PAGINA */
+/* PROJECT PAGINA */
+/* PROJECT PAGINA */
+
+@media (max-width: 768px) {
+    .project-detail h1 {
+        text-align: right;
+        /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: 100px;
+        /* Verhoog de ruimte aan de rechterkant */
+        margin-top: -50px;
+        /* Verplaats de tekst iets naar boven */
+    }
+}
+
+
+/* Media Query voor kleinere schermen (max-width: 768px) */
+@media (max-width: 768px) {
+    .project-detail h1 {
+        text-align: right;
+        /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
+        margin-right: -30px;
+        /* Optioneel: Voeg wat ruimte toe aan de rechterkant */
+    }
+}
+
+.projects-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.projects-section h2 {
+    color: #009688;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #009688;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.view-details {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: #00796b;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centraal uitlijnen */
+    gap: 35px;
+    /* Ruimte tussen projectcards */
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    /* Breedte van nieuwsitems */
+    transition: transform 0.2s;
+    /* Voor een kleine schaling bij hover */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    /* Klein effect bij hover */
+}
+
+.project-link {
+    text-decoration: none;
+    /* Verwijder onderlijning van de link */
+    color: inherit;
+    /* Zorg ervoor dat de tekst dezelfde kleur heeft als het omhulsel */
+}
+
+.project-image {
+    width: 100%;
+    /* Zorg ervoor dat de afbeelding binnen het item past */
+    border-radius: 5px;
+    position: center;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 kolom op kleinere schermen */
+    }
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #009688;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.detail-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .sponsor-list {
+        justify-content: flex-start;
+        /* Zorg ervoor dat de items aan de linkerkant beginnen */
+    }
+
+    .sponsor-list li {
+        flex: 1 1 30%;
+        /* Maak de lijstitems 30% breed op tablets */
+        margin: 10px 5px;
+        /* Voeg verticale ruimte toe tussen items */
+    }
+
+    .sponsor-list li img {
+        max-width: 80%;
+        /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
+    }
+}
+
+/* Media Query voor smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .sponsor-list li {
+        flex: 1 1 45%;
+        /* Maak de lijstitems 45% breed op smartphones */
+        margin: 5px 2.5%;
+        /* Verminder de ruimte tussen items */
+    }
+
+    .sponsor-list li img {
+        max-width: 100%;
+        /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
+    }
+
+    .sponsor-section {
+        text-align: center;
+        /* Center de tekst in de sectie */
+    }
+}
+
+
+/* Media Query voor tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .detail-image {
+        max-width: 80%;
+        /* Verklein de afbeelding tot 80% van de breedte op tablets */
+    }
+}
+
+/* Media Query voor smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .detail-image {
+        max-width: 100%;
+        /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
+        height: auto;
+        /* Houd de hoogte in verhouding tot de breedte */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-content {
+        margin-top: 20px;
+        /* Voeg wat extra ruimte boven de content toe */
+    }
+}
+
+/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
+@media (max-width: 480px) {
+    .project-content {
+        margin-top: 40px;
+        /* Nog meer ruimte voor kleinere schermen */
+    }
+}
+
+/* Media query voor schermen kleiner dan 768px (bijvoorbeeld tablets en telefoons) */
+@media (max-width: 768px) {
+    .projects-section h2 {
+        margin-left: 20px;
+        /* Verschuift de h2 een stukje naar rechts */
+    }
+}
+
+/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
+@media (max-width: 480px) {
+    .projects-section h2 {
+        margin-left: 40px;
+        /* Nog meer naar rechts op zeer kleine schermen */
+    }
+}
+
+.projects-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.projects-section h2 {
+    color: #009688;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #009688;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.view-details {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: #00796b;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centraal uitlijnen */
+    gap: 35px;
+    /* Ruimte tussen projectcards */
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    /* Breedte van nieuwsitems */
+    transition: transform 0.2s;
+    /* Voor een kleine schaling bij hover */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    /* Klein effect bij hover */
+}
+
+.project-link {
+    text-decoration: none;
+    /* Verwijder onderlijning van de link */
+    color: inherit;
+    /* Zorg ervoor dat de tekst dezelfde kleur heeft als het omhulsel */
+}
+
+.project-image {
+    width: 100%;
+    /* Zorg ervoor dat de afbeelding binnen het item past */
+    border-radius: 5px;
+    position: center;
+}
+
+
+.project-detail h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.project-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.detail-image {
+    flex: 1;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.sponsor-section {
+    flex: 1;
+    max-width: 350px;
+}
+
+.sponsor-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sponsor-list li {
+    margin-bottom: 10px;
+}
+
+.sponsor-list li img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+    margin-top: 40px;
+}
+
+.sponsor-list li img {
+    width: 150px;
+    /* Fixed width */
+    height: 100px;
+    /* Fixed height */
+    object-fit: contain;
+    /* Ensures the image fits inside the box while maintaining aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    /* Space between images */
+}
+
+.sponsor-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Create 2 equal-width columns */
+    gap: 20px;
+    /* Add space between items */
+    list-style: none;
+    padding: 0;
+}
+
+.sponsor-list li {
+    display: flex;
+    justify-content: center;
+    /* Center images inside the grid cells */
+}
+
+.sponsor-list li img {
+    width: 150px;
+    /* Set the width for images */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.detail-image {
+    max-width: 600px;
+    /* Set max width for the project image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    /* Rounded corners */
+    margin: 20px 0;
+    /* Spacing above and below the image */
+}
+
+.project-description,
+.project-info,
+.project-updates,
+.community-involvement {
+    margin-bottom: 30px;
+    /* Spacing between sections */
+}
+
+.project-info ul {
+    list-style: none;
+    /* Remove bullets */
+}
+
+.project-info li {
+    margin-bottom: 10px;
+    /* Spacing between list items */
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.fundraising-info {
+    background-color: #f9f9f9;
+    /* Achtergrondkleur voor contrast */
+    padding: 20px;
+    border-radius: 8px;
+    /* Ronde hoeken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Schaduw voor diepte */
+    margin: 20px 0;
+    /* Ruimte rondom het element */
+}
+
+.fundraising-details {
+    display: flex;
+    justify-content: space-between;
+    /* Zorgt voor ruimte tussen de items */
+    margin-bottom: 15px;
+    /* Ruimte onder de details */
+}
+
+.amount {
+    color: #009688;
+    /* Kleur voor het ingezamelde bedrag */
+    font-weight: bold;
+    /* Maak het vetgedrukt */
+}
+
+.goal {
+    color: #d9534f;
+    /* Kleur voor het doelbedrag */
+    font-weight: bold;
+    /* Maak het vetgedrukt */
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    /* Achtergrondkleur voor de voortgangsbalk */
+    border-radius: 5px;
+    /* Ronde hoeken */
+    height: 20px;
+    /* Hoogte van de balk */
+    overflow: hidden;
+    /* Verberg wat buiten de balk valt */
+}
+
+.progress {
+    background-color: #009688;
+    /* Kleur van de voortgang */
+    height: 100%;
+    /* Volledige hoogte van de balk */
+    border-radius: 5px;
+    /* Ronde hoeken voor de voortgang */
+}
+
+
+@media (max-width: 768px) {
+    .sponsor-list {
+        justify-content: flex-start;
+        /* Zorg ervoor dat de items aan de linkerkant beginnen */
+    }
+
+    .sponsor-list li {
+        flex: 1 1 30%;
+        /* Maak de lijstitems 30% breed op tablets */
+        margin: 10px 5px;
+        /* Voeg verticale ruimte toe tussen items */
+    }
+
+    .sponsor-list li img {
+        max-width: 80%;
+        /* Verklein de afbeeldingen tot 80% van hun originele grootte op tablets */
+    }
+}
+
+/* Media Query voor smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .sponsor-list li {
+        flex: 1 1 45%;
+        /* Maak de lijstitems 45% breed op smartphones */
+        margin: 5px 2.5%;
+        /* Verminder de ruimte tussen items */
+    }
+
+    .sponsor-list li img {
+        max-width: 100%;
+        /* Verklein de afbeeldingen tot 60% van hun originele grootte op smartphones */
+    }
+
+    .sponsor-section {
+        text-align: center;
+        /* Center de tekst in de sectie */
+    }
+}
+
+
+/* Media Query voor tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .detail-image {
+        max-width: 80%;
+        /* Verklein de afbeelding tot 80% van de breedte op tablets */
+    }
+}
+
+/* Media Query voor smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .detail-image {
+        max-width: 100%;
+        /* Zorg ervoor dat de afbeelding 100% breed is op smartphones */
+        height: auto;
+        /* Houd de hoogte in verhouding tot de breedte */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-content {
+        margin-top: 20px;
+        /* Voeg wat extra ruimte boven de content toe */
+    }
+}
+
+/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
+@media (max-width: 480px) {
+    .project-content {
+        margin-top: 40px;
+        /* Nog meer ruimte voor kleinere schermen */
+    }
+}
+
+/* Media query voor schermen kleiner dan 768px (bijvoorbeeld tablets en telefoons) */
+@media (max-width: 768px) {
+    .projects-section h2 {
+        margin-left: 20px;
+        /* Verschuift de h2 een stukje naar rechts */
+    }
+}
+
+/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
+@media (max-width: 480px) {
+    .projects-section h2 {
+        margin-left: 40px;
+        /* Nog meer naar rechts op zeer kleine schermen */
+    }
+}

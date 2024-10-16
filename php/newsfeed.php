@@ -53,19 +53,6 @@
     </div>
 </div>
 
-
-
-             
-
-           
-
-                <!-- <div class="pagination">
-                    <button id="prevPage">Vorige</button>
-                    <span>Pagina 1 van 2</span> 
-                    <button id="nextPage">Volgende</button>
-                </div> -->
-
-                <button id="backToTop">Naar boven</button>
             </div>
         </section>
     </main>

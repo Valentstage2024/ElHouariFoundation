@@ -20,7 +20,7 @@
 
         <div class="project-content">
             <div>
-                <img src="https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/417691151_814363024070940_3487350996679660474_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KjrUzVNjCmcQ7kNvgHXiKzn&_nc_ht=scontent-ams2-1.xx&_nc_gid=AhBwngdstmiIPZR-a4y1ILw&oh=00_AYDKyfNL9ALlTkkwQkMNgOuyikLpDMR1tH9j67gySc_rBA&oe=670D64AB" alt="Liefdadigheidspakketen" width="400" style="margin-left: 0px;">
+                <img src="../img/liefpakket.png" width="400" style="margin-left: 0px;">
             </div>
 
             <div class="sponsor-section">
@@ -85,6 +85,7 @@
         </div>
 
         <a href="../php/project.php" class="terug-button">Terug naar Projecten</a>
+        <a href="../php/doneer.php" class="terug-button">Doneer nu!</a>
     </main>
 
     <?php include_once '../includes/footer.php'; ?>

@@ -21,6 +21,7 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,30 +29,31 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-   
+
 </head>
+
 <body>
 
-<header>
-    <div class="logo">
-        <a href="php/login.php">
-            <img src="img/logo.png" alt="Logo" class="logo">
-        </a>
-    </div>
-    <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
-    <nav id="navbar">
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="php/newsfeed.php">Nieuws</a></li>
-            <li><a href="php/project.php">Projecten</a></li>
-            <li><a href="php/aboutus.php">Over ons</a></li>
-            <li><a href="php/agenda.php">Agenda</a></li>
-            <li><a href="php/koran.php">Koran</a></li>
-            <li><a href="php/doneer.php">Doneer</a></li>
-            <li><a href="php/contact.php">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <div class="logo">
+            <a href="php/login.php">
+                <img src="img/logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+        <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="php/newsfeed.php">Nieuws</a></li>
+                <li><a href="php/project.php">Projecten</a></li>
+                <li><a href="php/aboutus.php">Over ons</a></li>
+                <li><a href="php/agenda.php">Agenda</a></li>
+                <li><a href="php/koran.php">Koran</a></li>
+                <li><a href="php/doneer.php">Doneer</a></li>
+                <li><a href="php/contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -63,143 +65,149 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 
 
     <section class="flex-container">
-    <section class="text-section">
-        <h2 class="section-title">Over El Houari Foundation</h2>
-        <p class="section-description">
-        Wij kregen de vraag waar de naam el Houari Foundation vandaan kwam. Hassan el Houari was een respectvolle, lieve en zorgzame man. Hij wou altijd de kinderen en volwassenen om zich heen gelukkig zien en stond voor iedereen klaar. Als er iemand iets nodig had dan deed hij er alles voor om dit te regelen voor deze persoon.
+        <section class="text-section">
+            <h2 class="section-title">Over El Houari Foundation</h2>
+            <p class="section-description">
+                Wij kregen de vraag waar de naam el Houari Foundation vandaan kwam. Hassan el Houari was een respectvolle, lieve en zorgzame man. Hij wou altijd de kinderen en volwassenen om zich heen gelukkig zien en stond voor iedereen klaar. Als er iemand iets nodig had dan deed hij er alles voor om dit te regelen voor deze persoon.
 
-Deze prachtige man is onze vader, alhamdoulilah.
+                Deze prachtige man is onze vader, alhamdoulilah.
 
-De stichting is daarom ook opgericht als nagedachte van onze vader Hassan El Houari. De stichting heeft als doel zoveel mogelijk mensen helpen met dezelfde intentie zoals onze behulpzame vader dat deed.
-        </p>
-        <a href="php/aboutus.php" class="read-more-button">Lees ons verhaal</a>
-        <a href="php/project.php" class="indexproduct">Onze Projecten</a>
+                De stichting is daarom ook opgericht als nagedachte van onze vader Hassan El Houari. De stichting heeft als doel zoveel mogelijk mensen helpen met dezelfde intentie zoals onze behulpzame vader dat deed.
+            </p>
+            <a href="php/aboutus.php" class="read-more-button">Lees ons verhaal</a>
+            <a href="php/project.php" class="indexproduct">Onze Projecten</a>
+        </section>
+
+        <div class="image-container">
+            <img src="img/index.jpg" alt="Afbeelding van Stichting RizQ" class="imgrechts" />
+        </div>
     </section>
 
-    <div class="image-container">
-        <img src="img/index.jpg" alt="Afbeelding van Stichting RizQ" class="imgrechts" />
-    </div>
-</section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section footer-logo">
+                <img id="a-imgfooter" src="img/logo.png" alt="Elhouari Foundation Logo">
+            </div>
+            <div class="footer-section footer-legal">
+                <a href="php/aboutus.php">Over ons</a>
+                <a href="php/project.php">Projecten</a>
+                <a href="php/doneer.php">Doneren</a>
+                <a href="php/agenda.php">Agenda</a>
 
-<!-- Footer -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-section footer-logo">
-            <img id="a-imgfooter" src="img/logo.png" alt="Elhouari Foundation Logo">
-        </div>
-        <div class="footer-section footer-legal">
-            <a href="php/aboutus.php">Over ons</a>
-            <a href="php/project.php">Projecten</a>
-            <a href="php/doneer.php">Doneren</a>
-            <a href="php/agenda.php">Agenda</a>
-                
-        </div>
-        <div class="footer-section footer-legal">
-            <a href="php/privacy.php">Privacy Policy</a>
-            <a href="php/voorwaarden.php">Algemene Voorwaarden</a>
-            <a href="php/missievisie.php">Missie & Visie</a>
-            <a href="php/newsfeed.php">Nieuwsfeed</a>
+            </div>
+            <div class="footer-section footer-legal">
+                <a href="php/privacy.php">Privacy Policy</a>
+                <a href="php/voorwaarden.php">Algemene Voorwaarden</a>
+                <a href="php/missievisie.php">Missie & Visie</a>
+                <a href="php/newsfeed.php">Nieuwsfeed</a>
 
+            </div>
+            <div class="footer-section footer-contact">
+                <p>Contact: 06-50405030</p>
+                <p>info@elhouarifoundation.nl</p>
+                <p>www.elhouarifoundation.nl</p>
+            </div>
+            <div class="footer-section footer-prayer-times">
+                <p>Fajr: <span id="fajr-time"><?php echo $fajr; ?></span></p>
+                <p>Dhuhr: <span id="dhuhr-time"><?php echo $dhuhr; ?></span></p>
+                <p>Asr: <span id="asr-time"><?php echo $asr; ?></span></p>
+                <p>Maghrib: <span id="maghrib-time"><?php echo $maghrib; ?></span></p>
+                <p>Isha: <span id="isha-time"><?php echo $isha; ?></span></p>
+                <p>Volgende gebed in: <span id="countdown"></span></p>
+            </div>
+            <div class="footer-section footer-hadith">
+                <blockquote>
+                    “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.”
+                    <cite>(Muslim, Iman, 93; Tirmidhī, Sifaat al-Qiyāma, 56.)</cite>
+                </blockquote>
+            </div>
+            <div class="footer-section footer-socials">
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram social-icon"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <i class="fab fa-tiktok social-icon"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <i class="fab fa-youtube social-icon"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook social-icon"></i>
+                </a>
+            </div>
         </div>
-        <div class="footer-section footer-contact">
-            <p>Contact: 06-50405030</p>
-            <p>info@elhouarifoundation.nl</p>
-            <p>www.elhouarifoundation.nl</p>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Elhouari Foundation. All rights reserved.</p>
         </div>
-        <div class="footer-section footer-prayer-times">
-            <p>Fajr: <span id="fajr-time"><?php echo $fajr; ?></span></p>
-            <p>Dhuhr: <span id="dhuhr-time"><?php echo $dhuhr; ?></span></p>
-            <p>Asr: <span id="asr-time"><?php echo $asr; ?></span></p>
-            <p>Maghrib: <span id="maghrib-time"><?php echo $maghrib; ?></span></p>
-            <p>Isha: <span id="isha-time"><?php echo $isha; ?></span></p>
-            <p>Volgende gebed in: <span id="countdown"></span></p>
-        </div>
-        <div class="footer-section footer-hadith">
-            <blockquote>
-                “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.”
-                <cite>(Muslim, Iman, 93; Tirmidhī, Sifaat al-Qiyāma, 56.)</cite>
-            </blockquote>
-        </div>
-        <div class="footer-section footer-socials">
-            <a href="https://www.instagram.com" target="_blank">
-            <i class="fab fa-instagram social-icon"></i>
-            </a>
-            <a href="https://www.tiktok.com" target="_blank">
-            <i class="fab fa-tiktok social-icon"></i>
-            </a>
-            <a href="https://www.youtube.com" target="_blank">
-            <i class="fab fa-youtube social-icon"></i>
-            </a>
-            <a href="https://www.facebook.com" target="_blank">
-            <i class="fab fa-facebook social-icon"></i>
-            </a>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <p>&copy; 2024 Elhouari Foundation. All rights reserved.</p>
-    </div>
-</footer>
+    </footer>
 
-<!-- Back to Top Button -->
-<button id="backToTop">naar boven</button>
+    <!-- Back to Top Button -->
+    <button id="backToTop">naar boven</button>
 
-<script src="js/hamburgerMenu.js"></script>
-<script src="js/scrollToTop.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    // Gebedstijden ophalen uit de HTML
-    const prayerTimes = {
-        Fajr: document.getElementById('fajr-time').innerText,
-        Dhuhr: document.getElementById('dhuhr-time').innerText,
-        Asr: document.getElementById('asr-time').innerText,
-        Maghrib: document.getElementById('maghrib-time').innerText,
-        Isha: document.getElementById('isha-time').innerText
-    };
+    <script src="js/hamburgerMenu.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gebedstijden ophalen uit de HTML
+            const prayerTimes = {
+                Fajr: document.getElementById('fajr-time').innerText,
+                Dhuhr: document.getElementById('dhuhr-time').innerText,
+                Asr: document.getElementById('asr-time').innerText,
+                Maghrib: document.getElementById('maghrib-time').innerText,
+                Isha: document.getElementById('isha-time').innerText
+            };
 
-    // Functie om de volgende gebedstijd te berekenen
-    function getNextPrayer() {
-        const now = new Date();
-        let nextPrayer = null;
-        let nextPrayerTime = null;
+            // Functie om de volgende gebedstijd te berekenen
+            function getNextPrayer() {
+                const now = new Date();
+                let nextPrayer = null;
+                let nextPrayerTime = null;
 
-        for (const prayer in prayerTimes) {
-            const prayerTime = new Date(now.toDateString() + ' ' + prayerTimes[prayer]);
-            if (prayerTime > now) {
-                nextPrayer = prayer;
-                nextPrayerTime = prayerTime;
-                break;
+                for (const prayer in prayerTimes) {
+                    const prayerTime = new Date(now.toDateString() + ' ' + prayerTimes[prayer]);
+                    if (prayerTime > now) {
+                        nextPrayer = prayer;
+                        nextPrayerTime = prayerTime;
+                        break;
+                    }
+                }
+
+                if (!nextPrayer) {
+                    const tomorrow = new Date(now);
+                    tomorrow.setDate(tomorrow.getDate() + 1);
+                    nextPrayerTime = new Date(tomorrow.toDateString() + ' ' + prayerTimes.Fajr);
+                    nextPrayer = 'Fajr';
+                }
+
+                return {
+                    nextPrayer,
+                    nextPrayerTime
+                };
             }
-        }
 
-        if (!nextPrayer) {
-            const tomorrow = new Date(now);
-            tomorrow.setDate(tomorrow.getDate() + 1);
-            nextPrayerTime = new Date(tomorrow.toDateString() + ' ' + prayerTimes.Fajr);
-            nextPrayer = 'Fajr';
-        }
+            // Countdown functie
+            function updateCountdown() {
+                const {
+                    nextPrayer,
+                    nextPrayerTime
+                } = getNextPrayer();
+                const now = new Date();
+                const timeDiff = nextPrayerTime - now;
 
-        return { nextPrayer, nextPrayerTime };
-    }
+                if (timeDiff > 0) {
+                    const hours = Math.floor((timeDiff / 1000 / 60 / 60) % 24);
+                    const minutes = Math.floor((timeDiff / 1000 / 60) % 60);
+                    const seconds = Math.floor((timeDiff / 1000) % 60);
+                    document.getElementById('countdown').innerText = `${hours} uur, ${minutes} min, ${seconds} sec tot ${nextPrayer}`;
+                } else {
+                    document.getElementById('countdown').innerText = 'Gebedstijd';
+                }
+            }
 
-    // Countdown functie
-    function updateCountdown() {
-        const { nextPrayer, nextPrayerTime } = getNextPrayer();
-        const now = new Date();
-        const timeDiff = nextPrayerTime - now;
-
-        if (timeDiff > 0) {
-            const hours = Math.floor((timeDiff / 1000 / 60 / 60) % 24);
-            const minutes = Math.floor((timeDiff / 1000 / 60) % 60);
-            const seconds = Math.floor((timeDiff / 1000) % 60);
-            document.getElementById('countdown').innerText = `${hours} uur, ${minutes} min, ${seconds} sec tot ${nextPrayer}`;
-        } else {
-            document.getElementById('countdown').innerText = 'Gebedstijd';
-        }
-    }
-
-    // Elke seconde updaten
-    setInterval(updateCountdown, 1000);
-});
-</script>
+            // Elke seconde updaten
+            setInterval(updateCountdown, 1000);
+        });
+    </script>
 </body>
 </html>
