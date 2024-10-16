@@ -8,7 +8,6 @@
 
 /* header!!! */
 
-/* Header styling blijft zoals het is */
 header {
     display: flex;
     justify-content: space-between;
@@ -19,7 +18,6 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
 }
-
 /* Hamburger menu-knop styling */
 .menu-toggle {
     display: none; /* Verberg de knop standaard */
@@ -67,12 +65,22 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center; 
+}
+
+header nav ul li a i {
+    margin-right: 8px; 
     font-size: 18px;
 }
 
 header nav ul li a:hover {
     color: #87CEEB;
 }
+
 
 nav {
     opacity: 1; /* Maak het menu volledig zichtbaar */
