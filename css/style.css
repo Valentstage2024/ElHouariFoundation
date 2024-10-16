@@ -71,7 +71,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ddd;
+    color: #87CEEB;
 }
 
 nav {
@@ -640,13 +640,18 @@ footer {
 
 .footer-socials .social-icon:hover {
     transform: scale(1.1); /* Vergroot de iconen bij hover */
-    color:#00796b
+    color: #87CEEB;
 }
 
 
 /* Contact Styling */
 .footer-contact p {
     margin: 5px 0;
+    
+}
+
+.footer-contact p:hover {
+    color: #87CEEB;
 }
 
 /* Copyright Styling */
