@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Gebedstijden ophalen uit de HTML
     const prayerTimes = {
-        Fajr: document.getElementById('fajr-time').innerText,
-        Dhuhr: document.getElementById('dhuhr-time').innerText,
-        Asr: document.getElementById('asr-time').innerText,
-        Maghrib: document.getElementById('maghrib-time').innerText,
-        Isha: document.getElementById('isha-time').innerText
+        Fajr: document.querySelector('.footer-prayer-times p:nth-child(1)').innerText.split(' ')[1],
+        Dhuhr: document.querySelector('.footer-prayer-times p:nth-child(2)').innerText.split(' ')[1],
+        Asr: document.querySelector('.footer-prayer-times p:nth-child(3)').innerText.split(' ')[1],
+        Maghrib: document.querySelector('.footer-prayer-times p:nth-child(4)').innerText.split(' ')[1],
+        Isha: document.querySelector('.footer-prayer-times p:nth-child(5)').innerText.split(' ')[1]
     };
 
     // Functie om de volgende gebedstijd te berekenen
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let nextPrayerTime = null;
 
         for (const prayer in prayerTimes) {
-            const prayerTime = new Date(now.toDateString() + ' ' + prayerTimes[prayer]);
+            const prayerTime = new Date(`${now.toDateString()} ${prayerTimes[prayer]}`);
             if (prayerTime > now) {
                 nextPrayer = prayer;
                 nextPrayerTime = prayerTime;
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Als er geen volgende gebed is, ga naar de eerste op de volgende dag
             const tomorrow = new Date(now);
             tomorrow.setDate(tomorrow.getDate() + 1);
-            nextPrayerTime = new Date(tomorrow.toDateString() + ' ' + prayerTimes.Fajr);
+            nextPrayerTime = new Date(`${tomorrow.toDateString()} ${prayerTimes.Fajr}`);
             nextPrayer = 'Fajr';
         }
 
@@ -36,22 +36,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Countdown functie
     function updateCountdown() {
-        const { nextPrayer, nextPrayerTime } = getNextPrayer();
+        const { nextPrayerTime } = getNextPrayer();
         const now = new Date();
         const timeDiff = nextPrayerTime - now;
 
-        if (timeDiff > 0) {
-            const hours = Math.floor((timeDiff / 1000 / 60 / 60) % 24);
-            const minutes = Math.floor((timeDiff / 1000 / 60) % 60);
-            const seconds = Math.floor((timeDiff / 1000) % 60);
-
-            document.getElementById('countdown').innerText = 
-                `${hours}u ${minutes}m ${seconds}s`;
-        } else {
-            document.getElementById('countdown').innerText = 'Gebedstijd!';
+        if (timeDiff <= 0) {
+            document.getElementById('countdown').innerText = '00:00:00';
+            return;
         }
+
+        const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown').innerText = 
+            `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     }
 
-    // Countdown bijwerken elke seconde
-    setInterval(updateCountdown, 1000);
+    setInterval(updateCountdown, 1000); // Update elke seconde
+    updateCountdown(); // Initiele update
 });

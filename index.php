@@ -28,7 +28,10 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     <title>Home - El Houari Foundation</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<<<<<<< Updated upstream
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+=======
+>>>>>>> Stashed changes
 </head>
 
 
@@ -87,7 +90,6 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
         </div>
     </section>
 
-
     <section class="flex-container">
         <section class="text-section">
             <h2 class="section-title">Over El Houari Foundation</h2>
@@ -118,13 +120,17 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
                 <a href="php/project.php">Projecten</a>
                 <a href="php/doneer.php">Doneren</a>
                 <a href="php/agenda.php">Agenda</a>
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
             </div>
             <div class="footer-section footer-legal">
                 <a href="php/privacy.php">Privacy Policy</a>
                 <a href="php/voorwaarden.php">Algemene Voorwaarden</a>
                 <a href="php/missievisie.php">Missie & Visie</a>
                 <a href="php/newsfeed.php">Nieuwsfeed</a>
+<<<<<<< Updated upstream
         </div>
         <div class="footer-section footer-contact">
         <p><a href="tel:+31650405030">Contact: 06-50405030</a></p>
@@ -143,10 +149,28 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
         </div>
 
         <div class="footer-section footer-hadith">
+=======
+            </div>
+            <div class="footer-section footer-contact">
+                <p>Contact: <a href="tel:0650405030">06-50405030</a></p>
+                <p><a href="mailto:info@elhouarifoundation.nl">info@elhouarifoundation.nl</a></p>
+                <p><a href="https://www.elhouarifoundation.nl" target="_blank">www.elhouarifoundation.nl</a></p>
+            </div>
+            <div class="footer-section footer-prayer-times">
+                <p>Fajr: <span id="fajr-time"><?php echo $fajr; ?></span></p>
+                <p>Dhuhr: <span id="dhuhr-time"><?php echo $dhuhr; ?></span></p>
+                <p>Asr: <span id="asr-time"><?php echo $asr; ?></span></p>
+                <p>Maghrib: <span id="maghrib-time"><?php echo $maghrib; ?></span></p>
+                <p>Isha: <span id="isha-time"><?php echo $isha; ?></span></p>
+                <p>Volgende gebed in: <span id="countdown"></span></p>
+            </div>
+            <div class="footer-section footer-hadith">
+>>>>>>> Stashed changes
                 <blockquote>
                     “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.”
                     <cite>(Muslim, Iman, 93; Tirmidhī, Sifaat al-Qiyāma, 56.)</cite>
                 </blockquote>
+<<<<<<< Updated upstream
         </div>
 
         <div class="footer-section footer-socials">
@@ -170,6 +194,27 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 </footer>
 
 
+=======
+            </div>
+            <div class="footer-section footer-socials">
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram social-icon"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <i class="fab fa-tiktok social-icon"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <i class="fab fa-youtube social-icon"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook social-icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Elhouari Foundation. All rights reserved.</p>
+        </div>
+>>>>>>> Stashed changes
     </footer>
 
     <!-- Back to Top Button -->
@@ -178,66 +223,65 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     <script src="js/hamburgerMenu.js"></script>
     <script src="js/scrollToTop.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Gebedstijden ophalen uit de HTML
-            const prayerTimes = {
-                Fajr: document.getElementById('fajr-time').innerText,
-                Dhuhr: document.getElementById('dhuhr-time').innerText,
-                Asr: document.getElementById('asr-time').innerText,
-                Maghrib: document.getElementById('maghrib-time').innerText,
-                Isha: document.getElementById('isha-time').innerText
-            };
+    document.addEventListener('DOMContentLoaded', function () {
+        // Gebedstijden ophalen uit de HTML
+        const prayerTimes = {
+            Fajr: document.getElementById('fajr-time').innerText,
+            Dhuhr: document.getElementById('dhuhr-time').innerText,
+            Asr: document.getElementById('asr-time').innerText,
+            Maghrib: document.getElementById('maghrib-time').innerText,
+            Isha: document.getElementById('isha-time').innerText
+        };
 
-            // Functie om de volgende gebedstijd te berekenen
-            function getNextPrayer() {
-                const now = new Date();
-                let nextPrayer = null;
-                let nextPrayerTime = null;
+        // Functie om de volgende gebedstijd te berekenen
+        function getNextPrayer() {
+            const now = new Date();
+            let nextPrayer = null;
+            let nextPrayerTime = null;
 
-                for (const prayer in prayerTimes) {
-                    const prayerTime = new Date(now.toDateString() + ' ' + prayerTimes[prayer]);
-                    if (prayerTime > now) {
-                        nextPrayer = prayer;
-                        nextPrayerTime = prayerTime;
-                        break;
-                    }
-                }
-
-                if (!nextPrayer) {
-                    const tomorrow = new Date(now);
-                    tomorrow.setDate(tomorrow.getDate() + 1);
-                    nextPrayerTime = new Date(tomorrow.toDateString() + ' ' + prayerTimes.Fajr);
-                    nextPrayer = 'Fajr';
-                }
-
-                return {
-                    nextPrayer,
-                    nextPrayerTime
-                };
-            }
-
-            // Countdown functie
-            function updateCountdown() {
-                const {
-                    nextPrayer,
-                    nextPrayerTime
-                } = getNextPrayer();
-                const now = new Date();
-                const timeDiff = nextPrayerTime - now;
-
-                if (timeDiff > 0) {
-                    const hours = Math.floor((timeDiff / 1000 / 60 / 60) % 24);
-                    const minutes = Math.floor((timeDiff / 1000 / 60) % 60);
-                    const seconds = Math.floor((timeDiff / 1000) % 60);
-                    document.getElementById('countdown').innerText = `${hours} uur, ${minutes} min, ${seconds} sec tot ${nextPrayer}`;
-                } else {
-                    document.getElementById('countdown').innerText = 'Gebedstijd';
+            for (const prayer in prayerTimes) {
+                const prayerTime = new Date(`${now.toDateString()} ${prayerTimes[prayer]}`);
+                if (prayerTime > now) {
+                    nextPrayer = prayer;
+                    nextPrayerTime = prayerTime;
+                    break;
                 }
             }
 
-            // Elke seconde updaten
-            setInterval(updateCountdown, 1000);
-        });
+            if (!nextPrayer) {
+                // Als er geen volgende gebed is, ga naar de eerste op de volgende dag
+                const tomorrow = new Date(now);
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                nextPrayerTime = new Date(`${tomorrow.toDateString()} ${prayerTimes.Fajr}`);
+                nextPrayer = 'Fajr';
+            }
+
+            return { nextPrayer, nextPrayerTime };
+        }
+
+        // Countdown functie
+        function updateCountdown() {
+            const { nextPrayerTime } = getNextPrayer();
+            const now = new Date();a
+            const timeDiff = nextPrayerTime - now;
+
+            if (timeDiff <= 0) {
+                document.getElementById('countdown').innerText = '00:00:00';
+                return;
+            }
+
+            const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerText = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        setInterval(updateCountdown, 1000); // Update elke seconde
+        updateCountdown(); // Initiele update
+    });
     </script>
 </body>
+
 </html>

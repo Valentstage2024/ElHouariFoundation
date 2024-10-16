@@ -19,8 +19,9 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     $isha = "N/A";
 }
 
-
-echo '<footer>
+// Footer HTML met gebedstijden
+echo '
+<footer>
     <div class="footer-container">
         <div class="footer-section footer-logo">
             <img id="a-imgfooter" src="../img/logo.png" alt="Elhouari Foundation Logo">
@@ -30,7 +31,6 @@ echo '<footer>
             <a href="../php/project.php">Projecten</a>
             <a href="../php/doneer.php">Doneren</a>
             <a href="../php/agenda.php">Agenda</a>
-            
         </div>
         <div class="footer-section footer-legal">
             <a href="../php/privacy.php">Privacy Policy</a>
@@ -38,12 +38,11 @@ echo '<footer>
             <a href="../php/missievisie.php">Missie & Visie</a>
             <a href="../php/newsfeed.php">Nieuwsfeed</a>
         </div>
-<div class="footer-section footer-contact">
-    <p><a href="tel:+31650405030">Contact: 06-50405030</a></p>
-    <p><a href="mailto:info@elhouarifoundation.nl">info@elhouarifoundation.nl</a></p>
-    <p><a href="https://www.elhouarifoundation.nl" target="_blank">www.elhouarifoundation.nl</a></p>
-</div>
-
+        <div class="footer-section footer-contact">
+            <p>Contact: <a href="tel:+31650405030">06-50405030</a></p>
+            <p><a href="mailto:info@elhouarifoundation.nl">info@elhouarifoundation.nl</a></p>
+            <p><a href="https://www.elhouarifoundation.nl" target="_blank">www.elhouarifoundation.nl</a></p>
+        </div>
         <div class="footer-section footer-prayer-times">
             <p>Fajr: ' . $fajr . '</p>
             <p>Dhuhr: ' . $dhuhr . '</p>
@@ -54,29 +53,18 @@ echo '<footer>
         </div>
         <div class="footer-section footer-hadith">
             <blockquote>
-                “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.” 
+                “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.”
                 <cite>(Muslim, Iman, 93; Tirmidhī, Sifaat al-Qiyāma, 56.)</cite>
             </blockquote>
         </div>
         <div class="footer-section footer-socials">
-            <a href="https://www.instagram.com" target="_blank">
-            <i class="fab fa-instagram social-icon"></i>
-            </a>
-            <a href="https://www.tiktok.com" target="_blank">
-            <i class="fab fa-tiktok social-icon"></i>
-            </a>
-            <a href="https://www.youtube.com" target="_blank">
-            <i class="fab fa-youtube social-icon"></i>
-            </a>
-            <a href="https://www.facebook.com" target="_blank">
-            <i class="fab fa-facebook social-icon"></i>
-            </a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram social-icon"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok social-icon"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube social-icon"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook social-icon"></i></a>
         </div>
     </div>
     <div class="footer-copyright">
         <p>&copy; 2024 Elhouari Foundation. All rights reserved.</p>
-    </div>
+    </div
 </footer>';
-?>
-
-<script src="../js/gebedstijden.js"></script>
