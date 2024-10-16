@@ -33,9 +33,13 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 
 
 <body>
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 <header>
     <div class="logo">
-        <a href="php/login.php">
+        <a href="index.php">
             <img src="img/logo.png" alt="Logo" class="logo">
         </a>
     </div>

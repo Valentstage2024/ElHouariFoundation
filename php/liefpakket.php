@@ -25,7 +25,9 @@
             </div>
 
             <div class="sponsor-section">
-                <h2>Samenwerkingspartners</h2>
+                <h2>Samenwerkingspartners:</h2>
+                <br>
+                <br>
                 <ul class="sponsor-list">
                     <li>
                         <a href="https://www.stichtingrizq.nl/" target="_blank">

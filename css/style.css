@@ -516,6 +516,7 @@ body {
     box-sizing: border-box;
     /* Zorgt ervoor dat padding en borders binnen de breedte blijven */
     text-align: center;
+    transition: transform 0.5s ease;
 }
 
 .news-item img {
@@ -523,6 +524,10 @@ body {
     /* Zorgt ervoor dat de afbeelding responsief blijft */
     height: auto;
     border-radius: 5px;
+}
+
+.news-item:hover {
+    transform: translateY(-30px);
 }
 
 /* Stijl voor de button */
@@ -564,6 +569,15 @@ body {
 .newsletter-section {
     padding: 40px;
     text-align: center;
+}
+
+
+.newsletter-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .newsletter-section h2 {
@@ -2917,6 +2931,13 @@ h3 {
 .sponsor-list {
     list-style: none;
     padding: 0;
+    transition: transform 0.5s ease;
+    box-shadow: #333;
+}
+
+.sponsor-list:hover {
+    transform: scale(1.05);
+    box-shadow: #333;
 }
 
 .sponsor-list li {

@@ -26,7 +26,9 @@
         <img src="https://images.gofundme.com/o6la6u9oj-YohGO5E-L3c1_ZqZI=/1200x900/https://d2g8igdw686xgo.cloudfront.net/79224099_1711886119835859_r.png" alt="Project 1 Image" class="detail-image">
 
         <div class="sponsor-section">
-            <h2>Samenwerkingspartners</h2>
+            <h2>Samenwerkingspartners:</h2>
+            <br>
+            <br>
             <ul class="sponsor-list">
                 <li>
                     <a href="https://ontwikkelcentrumdewereld.nl/" target="_blank">
