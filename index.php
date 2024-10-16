@@ -199,7 +199,11 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
                     const hours = Math.floor((timeDiff / 1000 / 60 / 60) % 24);
                     const minutes = Math.floor((timeDiff / 1000 / 60) % 60);
                     const seconds = Math.floor((timeDiff / 1000) % 60);
+<<<<<<< Updated upstream
                     document.getElementById('countdown').innerText = `${hours} uur, ${minutes} min, ${seconds} sec tot ${nextPrayer}`;
+=======
+                    document.getElementById('countdown').innerText = ${hours} uur, ${minutes} min, ${seconds} sec tot ${nextPrayer};
+>>>>>>> Stashed changes
                 } else {
                     document.getElementById('countdown').innerText = 'Gebedstijd';
                 }
@@ -210,4 +214,9 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
         });
     </script>
 </body>
+<<<<<<< Updated upstream
 </html>
+=======
+
+</html>
+>>>>>>> Stashed changes
