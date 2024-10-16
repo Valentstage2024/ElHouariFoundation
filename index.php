@@ -28,37 +28,11 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     <title>Home - El Houari Foundation</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<<<<<<< Updated upstream
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-=======
->>>>>>> Stashed changes
 </head>
 
 
 <body>
-
-<<<<<<< Updated upstream
-    <header>
-        <div class="logo">
-            <a href="index.php">
-                <img src="img/logo.png" alt="Logo" class="logo">
-            </a>
-        </div>
-        <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="php/newsfeed.php">Nieuws</a></li>
-                <li><a href="php/project.php">Projecten</a></li>
-                <li><a href="php/aboutus.php">Over ons</a></li>
-                <li><a href="php/agenda.php">Agenda</a></li>
-                <li><a href="php/koran.php">Koran</a></li>
-                <li><a href="php/doneer.php">Doneer</a></li>
-                <li><a href="php/contact.php">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-=======
 <header>
     <div class="logo">
         <a href="php/login.php">
@@ -80,7 +54,6 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     </nav>
 </header>
 
->>>>>>> Stashed changes
 
     <!-- Hero Section -->
     <section class="hero">
@@ -120,17 +93,12 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
                 <a href="php/project.php">Projecten</a>
                 <a href="php/doneer.php">Doneren</a>
                 <a href="php/agenda.php">Agenda</a>
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
             </div>
             <div class="footer-section footer-legal">
                 <a href="php/privacy.php">Privacy Policy</a>
                 <a href="php/voorwaarden.php">Algemene Voorwaarden</a>
                 <a href="php/missievisie.php">Missie & Visie</a>
                 <a href="php/newsfeed.php">Nieuwsfeed</a>
-<<<<<<< Updated upstream
         </div>
         <div class="footer-section footer-contact">
         <p><a href="tel:+31650405030">Contact: 06-50405030</a></p>
@@ -139,38 +107,20 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
         </div>
 
         <div class="footer-section footer-prayer-times">
-        
-            <p>Fajr: <span id="fajr-time"></span></p>
-            <p>Dhuhr: <span id="dhuhr-time"></span></p>
-            <p>Asr: <span id="asr-time"></span></p>
-            <p>Maghrib: <span id="maghrib-time"></span></p>
-            <p>Isha: <span id="isha-time"></span></p>
-            <p>Volgende gebed in: <span id="countdown"></span></p>
-        </div>
+    <p>Fajr: <span id="fajr-time"><?php echo $fajr; ?></span></p>
+    <p>Dhuhr: <span id="dhuhr-time"><?php echo $dhuhr; ?></span></p>
+    <p>Asr: <span id="asr-time"><?php echo $asr; ?></span></p>
+    <p>Maghrib: <span id="maghrib-time"><?php echo $maghrib; ?></span></p>
+    <p>Isha: <span id="isha-time"><?php echo $isha; ?></span></p>
+    <p>Volgende gebed in: <span id="countdown"></span></p>
+</div>
+
 
         <div class="footer-section footer-hadith">
-=======
-            </div>
-            <div class="footer-section footer-contact">
-                <p>Contact: <a href="tel:0650405030">06-50405030</a></p>
-                <p><a href="mailto:info@elhouarifoundation.nl">info@elhouarifoundation.nl</a></p>
-                <p><a href="https://www.elhouarifoundation.nl" target="_blank">www.elhouarifoundation.nl</a></p>
-            </div>
-            <div class="footer-section footer-prayer-times">
-                <p>Fajr: <span id="fajr-time"><?php echo $fajr; ?></span></p>
-                <p>Dhuhr: <span id="dhuhr-time"><?php echo $dhuhr; ?></span></p>
-                <p>Asr: <span id="asr-time"><?php echo $asr; ?></span></p>
-                <p>Maghrib: <span id="maghrib-time"><?php echo $maghrib; ?></span></p>
-                <p>Isha: <span id="isha-time"><?php echo $isha; ?></span></p>
-                <p>Volgende gebed in: <span id="countdown"></span></p>
-            </div>
-            <div class="footer-section footer-hadith">
->>>>>>> Stashed changes
                 <blockquote>
                     “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.”
                     <cite>(Muslim, Iman, 93; Tirmidhī, Sifaat al-Qiyāma, 56.)</cite>
                 </blockquote>
-<<<<<<< Updated upstream
         </div>
 
         <div class="footer-section footer-socials">
@@ -194,27 +144,6 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 </footer>
 
 
-=======
-            </div>
-            <div class="footer-section footer-socials">
-                <a href="https://www.instagram.com" target="_blank">
-                    <i class="fab fa-instagram social-icon"></i>
-                </a>
-                <a href="https://www.tiktok.com" target="_blank">
-                    <i class="fab fa-tiktok social-icon"></i>
-                </a>
-                <a href="https://www.youtube.com" target="_blank">
-                    <i class="fab fa-youtube social-icon"></i>
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <i class="fab fa-facebook social-icon"></i>
-                </a>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2024 Elhouari Foundation. All rights reserved.</p>
-        </div>
->>>>>>> Stashed changes
     </footer>
 
     <!-- Back to Top Button -->
