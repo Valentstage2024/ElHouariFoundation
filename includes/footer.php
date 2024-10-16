@@ -38,11 +38,12 @@ echo '<footer>
             <a href="../php/missievisie.php">Missie & Visie</a>
             <a href="../php/newsfeed.php">Nieuwsfeed</a>
         </div>
-        <div class="footer-section footer-contact">
-            <p>Contact: 06-50405030</p>
-            <p>info@elhouarifoundation.nl</p>
-            <p>www.elhouarifoundation.nl</p>
-        </div>
+<div class="footer-section footer-contact">
+    <p><a href="tel:+31650405030">Contact: 06-50405030</a></p>
+    <p><a href="mailto:info@elhouarifoundation.nl">info@elhouarifoundation.nl</a></p>
+    <p><a href="https://www.elhouarifoundation.nl" target="_blank">www.elhouarifoundation.nl</a></p>
+</div>
+
         <div class="footer-section footer-prayer-times">
             <p>Fajr: ' . $fajr . '</p>
             <p>Dhuhr: ' . $dhuhr . '</p>
