@@ -1,7 +1,8 @@
 <?php
 echo '<header>
     <div class="logo">
-        <a href="login.php">
+        <a href="
+        .php">
             <img src="../img/logo.png" alt="Logo" class="logo">
         </a>
     </div>
