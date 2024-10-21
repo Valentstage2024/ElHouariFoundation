@@ -22,7 +22,7 @@
             <p>blijf op de hoogte van het nieuws</p>
         </div>
     </section>
-  
+    <!-- Einde Hero Sectie -->
 
     <main>
         <div class="news-feed" id="news-feed">
@@ -44,14 +44,7 @@
                 <p>We zijn bezig met een nieuw educatief project voor kinderen in Marokko.</p>
             </div>
 
-            <!-- Nieuwsitem 3 -->
-            <div class="news-item">
-                <a href="news3.php">
-                    <img src="../img/voetbal.png" class="news-img" alt="Afbeelding van voedselhulp">
-                </a>
-                <h3>Voedselhulp in de Winter</h3>
-                <p>Onze organisatie verstrekt voedselpakketten aan behoeftigen in de winterperiode.</p>
-            </div>
+       
         </div>
     </main>
 

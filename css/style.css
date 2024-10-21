@@ -1976,18 +1976,6 @@ p {
     background-color: #0056b3;
 }
 
-/* Responsiviteit voor kleinere schermen */
-@media (max-width: 768px) {
-    .news-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .pagination span {
-        display: block;
-        margin-top: 10px;
-    }
-}
 
 
 .terug-button {
@@ -3167,29 +3155,6 @@ h3 {
     }
 }
 
-/* Media query voor nog kleinere schermen, bijvoorbeeld telefoons kleiner dan 480px */
-@media (max-width: 480px) {
-    .projects-section h2 {
-        margin-left: 40px;
-        /* Nog meer naar rechts op zeer kleine schermen */
-    }
-}
-.news-item {
-    position: relative; /* Zorgt ervoor dat de items in positie kunnen worden aangepast */
-    overflow: hidden; /* Zorgt ervoor dat elementen die buiten de grenzen vallen niet zichtbaar zijn */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Voegt een transitie-effect toe */
-}
-
-.news-item:hover {
-    transform: translateY(-5px); /* Tilt het item een beetje omhoog */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Voegt een schaduw toe voor diepte-effect */
-}
-
-.news-img {
-    width: 100%; /* Zorgt ervoor dat de afbeelding responsief is */
-    height: auto; /* Behoudt de aspect ratio van de afbeelding */
-}
-
 
 
 
@@ -3294,4 +3259,41 @@ h3 {
 .news-item img {
     width: 100%;
     height: auto;
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+}
+
+.news-item {
+    text-align: center;
+}
+.news1-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.news1-wrapper {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.news1-content {
+    max-width: 600px;
+}
+
+.news1-image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.news1-img {
+    width: 500px; /* Stel de breedte van de afbeelding in */
+    height: auto; /* Houd de verhoudingen van de afbeelding correct */
+    max-width: 100%; /* Zorg dat de afbeelding niet groter wordt dan zijn container */
+    border-radius: 10px; /* Optioneel: voeg afgeronde hoeken toe */
 }
