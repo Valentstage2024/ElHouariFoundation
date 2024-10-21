@@ -11,8 +11,16 @@
 </head>
 
 <body>
+    
 
     <?php include_once '../includes/header.php'; ?>
+    <section class="heropagina">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h2>Donatie</h2>
+            <p> Elke donatie helpt ons om essentiële hulp te bieden.   </p>
+        </div>
+    </section>
 
 
     <div class="donatie-achtergrond">

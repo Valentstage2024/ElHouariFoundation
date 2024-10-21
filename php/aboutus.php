@@ -13,7 +13,13 @@
 <body>
 
     <?php include_once '../includes/header.php'; ?>
-
+    <section class="heropagina">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h2>Over ons</h2>
+            <p>Lees hier ons verhaal.</p>
+        </div>
+    </section>
 
     <div class="a-container">
         <div class="a-aboutTitle">Wie zijn wij
@@ -33,7 +39,7 @@
 
             <div class="a-testoTitle">Dankwoord
                 <div class="a-testoText">Wij willen iedereen bedanken die de stichting mogelijk maakt omwille van Allah. <br>
-                    <div class="a-aboutusEnd">Amin el Houari (11 jaar oud) en Abdelouahed el Houari (28 jaar oud)</div>
+                    <div class="a-aboutusEnd"> Familie el Houari</div>
                     <br>
                     <br>
                     <br>

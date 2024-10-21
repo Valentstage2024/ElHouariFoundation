@@ -14,53 +14,52 @@
 
     <?php include_once '../includes/header.php'; ?>
 
-
+    <!-- Begin Hero Sectie -->
+    <section class="heropagina">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h2>Nieuwsfeed </h2>
+            <p>blijf op de hoogte van het nieuws</p>
+        </div>
+    </section>
   
-<main>
 
-        
-            
-            <div class="news-feed" id="news-feed">
-            <div class="news-feed" id="news-feed">
-    <!-- Nieuwsitem 1 -->
-    <div class="news-item">
-        <a href="news1.php">
-            <img src="../img/voetbal.png" class="news-img" alt="Afbeelding van voetbalproject">
-        </a>
-        <h3>Arme Gezinnen Helpen in Marokko</h3>
-        <p>Samen met Dar Al Ousra bieden we ondersteuning aan kwetsbare gezinnen in Marokko.</p>
-    </div>
-
-    <!-- Nieuwsitem 2 -->
-    <div class="news-item">
-        <a href="news2.php">
-            <img src="../img/voetbal.png" class="news-img" alt="Afbeelding van educatief project">
-        </a>
-        <h3>Project Voor Educatie</h3>
-        <p>We zijn bezig met een nieuw educatief project voor kinderen in Marokko.</p>
-    </div>
-
-    <!-- Nieuwsitem 3 -->
-    <div class="news-item">
-        <a href="news3.php">
-            <img src="../img/voetbal.png" class="news-img" alt="Afbeelding van voedselhulp">
-        </a>
-        <h3>Voedselhulp in de Winter</h3>
-        <p>Onze organisatie verstrekt voedselpakketten aan behoeftigen in de winterperiode.</p>
-    </div>
-</div>
-
+    <main>
+        <div class="news-feed" id="news-feed">
+            <!-- Nieuwsitem 1 -->
+            <div class="news-item">
+                <a href="news1.php">
+                    <img src="../img/voetbal.png" class="news-img" alt="Afbeelding van voetbalproject">
+                </a>
+                <h3>Arme Gezinnen Helpen in Marokko</h3>
+                <p>Samen met Dar Al Ousra bieden we ondersteuning aan kwetsbare gezinnen in Marokko.</p>
             </div>
-        </section>
-    </main>
 
+            <!-- Nieuwsitem 2 -->
+            <div class="news-item">
+                <a href="news2.php">
+                    <img src="../img/voetbal.png" class="news-img" alt="Afbeelding van educatief project">
+                </a>
+                <h3>Project Voor Educatie</h3>
+                <p>We zijn bezig met een nieuw educatief project voor kinderen in Marokko.</p>
+            </div>
+
+            <!-- Nieuwsitem 3 -->
+            <div class="news-item">
+                <a href="news3.php">
+                    <img src="../img/voetbal.png" class="news-img" alt="Afbeelding van voedselhulp">
+                </a>
+                <h3>Voedselhulp in de Winter</h3>
+                <p>Onze organisatie verstrekt voedselpakketten aan behoeftigen in de winterperiode.</p>
+            </div>
+        </div>
+    </main>
 
     <?php include_once '../includes/footer.php'; ?>
 
     <button id="backToTop">naar boven</button>
 
     <script src="../js/scrollToTop.js"></script>
-
 
 </body>
 

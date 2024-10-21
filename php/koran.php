@@ -15,7 +15,17 @@
 
     <?php include_once '../includes/header.php'; ?>
 
-   
+       <!-- Hero section -->
+       <section class="heropagina">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h2>Koran</h2>
+            <p>Kom hier even tot rust, luister of lees koranvers</p>
+        </div>
+    </section>
+    <br>    
+<br>
+<br>    
      <div class="image-wrapper">
     <img src="https://koran.nl/wp-content/plugins/quran-learning-app/public/app/assets/images/basmala.svg" alt="Beschrijving van de afbeelding">
 </div>

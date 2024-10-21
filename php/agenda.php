@@ -41,14 +41,22 @@ foreach ($events as $index => $event) {
 <body class="agenda-body">
 
     <?php include_once '../includes/header.php'; ?>
-<br>
-<br>
-<br>
 
 
+
+
+  
+
+<section class="heropagina">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h2>Agenda</h2>
+            <p>Blijf op de hoogte van onze evenementen</p>
+        </div>
+    </section>
 
     <section class="agenda">
-        <h2>Agenda</h2>
+     
         <div class="event-container">
             <h3 id="event-title"></h3>
             <p id="event-description"></p>

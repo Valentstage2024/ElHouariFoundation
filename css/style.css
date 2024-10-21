@@ -3240,5 +3240,58 @@ h3 {
     }
 }
 
+.heropagina {
+    width: 100vw; /* Full width of the viewport */
+    height: 60vh; /* Verminder de hoogte naar 60% van de viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://static.vecteezy.com/ti/gratis-vector/p1/22379987-groen-en-goud-luxe-mandala-achtergrond-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
 
+/* Overlay voor verduistering */
+.heropagina::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(5, 28, 2, 0.24);
+    z-index: -1;
+}
 
+.heropagina h2 {
+    font-size: 40px; /* Kleinere fontgrootte */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.heropagina p {
+    font-size: 18px; /* Kleinere fontgrootte */
+    max-width: 600px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px; /* Kleinere fontgrootte */
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
