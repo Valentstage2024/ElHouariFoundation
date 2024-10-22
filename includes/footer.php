@@ -80,3 +80,4 @@ echo "
         </div>
 </footer>";
 ?>
+<script src="../js/gebedstijden. js"></script>

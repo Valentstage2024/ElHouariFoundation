@@ -38,10 +38,11 @@
             <!-- Nieuwsitem 2 -->
             <div class="news-item">
                 <a href="news2.php">
-                    <img src="../img/voetbal.png" class="news-img" alt="Afbeelding van educatief project">
+             <img src="../img/samenwerkingbibin.jpg" class="news-img" alt="Afbeelding van educatief project" style="width: 330px; height: auto;">
+
                 </a>
-                <h3>Project Voor Educatie</h3>
-                <p>We zijn bezig met een nieuw educatief project voor kinderen in Marokko.</p>
+                <h3>Samenwerking BIBIN</h3>
+                <p>Onze samenwerking stelt ons in staat om gezamenlijke oplossingen voor de mensheid.</p>
             </div>
 
        

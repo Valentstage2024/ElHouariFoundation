@@ -61,22 +61,22 @@
             </div>
 
             <div class="contact-form">
-    <h2>Heb je een vraag?</h2>
-    <p>Als je vragen hebt over onze projecten, evenementen of hoe je ons kunt steunen, kun je via het
-        onderstaande formulier contact met ons opnemen. We beantwoorden je vraag graag zo snel mogelijk!</p>
+                <h2>Heb je een vraag?</h2>
+                <p>Als je vragen hebt over onze projecten, evenementen of hoe je ons kunt steunen, kun je via het
+                    onderstaande formulier contact met ons opnemen. We beantwoorden je vraag graag zo snel mogelijk!</p>
 
-    <form action="/submit_form" method="POST">
-        <input type="text" name="first_name" placeholder="Voornaam" required>
-        <input type="text" name="last_name" placeholder="Achternaam" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Telefoonnummer" required>
-        <textarea name="message" rows="5" placeholder="Je vraag" required></textarea>
-        <button type="submit">Verstuur vraag</button>
-    </form>
-</div>
+                <form action="mailto:stagevalent2024@gmail.com" method="POST" enctype="text/plain">
+                    <input type="text" name="first_name" placeholder="Voornaam" required>
+                    <input type="text" name="last_name" placeholder="Achternaam" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Telefoonnummer" required>
+                    <textarea name="message" rows="5" placeholder="Je vraag" required></textarea>
+                    <button type="submit">Verstuur vraag</button>
+                </form>
+            </div>
 
+        </div>
     </main>
-
 
     <?php include_once '../includes/footer.php'; ?>
 

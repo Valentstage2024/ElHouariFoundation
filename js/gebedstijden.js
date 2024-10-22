@@ -15,7 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
         let nextPrayerTime = null;
 
         for (const prayer in prayerTimes) {
-            const prayerTime = new Date(`${now.toDateString()} ${prayerTimes[prayer]}`);
+            // Tijd opsplitsen in uren en minuten
+            const [hours, minutes] = prayerTimes[prayer].split(':').map(Number);
+            const prayerTime = new Date(now);
+            prayerTime.setHours(hours, minutes, 0, 0); // Zet het juiste tijdstip
+
             if (prayerTime > now) {
                 nextPrayer = prayer;
                 nextPrayerTime = prayerTime;
@@ -27,7 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
             // Als er geen volgende gebed is, ga naar de eerste op de volgende dag
             const tomorrow = new Date(now);
             tomorrow.setDate(tomorrow.getDate() + 1);
-            nextPrayerTime = new Date(`${tomorrow.toDateString()} ${prayerTimes.Fajr}`);
+            const [hours, minutes] = prayerTimes.Fajr.split(':').map(Number);
+            nextPrayerTime = new Date(tomorrow);
+            nextPrayerTime.setHours(hours, minutes, 0, 0);
             nextPrayer = 'Fajr';
         }
 
