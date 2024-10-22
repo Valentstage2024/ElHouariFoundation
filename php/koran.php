@@ -29,7 +29,7 @@
      <div class="image-wrapper">
     <img src="https://koran.nl/wp-content/plugins/quran-learning-app/public/app/assets/images/basmala.svg" alt="Beschrijving van de afbeelding">
 </div>
-   </di>
+   </div>
 
 
     

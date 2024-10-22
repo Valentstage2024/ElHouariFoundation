@@ -3298,3 +3298,120 @@ h3 {
     border-radius: 10px; /* Optioneel: voeg afgeronde hoeken toe */
 }
     
+
+/* Media query voor kleinere schermen */
+@media (max-width: 600px) {
+    .news-feed {
+        flex-direction: column; /* Stapel de nieuwsitems onder elkaar */
+        align-items: center; /* Centreer de items in de container */
+    }
+
+    .news-item {
+        width: 90%; /* Geef de nieuwsitems een breedte van 90% van de container */
+        margin: 10px 0; /* Zorg voor ruimte tussen de items */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Pas de titelgrootte aan voor betere leesbaarheid */
+        text-align: center; /* Centreer de titel */
+    }
+
+    p {
+        font-size: 1rem; /* Pas de tekstgrootte aan voor betere leesbaarheid */
+        text-align: center; /* Centreer de tekst */
+    }
+}
+
+/* Media query voor kleinere schermen */
+@media (max-width: 600px) {
+    .a-container {
+        padding: 10px; /* Verminder padding voor kleine schermen */
+    }
+
+    .a-aboutTitle, .a-standTitle, .a-testoTitle {
+        font-size: 2.3rem; /* Kleinere titelgrootte voor mobiele apparaten */
+    }
+
+    .a-aboutsubTitle, .a-standText, .a-testoText {
+        font-size: 1rem; /* Kleinere tekstgrootte voor mobiele apparaten */
+    }
+
+    .a-kopjeoverons, .a-aboutusEnd {
+        font-weight: bold; /* Maak deze tekst vetgedrukt */
+        text-align: center; /* Centreer de tekst */
+    }
+}
+/* Responsieve stijlen voor kleinere schermen */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5rem; /* Kleinere tekstgrootte voor de hoofdsectie */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Kleinere tekstgrootte voor subkoppen */
+    }
+
+    .sura p {
+        font-size: 0.9rem; /* Kleinere tekstgrootte voor paragraafinhoud */
+    }
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .image-wrapper img {
+        max-width: 300px; /* Adjust maximum width for smaller screens */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .heropagina {
+        height: 200px; /* Decrease height on smaller screens */
+    }
+
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .donatie--1, .donatie--2, .donatie--3 {
+        max-width: 90%; /* Allow more width on smaller devices */
+        padding: 8px; /* Slightly reduce padding */
+    }
+
+    .doneer {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align the elements */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    .donatie--1, .donatie--2, .donatie--3 {
+        max-width: 100%; /* Use full width on mobile */
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .radio-buttons {
+        flex-direction: column; /* Stack radio buttons vertically on mobile */
+        align-items: center; /* Center align buttons */
+    }
+
+    button {
+        width: 100%; /* Full width for the button */
+        padding: 12px; /* Add padding for easier clicking */
+        font-size: 16px; /* Increase font size for better readability */
+    }
+
+    aside {
+        text-align: center; /* Center align aside content */
+        margin-top: 15px; /* Add space above the aside section */
+    }
+}
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .donation-form input {
+        width: 100%; /* Use full width on mobile */
+        max-width: none; /* Remove max width on mobile */
+        padding: 6px; /* Reduce padding for smaller screens */
+        font-size: 12px; /* Further reduce font size */
+    }
+}
