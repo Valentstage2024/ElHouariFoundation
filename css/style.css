@@ -543,24 +543,7 @@ body {
     margin-top: 20px;
 }
 
-.donatie h1 {
-    color: #009688;
-    margin-bottom: 1rem;
-}
 
-.donatie {
-    display: flex;
-    flex-direction: column; /* Zorg ervoor dat de items onder elkaar staan */
-    align-items: center; /* Dit centreert de items horizontaal */
-    color: #555;
-    margin-bottom: 40px;
-}
-
-.donatie p {
-    text-align: center; 
-    margin-bottom: 1rem;
-    color: #555;
-}
 
 
 
@@ -1351,6 +1334,27 @@ select {
     height: 40px;
 }
 
+.donatie h1 {
+    color: #009688;
+    margin-bottom: 1rem;
+}
+
+.donatie {
+    display: flex;
+    flex-direction: column; /* Zorg ervoor dat de items onder elkaar staan */
+    align-items: center; /* Dit centreert de items horizontaal */
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.donatie p {
+    text-align: center; 
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+
+/* contact pagina */
 
 .contact-container {
     display: flex;
@@ -3370,3 +3374,78 @@ h3 {
 
 }
 
+@media (max-width: 768px) {
+    .donatie-container {
+        width: 90%;
+    }
+
+    .doneer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donatie--2,
+    .donatie--3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donatie>form>input,
+    select {
+        width: 100%;
+    }
+
+    .donatie--3>img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .donatie {
+        width: 100%;
+    }
+}
+
+/* Responsieve layout */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        width: 90%; /* Maak de container iets breder voor mobiel */
+        padding: 10px;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%; /* Laat beide blokken 100% van de breedte innemen */
+        margin-bottom: 20px; /* Voeg ruimte toe tussen de blokken */
+    }
+
+    .contact-logo {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-logo {
+        width: 50%;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    .contact-form h2, .contact-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
