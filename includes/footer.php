@@ -27,16 +27,16 @@ echo "
                 <img id='a-imgfooter' src='../img/logo.png' alt='Elhouari Foundation Logo'>
             </div>
             <div class='footer-section footer-legal'>
-                <a href='php/aboutus.php'>Over ons</a>
-                <a href='php/project.php'>Projecten</a>
-                <a href='php/doneer.php'>Doneren</a>
-                <a href='php/agenda.php'>Agenda</a>
+                <a href='aboutus.php'>Over ons</a>
+                <a href='project.php'>Projecten</a>
+                <a href='doneer.php'>Doneren</a>
+                <a href='agenda.php'>Agenda</a>
             </div>
             <div class='footer-section footer-legal'>
-                <a href='php/privacy.php'>Privacy Policy</a>
-                <a href='php/voorwaarden.php'>Algemene Voorwaarden</a>
-                <a href='php/missievisie.php'>Missie & Visie</a>
-                <a href='php/newsfeed.php'>Nieuwsfeed</a>
+                <a href='privacy.php'>Privacy Policy</a>
+                <a href='voorwaarden.php'>Algemene Voorwaarden</a>
+                <a href='missievisie.php'>Missie & Visie</a>
+                <a href='newsfeed.php'>Nieuwsfeed</a>
             </div>
             <div class='footer-section footer-contact'>
                 <p><a href='tel:+31650405030'>Contact: 06-50405030</a></p>

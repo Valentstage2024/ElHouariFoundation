@@ -162,4 +162,39 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     <script src="js/gebedstijden.js"></script>
 </body>
 
+
+
 </html>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const textSection = document.querySelector('.text-section');
+    const flexContainer = document.querySelector('.flex-container');
+
+    const observerOptions = {
+        root: null, // Gebruik de viewport als root
+        rootMargin: '0px',
+        threshold: 0.1 // Trigger de callback als 10% van het element in beeld is
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Voeg animatieklassen toe als het element in beeld komt
+                textSection.classList.add('fade-in-down');
+                flexContainer.classList.add('fade-in-up');
+
+                // Stop met observeren nadat de animaties zijn toegevoegd
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    
+    // Observeer de elementen
+    observer.observe(textSection);
+    observer.observe(flexContainer);
+});
+
+</script>
+
