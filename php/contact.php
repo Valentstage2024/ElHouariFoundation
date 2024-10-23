@@ -34,14 +34,15 @@
                         <li>
                             <i class="fa fa-phone"></i>06-50405030
                         </li>
-                        <li>
-                            <i class="fa fa-envelope"></i>
-                            <a href="mailto:info@elhouarifoundation.nl">info@elhouarifoundation.nl</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-globe"></i>
-                            <a href="http://www.elhouarifoundation.nl">www.elhouarifoundation.nl</a>
-                        </li>
+                        <li class="contact-item">
+    <i class="fa fa-envelope"></i>
+    <a href="mailto:info@elhouarifoundation.nl">info@elhouarifoundation.nl</a>
+</li>
+<li class="contact-item">
+    <i class="fa fa-globe"></i>
+    <a href="http://www.elhouarifoundation.nl">www.elhouarifoundation.nl</a>
+</li>
+
                     </ul>
                     <div class="social-icons">
                         <a href="https://www.tiktok.com" target="_blank">

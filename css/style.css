@@ -1364,14 +1364,14 @@ select {
     margin: auto;
     padding: 20px;
 }
-
+/* Standaard styling voor grotere schermen (naast elkaar) */
 .contact-info,
 .contact-form {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 48%;
+    width: 48%; /* Zorgt ervoor dat de secties naast elkaar staan */
     display: flex;
     flex-direction: column;
 }
@@ -1393,7 +1393,7 @@ select {
 .contact-info h2,
 .contact-form h2 {
     color: #6a9a80;
-    margin-bottom: 15px; /* Ruimte onder de h2 */
+    margin-bottom: 15px;
 }
 
 .contact-info ul {
@@ -1438,7 +1438,7 @@ select {
 }
 
 .contact-form button:hover {
-    background-color: #5a8b6b; /* Bijvoorbeeld een iets donkerdere kleur */
+    background-color: #5a8b6b;
 }
 
 .contact-form form {
@@ -1448,12 +1448,11 @@ select {
 }
 
 .contact-form p {
-    margin-bottom: 20px; /* Ruimte onder de paragraaf */
+    margin-bottom: 20px;
     font-size: 14px;
     color: #555;
     line-height: 1.5;
 }
-
 
 .social-icons {
     margin-top: 15px;
@@ -1466,6 +1465,29 @@ select {
     text-decoration: none;
     transition: color 0.3s;
 }
+
+/* Media query voor kleinere schermen (onder elkaar) */
+@media screen and (max-width: 768px) {
+    .contact-info,
+    .contact-form {
+        width: 100%; /* Secties krijgen volledige breedte */
+        margin-bottom: 20px; /* Ruimte tussen secties */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; /* Zorg ervoor dat ze onder elkaar komen */
+    }
+
+    .contact-info {
+        order: 1; /* Zorg ervoor dat contact-info als eerste komt */
+    }
+
+    .contact-form {
+        order: 2; /* Zorg ervoor dat contact-form onder contact-info komt */
+    }
+}
+
 
 .social-icons a:hover {
     color: #007bff;
@@ -1519,6 +1541,20 @@ select {
     .news-item {
         width: 100%;
         /* Breedte van elk nieuwsitem op heel kleine schermen */
+    }
+}
+/* Responsieve styling voor kleinere schermen */
+@media screen and (max-width: 768px) {
+    .contact-item {
+        font-size: 14px; /* Kleinere tekstgrootte op mobiele apparaten */
+    }
+
+    .contact-item i {
+        font-size: 18px; /* Pas de grootte van de iconen aan */
+    }
+
+    .contact-item a {
+        word-wrap: break-word; /* Zorg ervoor dat lange links netjes afgebroken worden */
     }
 }
 
@@ -3449,3 +3485,54 @@ h3 {
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 10px; /* Reduce padding on small screens */
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%; /* Full width inputs */
+        padding: 8px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Font size for better readability */
+    }
+
+    .contact-form button {
+        padding: 10px 20px; /* Adjust button size for smaller screens */
+        font-size: 14px; /* Smaller button text */
+        width: 100%; /* Full width button */
+    }
+}
+
+/* Media query for even smaller screens (480px) */
+@media (max-width: 480px) {
+    .contact-container {
+        width: 100%; /* Full width container on smallest screens */
+    }
+
+    .contact-logo {
+        width: 40%; /* Further reduce logo size */
+    }
+
+    .contact-form h2, .contact-info h2 {
+        font-size: 1.5rem; /* Adjust font size for headings */
+    }
+
+    .social-icons a {
+        font-size: 1.2rem; /* Adjust social icon size */
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        font-size: 13px; /* Slightly smaller input font size for narrow screens */
+    }
+    
+    .contact-form button {
+        padding: 8px 15px; /* Reduce button size */
+        font-size: 13px; /* Smaller text size */
+    }
+}
+
+
+
