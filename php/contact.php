@@ -56,8 +56,11 @@
                         </a>
                         <a href="https://www.facebook.com" target="_blank">
                             <i class="fab fa-facebook"></i>
+                            
                         </a>
+                        
                     </div>
+                    
                 </div>
             </div>
 
@@ -73,6 +76,7 @@
                     <input type="tel" name="phone" placeholder="Telefoonnummer" required>
                     <textarea name="message" rows="5" placeholder="Je vraag" required></textarea>
                     <button type="submit">Verstuur vraag</button>
+                    
                 </form>
             </div>
 

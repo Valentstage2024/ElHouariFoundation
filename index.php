@@ -55,12 +55,19 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
 </header>
 
 
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
+            
             <h2>El Houari Foundation</h2>
             <p>Bij ons gaat het om geven, delen en helpen.</p>
+            <br>
+            <br>
+            <a href="php/doneer.php" class="donate-button">Doneer Nu</a>
+            
         </div>
+        
     </section>
 
     <section class="flex-container">
@@ -75,6 +82,7 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
             </p>
             <a href="php/aboutus.php" class="read-more-button">Lees ons verhaal</a>
             <a href="php/project.php" class="indexproduct">Onze Projecten</a>
+            
         </section>
 
         <div class="image-container">
