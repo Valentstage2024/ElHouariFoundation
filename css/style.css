@@ -3879,16 +3879,27 @@ input.add-event-edit {
     width: 100%;
     text-align: center;
     font-weight: 800;
-    font-size: 26px; /* Vergrote lettergrootte */
+    font-size: 26px;
     font-family: 'Avenir', sans-serif;
-    padding-bottom: 30px; /* Vergrote padding */
+    padding-bottom: 30px;
     color: #222;
     text-transform: uppercase;
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
     justify-content: space-around;
+    cursor: pointer; /* Zorg dat de muis een handje wordt */
+    transition: transform 0.3s ease; /* Voeg een overgang toe */
 }
+
+.cview__month:hover {
+    color: #ffffff; /* Verander kleur bij hover (optioneel) */
+}
+
+.cview__month.active {
+    transform: translateY(-20px); /* Beweeg het element 20px naar boven */
+}
+
 
 .cview__month-last, .cview__month-next, .cview__month-current {
     width: 33.33333%;
@@ -3999,4 +4010,108 @@ input.add-event-edit {
     cursor: pointer;
     padding: 2px 5px;
     border-bottom: 1px solid #fff;
+}
+@media (max-width: 1024px) {
+    .calendar {
+        width: 90%; /* Maak de kalender smaller */
+        padding: 60px 40px 80px 40px; /* Verminder padding */
+        height: auto; /* Zorg ervoor dat de hoogte dynamisch wordt */
+    }
+
+    .calendar__title {
+        font-size: 28px; /* Pas de titelgrootte aan */
+    }
+
+    .cview__month {
+        font-size: 24px; /* Verklein de maandgrootte */
+    }
+}
+
+@media (max-width: 768px) {
+    .calendar {
+        padding: 40px 20px 60px 20px; /* Nog kleinere padding voor mobiel */
+        width: 100%; /* Gebruik volledige breedte van het scherm */
+        height: auto; /* Zorg ervoor dat de kalender de hoogte aanpast */
+    }
+
+    .calendar__title {
+        font-size: 24px; /* Verklein de titelgrootte voor mobiel */
+    }
+
+    .cview__month {
+        font-size: 20px; /* Verklein de maandgrootte verder */
+        padding-bottom: 20px; /* Pas de padding aan */
+    }
+
+    .cview__month-last, .cview__month-next, .cview__month-current {
+        font-size: 22px; /* Verklein lettergrootte van de maanden */
+        width: 100%; /* Maak maanden 100% breed voor mobiel */
+        text-align: center; /* Zorg voor gecentreerde tekst */
+    }
+
+    .cview--spacer, .cview__header, .cview--date {
+        font-size: 16px; /* Verklein de datumlettergrootte */
+        padding: 10px; /* Verminder de padding */
+        width: 100%; /* Zorg ervoor dat de datums 100% breed zijn */
+    }
+
+    .footer {
+        font-size: 14px; /* Pas de grootte van de footer aan */
+        bottom: 20px; /* Pas de positie van de footer aan */
+    }
+
+    .day-view-content {
+        padding-top: 40px; /* Verminder de padding voor mobiel */
+    }
+
+    .day-highlight, .day-add-event {
+        padding: 12px 16px; /* Verklein de padding voor mobiel */
+        margin: 10px 15px; /* Verklein de marge voor mobiel */
+    }
+
+    .day-inspiration-quote {
+        font-size: 24px; /* Verklein lettergrootte voor citaten */
+        margin-top: -40px; /* Pas de margin aan */
+    }
+
+    .day-view-exit, .day-view-date {
+        font-size: 22px; /* Verklein de lettergrootte */
+        top: 20px; /* Pas de positie aan voor mobiel */
+    }
+
+    .event-btn {
+        width: 80px; /* Maak knoppen smaller */
+        padding: 8px 12px; /* Verminder padding voor knoppen */
+    }
+
+    .add-event-edit {
+        max-width: 90%; /* Verbreed invoervelden voor mobiel */
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar {
+        padding: 20px 10px 40px 10px; /* Nog kleinere padding voor zeer kleine schermen */
+    }
+
+    .calendar__title {
+        font-size: 20px; /* Verklein titel nog verder */
+    }
+
+    .cview__month {
+        font-size: 18px; /* Nog kleinere maandgrootte */
+    }
+
+    .footer {
+        font-size: 12px; /* Verklein de footer nog verder */
+    }
+
+    .day-inspiration-quote {
+        font-size: 20px; /* Verklein de lettergrootte van de citaten verder */
+    }
+
+    .event-btn {
+        width: 60px; /* Nog kleinere knoppen */
+        font-size: 12px; /* Verklein de tekst in knoppen */
+    }
 }
