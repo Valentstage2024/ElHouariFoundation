@@ -79,53 +79,27 @@ foreach ($events as $index => $event) {
             <button onclick="nextEvent()">Volgende</button>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
 
-    <br>
-    <br>
-    <br>
+
+
+
     <div class="calendar" id="calendar-app">
   <div class="calendar--day-view" id="day-view">
     <span class="day-view-exit" id="day-view-exit">&times;</span>
     <span class="day-view-date" id="day-view-date">29 MEI 2016</span>
     <div class="day-view-content">
-      <div class="day-highlight">
-        Je <span class="day-events" id="day-events">had geen evenementen voor vandaag</span>. &nbsp; <span tabindex="0" onkeyup="if(event.keyCode != 13) return; this.click();" class="day-events-link" id="add-event" data-date>Wil je een nieuw evenement toevoegen?</span>
-      </div>
       <div class="day-add-event" id="add-day-event-box" data-active="false">
         <div class="row">
-          <div class="half">
-            <label class="add-event-label">
-               Naam van het evenement
-              <input type="text" class="add-event-edit add-event-edit--long" placeholder="Nieuw evenement" id="input-add-event-name">
-             
-            </label>
-          </div>
           <div class="qtr">
-            <label class="add-event-label">
-          Starttijd
-              <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
-              <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm" data-options="a,p,am,pm">
-            </label>
-          </div>
-          <div class="qtr">
-            <label class="add-event-label">
-          Eindtijd
-              <input type="text" class="add-event-edit" placeholder="9" id="input-add-event-end-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
-              <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm" data-options="a,p,am,pm">
-            </label>
-          </div>
-          <div class="half">
-            <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save" class="event-btn--save event-btn">opslaan</a>
-            <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">annuleren</a>
           </div>
         </div>
         
       </div>
       <div id="day-events-list" class="day-events-list">
         
-      </div>
-      <div class="day-inspiration-quote" id="inspirational-quote">
-        Elk kind is een kunstenaar. Het probleem is hoe kunstenaar te blijven als hij volwassen wordt. –Pablo Picasso
       </div>
     </div>
   </div>
@@ -135,13 +109,13 @@ foreach ($events as $index => $event) {
       <span class="cview__month-current" id="calendar-month">Mei</span>
       <span class="cview__month-next" id="calendar-month-next">Jun</span>
     </div>
-    <div class="cview__header">Zon</div>
-    <div class="cview__header">Maa</div>
-    <div class="cview__header">Din</div>
-    <div class="cview__header">Woe</div>
-    <div class="cview__header">Don</div>
-    <div class="cview__header">Vri</div>
-    <div class="cview__header">Zat</div>
+    <div class="cview__header">Zo</div>
+    <div class="cview__header">Ma</div>
+    <div class="cview__header">Di</div>
+    <div class="cview__header">Wo</div>
+    <div class="cview__header">Do</div>
+    <div class="cview__header">Vr</div>
+    <div class="cview__header">Za</div>
     <div class="calendar--view" id="dates">
     </div>
   </div>
@@ -151,7 +125,7 @@ foreach ($events as $index => $event) {
   <div class="footer">
     
     
-    <span><span id="footer-date" class="footer__link">Vandaag is 30 mei</span></span>
+    <span><span id="footer-date" class="footer__link"> <?php $date = new DateTime(); $formatter = new IntlDateFormatter('nl_NL', IntlDateFormatter::LONG, IntlDateFormatter::NONE); echo "Het is vandaag " . $formatter->format($date); ?></span></span>
 
   </div>
 </div>
@@ -161,7 +135,9 @@ foreach ($events as $index => $event) {
 
     <button id="backToTop">naar boven</button>
     <script src="../js/scrollToTop.js"></script>
+    <script src="../js/fetchEvent.js"></script>
     <script src="../js/kalender.js"></script>
+    
 
 </body>
 

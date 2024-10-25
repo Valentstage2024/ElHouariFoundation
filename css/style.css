@@ -621,7 +621,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: #ffd700;
+    color: #87CEEB;
 }
 
 /* Logo Styling */
@@ -671,9 +671,10 @@ footer {
 .footer-contact p {
     margin: 5px 0;
     
+    
 }
 
-.footer-contact p:hover {
+.footer-contact:hover {
     color: #87CEEB;
 }
 
