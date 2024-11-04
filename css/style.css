@@ -3596,12 +3596,6 @@ h3 {
     }
 }
 
-
-
-
-
-
-
 .calendar {
     color: #fff;
     margin: 20px auto; /* Vergrote marge */
@@ -3902,7 +3896,7 @@ input.add-event-edit {
 }
 
 
-.cview__month-last, .cview__month-next, .cview__month-current {
+.cview_month-last, .cviewmonth-next, .cview_month-current {
     width: 33.33333%;
     text-align: center;
     font-size: 26px; /* Vergrote lettergrootte */
@@ -4044,7 +4038,7 @@ input.add-event-edit {
         padding-bottom: 20px; /* Pas de padding aan */
     }
 
-    .cview__month-last, .cview__month-next, .cview__month-current {
+    .cview_month-last, .cviewmonth-next, .cview_month-current {
         font-size: 22px; /* Verklein lettergrootte van de maanden */
         width: 100%; /* Maak maanden 100% breed voor mobiel */
         text-align: center; /* Zorg voor gecentreerde tekst */
@@ -4116,3 +4110,8 @@ input.add-event-edit {
         font-size: 12px; /* Verklein de tekst in knoppen */
     }
 }
+
+
+
+
+
