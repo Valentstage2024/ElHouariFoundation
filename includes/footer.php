@@ -61,7 +61,7 @@ echo "
             </div>
 
             <div class='footer-section footer-socials'>
-                <a href='https://www.instagram.com' target='_blank'>
+                <a href='https://www.instagram.com/elhouarifoundation/' target='_blank'>
                     <i class='fab fa-instagram social-icon'></i>
                 </a>
                 <a href='https://www.tiktok.com' target='_blank'>
