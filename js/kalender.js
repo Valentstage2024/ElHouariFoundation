@@ -29,27 +29,10 @@ function CalendarApp(date) {
 ];
 
 
-      
-    
-  this.apts = [
-    {
-      name: 'Finish this web app',
-      endTime: new Date(2016, 4, 30, 23),
-      startTime: new Date(2016, 4, 30, 21),
-      day: new Date(2016, 4, 30).toString()
-    },
-     {
-      name: 'My Birthday!',
-      endTime: new Date(2016, 4, 1, 23, 59),
-      startTime: new Date(2016, 4, 1, 0),
-      day: new Date(2016, 4, 1).toString()
-    },
-    
-  ];
   
   this.aptDates = [new Date(2016, 4, 30).toString(),new Date(2016, 4, 1).toString()];
   this.eles = {
-  };
+  };    
   this.calDaySelected = null;
   
   this.calendar = document.getElementById("calendar-app");

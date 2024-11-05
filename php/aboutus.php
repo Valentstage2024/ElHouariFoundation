@@ -14,12 +14,22 @@
 
     <?php include_once '../includes/header.php'; ?>
     <section class="heropagina">
-        <div class="overlay"></div>
-        <div class="hero-text">
-            <h2>Over ons</h2>
-            <p>Lees hier ons verhaal.</p>
+    <div class="overlay"></div>
+    <div class="hero-text">
+        <h2>Over Ons</h2>
+        <img src="../img/theepot.png" alt="Theepot" class="hero-teapot">
+        <div class="hero-sayings">
+            <p>“Wees goed voor een ander”</p>
+            <p>“Alhamdoulilah ten alle tijden”</p>
+            <p>“Alles gebeurt met een reden”</p>
+            <p>“Wees geduldig (heb sabr)”</p>
+            <p>“De glas is half vol, niet half leeg”</p>
+            <p>“Altijd doorgaan wat er ook gebeurt”</p>
+            <p>“Keep your head up”</p>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <div class="a-container">
         <div class="a-aboutTitle">Wie zijn wij
