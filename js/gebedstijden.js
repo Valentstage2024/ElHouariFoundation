@@ -1,24 +1,65 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Gebedstijden ophalen uit de HTML
-    const prayerTimes = {
-        Fajr: document.querySelector('.footer-prayer-times p:nth-child(1)').innerText.split(' ')[1],
-        Dhuhr: document.querySelector('.footer-prayer-times p:nth-child(2)').innerText.split(' ')[1],
-        Asr: document.querySelector('.footer-prayer-times p:nth-child(3)').innerText.split(' ')[1],
-        Maghrib: document.querySelector('.footer-prayer-times p:nth-child(4)').innerText.split(' ')[1],
-        Isha: document.querySelector('.footer-prayer-times p:nth-child(5)').innerText.split(' ')[1]
-    };
+    let prayerTimes = {};
 
-    // Functie om de volgende gebedstijd te berekenen
+    // Fetch prayer times based on latitude and longitude
+    function fetchPrayerTimes(lat, lon) {
+        const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
+        const apiUrl = `https://api.aladhan.com/v1/timings/${today}?latitude=${lat}&longitude=${lon}&method=2`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                // Store prayer times
+                prayerTimes = {
+                    Fajr: data.data.timings.Fajr,
+                    Dhuhr: data.data.timings.Dhuhr,
+                    Asr: data.data.timings.Asr,
+                    Maghrib: data.data.timings.Maghrib,
+                    Isha: data.data.timings.Isha
+                };
+
+                // Update prayer times in the HTML
+                document.getElementById('fajr-time').innerText = prayerTimes.Fajr;
+                document.getElementById('dhuhr-time').innerText = prayerTimes.Dhuhr;
+                document.getElementById('asr-time').innerText = prayerTimes.Asr;
+                document.getElementById('maghrib-time').innerText = prayerTimes.Maghrib;
+                document.getElementById('isha-time').innerText = prayerTimes.Isha;
+
+                // Start countdown and update it every second
+                updateCountdown();
+                setInterval(updateCountdown, 1000); // Update countdown every second
+            })
+            .catch(error => console.error('Error fetching prayer times:', error));
+    }
+
+    // Get user's location and fetch prayer times
+    function requestLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                position => {
+                    const { latitude, longitude } = position.coords;
+                    fetchPrayerTimes(latitude, longitude);
+                },
+                error => {
+                    console.error('Geolocation access denied or failed:', error);
+                    alert('Location access is required to show accurate prayer times.');
+                }
+            );
+        } else {
+            alert('Geolocation is not supported by your browser.');
+        }
+    }
+
+    // Calculate the next prayer time
     function getNextPrayer() {
         const now = new Date();
         let nextPrayer = null;
         let nextPrayerTime = null;
 
         for (const prayer in prayerTimes) {
-            // Tijd opsplitsen in uren en minuten
             const [hours, minutes] = prayerTimes[prayer].split(':').map(Number);
             const prayerTime = new Date(now);
-            prayerTime.setHours(hours, minutes, 0, 0); // Zet het juiste tijdstip
+            prayerTime.setHours(hours, minutes, 0, 0);
 
             if (prayerTime > now) {
                 nextPrayer = prayer;
@@ -28,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (!nextPrayer) {
-            // Als er geen volgende gebed is, ga naar de eerste op de volgende dag
+            // If no more prayers today, start with Fajr tomorrow
             const tomorrow = new Date(now);
             tomorrow.setDate(tomorrow.getDate() + 1);
             const [hours, minutes] = prayerTimes.Fajr.split(':').map(Number);
@@ -40,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return { nextPrayer, nextPrayerTime };
     }
 
-    // Countdown functie
+    // Update countdown timer
     function updateCountdown() {
         const { nextPrayerTime } = getNextPrayer();
         const now = new Date();
@@ -55,10 +96,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
-        document.getElementById('countdown').innerText = 
+        document.getElementById('countdown').innerText =
             `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     }
 
-    setInterval(updateCountdown, 1000); // Update elke seconde
-    updateCountdown(); // Initiele update
+    // Start the process by requesting the user's location
+    requestLocation();
 });
