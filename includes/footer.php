@@ -54,7 +54,6 @@ echo "
             <p><a href='https://www.elhouarifoundation.nl' target='_blank'>www.elhouarifoundation.nl</a></p>
         </div>
 
-
         <div class='footer-section footer-hadith'>
             <blockquote>
                 “Jullie zullen het paradijs niet binnengaan als jullie niet geloven en jullie zullen geen gelovigen zijn als jullie elkaar niet liefhebben.”

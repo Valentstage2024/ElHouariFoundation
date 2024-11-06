@@ -15,12 +15,13 @@
     <?php include_once '../includes/header.php'; ?>
 
     <!-- Hero section -->
-    <section class="heropagina">
+    <section class="project-heropagina">
         <div class="overlay"></div>
         <div class="hero-text">
             <h2>Onze projecten</h2>
             <br>
             <p>We werken momenteel aan nieuwe projecten die binnenkort beschikbaar zullen zijn. Houd deze pagina in de gaten voor updates.</p>
+            <a href="../php/doneer.php" class="aboutus-donate-button">Doneer Nu</a>
         </div>
     </section>
 

@@ -14,16 +14,15 @@
 
     <?php include_once '../includes/header.php'; ?>
     <section class="aboutus-hero">
-        <div class="overlay"></div>
-        <div class="hero-text">
-            <h2>Over Ons</h2>
-            <br>
-            <!-- <img src="../img/theepot.png" alt="Theepot" class="hero-teapot"> -->
-            <div class="hero-sayings">
-                <p>Lees hier meer over de foundation</p>
-            </div>
-        </div>
-    </section>
+    <div class="overlay"></div>
+    <div class="hero-text">
+        <h2>Over Ons</h2>
+        <br>
+        <p>Lees hier meer over de foundation</p>
+        <a href="../php/doneer.php" class="aboutus-donate-button">Doneer Nu</a>
+    </div>
+</section>
+
 
 
     <div class="a-container">

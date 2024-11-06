@@ -16,12 +16,13 @@
     <?php include_once '../includes/header.php'; ?>
 
        <!-- Hero section -->
-       <section class="heropagina">
+       <section class="koran-heropagina">
         <div class="overlay"></div>
         <div class="hero-text">
             <h2>Koran</h2>
             <br>
             <p>Kom hier even tot rust, luister of lees koranvers</p>
+            <a href="../php/doneer.php" class="aboutus-donate-button">Doneer Nu</a>
         </div>
     </section>
     <br>    

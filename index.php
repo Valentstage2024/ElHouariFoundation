@@ -59,7 +59,6 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
-            
             <h2>El Houari Foundation</h2>
             <br>
             <p>Bij ons gaat het om geven, delen en helpen.</p>
@@ -115,14 +114,7 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
         <p><a href="https://www.elhouarifoundation.nl" target="_blank">www.elhouarifoundation.nl</a></p>
         </div>
 
-        <div class="footer-section footer-prayer-times">
-    <p>Fajr: <span id="fajr-time"><?php echo $fajr; ?></span></p>
-    <p>Dhuhr: <span id="dhuhr-time"><?php echo $dhuhr; ?></span></p>
-    <p>Asr: <span id="asr-time"><?php echo $asr; ?></span></p>
-    <p>Maghrib: <span id="maghrib-time"><?php echo $maghrib; ?></span></p>
-    <p>Isha: <span id="isha-time"><?php echo $isha; ?></span></p>
-    <p>Volgende gebed in: <span id="countdown"></span></p>
-</div>
+
 
 
         <div class="footer-section footer-hadith">
