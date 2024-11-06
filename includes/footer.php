@@ -54,14 +54,6 @@ echo "
             <p><a href='https://www.elhouarifoundation.nl' target='_blank'>www.elhouarifoundation.nl</a></p>
         </div>
 
-        <div id='prayer-times'>
-            <p>Fajr: <span id='fajr-time'>$fajr</span></p>
-            <p>Dhuhr: <span id='dhuhr-time'>$dhuhr</span></p>
-            <p>Asr: <span id='asr-time'>$asr</span></p>
-            <p>Maghrib: <span id='maghrib-time'>$maghrib</span></p>
-            <p>Isha: <span id='isha-time'>$isha</span></p>
-            <p>Next prayer in: <span id='countdown'>Loading...</span></p>
-        </div>
 
         <div class='footer-section footer-hadith'>
             <blockquote>

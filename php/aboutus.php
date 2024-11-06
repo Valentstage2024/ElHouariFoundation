@@ -46,9 +46,11 @@
                 <div class="a-standText">
                     <p>“Wees goed voor een ander”</p>
                     <p>“Alhamdoulilah ten alle tijden”</p>
+                    <p>“Alles gebeurt met een reden”</p>
                     <p>“Wees geduldig (heb sabr)”</p>
                     <p>“De glas is half vol, niet half leeg”</p>
                     <p>“Altijd doorgaan wat er ook gebeurt”</p>
+                    <p>“Keep your head up”</p>
                 </div>
             </div>
 
@@ -74,9 +76,5 @@
 </body>
 
 </html>
-
-
-
-
 
 
