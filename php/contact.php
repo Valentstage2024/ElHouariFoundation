@@ -18,6 +18,7 @@
         <div class="overlay"></div>
         <div class="hero-text">
             <h2>Contact</h2>
+            <br>
             <p>Heeft u vragen over onze projecten of wilt u meer weten over hoe u kunt helpen? Neem gerust contact met ons op. </p>
         </div>
     </section>

@@ -13,22 +13,17 @@
 <body>
 
     <?php include_once '../includes/header.php'; ?>
-    <section class="heropagina">
-    <div class="overlay"></div>
-    <div class="hero-text">
-        <h2>Over Ons</h2>
-        <img src="../img/theepot.png" alt="Theepot" class="hero-teapot">
-        <div class="hero-sayings">
-            <p>“Wees goed voor een ander”</p>
-            <p>“Alhamdoulilah ten alle tijden”</p>
-            <p>“Alles gebeurt met een reden”</p>
-            <p>“Wees geduldig (heb sabr)”</p>
-            <p>“De glas is half vol, niet half leeg”</p>
-            <p>“Altijd doorgaan wat er ook gebeurt”</p>
-            <p>“Keep your head up”</p>
+    <section class="aboutus-hero">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h2>Over Ons</h2>
+            <br>
+            <!-- <img src="../img/theepot.png" alt="Theepot" class="hero-teapot"> -->
+            <div class="hero-sayings">
+                <p>Lees hier meer over de foundation</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <div class="a-container">
@@ -47,9 +42,19 @@
                 </div>
             </div>
 
+            <div class="a-standTitle">Wijze woorden van onze vader
+                <div class="a-standText">
+                    <p>“Wees goed voor een ander”</p>
+                    <p>“Alhamdoulilah ten alle tijden”</p>
+                    <p>“Wees geduldig (heb sabr)”</p>
+                    <p>“De glas is half vol, niet half leeg”</p>
+                    <p>“Altijd doorgaan wat er ook gebeurt”</p>
+                </div>
+            </div>
+
             <div class="a-testoTitle">Dankwoord
-                <div class="a-testoText">Wij willen iedereen bedanken die de stichting mogelijk maakt omwille van Allah. <br>
-                    <div class="a-aboutusEnd"> Familie el Houari</div>
+                <div class="a-testoText">Wij willen iedereen bedanken die de stichting mogelijk maakt omwille van Allah. Wij willen onze donateurs bedanken voor hun bijdrage en onze vrijwilligers voor hun inzet. Moge Allah jullie belonen voor jullie goede daden. Wij willen ook onze volgers bedanken voor hun steun en vertrouwen in de stichting. Moge Allah jullie belonen voor jullie steun en vertrouwen.
+                    <div class="a-aboutusEnd">Familie el Houari</div>
                     <br>
                     <br>
                     <br>

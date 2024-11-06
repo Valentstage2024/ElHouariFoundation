@@ -18,6 +18,7 @@
         <div class="overlay"></div>
         <div class="hero-text">
             <h2>Donatie</h2>
+            <br>
             <p> Elke donatie helpt ons om essentiële hulp te bieden.   </p>
         </div>
     </section>

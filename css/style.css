@@ -756,6 +756,7 @@ body {
     z-index: 1;
 }
 
+
 /* .overlay {
     position: absolute;
     top: 0;
@@ -1688,7 +1689,8 @@ select {
 
 .a-aboutusEnd {
     font-weight: bold;
-    margin: 5px;
+    margin: 30px;
+    margin-right: 60px;
 }
 
 
@@ -2971,8 +2973,8 @@ h3 {
     height: auto;
     margin-bottom: 1rem;
     opacity: 0;
-    transform: translateY(-30px);
-    animation: fadeDown 0.5s ease-out forwards;
+    transform: translateY(-5px);
+    animation: fadeIn 0.5s ease-out forwards;
     animation-delay: 0.2s;
 }
 
@@ -3000,6 +3002,49 @@ h3 {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+.aboutus-hero {
+    width: 100vw; /* Full width of the viewport */
+    height: 60vh; /* Verminder de hoogte naar 60% van de viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/hero_theepot.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    opacity: 90%;
+}
+
+/* Overlay voor verduistering */
+.aboutus-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(5, 28, 2, 0.24);
+    z-index: -1;
+}
+
+.aboutus-hero h2 {
+    font-size: 40px; /* Kleinere fontgrootte */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.aboutus-hero p {
+    font-size: 18px; /* Kleinere fontgrootte */
+    max-width: 600px;
+    animation: fadeInUp 1s ease-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 

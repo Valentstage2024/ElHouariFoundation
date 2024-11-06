@@ -19,6 +19,7 @@
         <div class="overlay"></div>
         <div class="hero-text">
             <h2>Onze projecten</h2>
+            <br>
             <p>We werken momenteel aan nieuwe projecten die binnenkort beschikbaar zullen zijn. Houd deze pagina in de gaten voor updates.</p>
         </div>
     </section>

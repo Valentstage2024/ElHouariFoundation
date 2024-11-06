@@ -61,6 +61,7 @@ if ($prayerTimesArray && $prayerTimesArray['code'] == 200) {
         <div class="hero-text">
             
             <h2>El Houari Foundation</h2>
+            <br>
             <p>Bij ons gaat het om geven, delen en helpen.</p>
             <br>
             <br>

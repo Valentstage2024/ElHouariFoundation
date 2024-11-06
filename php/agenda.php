@@ -61,6 +61,7 @@ foreach ($events as $index => $event) {
         <div class="overlay"></div>
         <div class="hero-text">
             <h2>Agenda</h2>
+            <br>
             <p>Blijf op de hoogte van onze evenementen</p>
         </div>
     </section>

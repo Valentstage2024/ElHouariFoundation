@@ -20,6 +20,7 @@
         <div class="overlay"></div>
         <div class="hero-text">
             <h2>Koran</h2>
+            <br>
             <p>Kom hier even tot rust, luister of lees koranvers</p>
         </div>
     </section>

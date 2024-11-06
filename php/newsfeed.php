@@ -19,6 +19,7 @@
         <div class="overlay"></div>
         <div class="hero-text">
             <h2>Nieuwsfeed </h2>
+            <br>
             <p>blijf op de hoogte van het nieuws</p>
         </div>
     </section>
