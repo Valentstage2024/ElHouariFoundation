@@ -15,12 +15,13 @@
     <?php include_once '../includes/header.php'; ?>
 
     <!-- Begin Hero Sectie -->
-    <section class="heropagina">
+    <section class="news-heropagina">
         <div class="overlay"></div>
         <div class="hero-text">
             <h2>Nieuwsfeed </h2>
             <br>
-            <p>blijf op de hoogte van het nieuws</p>
+            <p>Blijf op de hoogte van het nieuws</p>
+            <a href="../php/doneer.php" class="aboutus-donate-button">Doneer Nu</a>
         </div>
     </section>
     <!-- Einde Hero Sectie -->

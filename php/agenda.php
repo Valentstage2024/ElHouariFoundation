@@ -63,6 +63,7 @@ foreach ($events as $index => $event) {
             <h2>Agenda</h2>
             <br>
             <p>Blijf op de hoogte van onze evenementen</p>
+            <a href="../php/doneer.php" class="aboutus-donate-button">Doneer Nu</a>
         </div>
     </section>
 
