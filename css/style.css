@@ -2587,8 +2587,7 @@ p {
     }
 
     .news1-image-content img {
-        max-width: 100%;
-        height: auto;
+        display: none;
     }
 
     .back-to-newsfeed {
@@ -2629,25 +2628,14 @@ p {
 
 @media (max-width: 768px) {
     .project-detail h1 {
-        text-align: right;
+        text-align: center;
         /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
-        margin-right: 100px;
-        /* Verhoog de ruimte aan de rechterkant */
-        margin-top: -50px;
-        /* Verplaats de tekst iets naar boven */
-    }
-}
-
-
-/* Media Query voor kleinere schermen (max-width: 768px) */
-@media (max-width: 768px) {
-    .project-detail h1 {
-        text-align: right;
-        /* Zorgt ervoor dat de tekst naar rechts uitgelijnd is */
-        margin-right: -30px;
+        margin-right: 10%;
         /* Optioneel: Voeg wat ruimte toe aan de rechterkant */
     }
 }
+
+
 
 .projects-section {
     text-align: center;
@@ -4433,8 +4421,3 @@ input.add-event-edit {
         font-size: 12px; /* Verklein de tekst in knoppen */
     }
 }
-
-
-
-
-

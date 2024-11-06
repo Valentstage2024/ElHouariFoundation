@@ -21,7 +21,7 @@
 
         <div class="project-content">
             <div>
-                <img src="../img/liefpakket.png" width="400" style="margin-left: 0px;">
+                <img src="../img/liefpakket.png" width="340" style="margin-left: 0px;">
             </div>
 
             <div class="sponsor-section">
