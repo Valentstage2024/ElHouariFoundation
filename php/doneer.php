@@ -14,21 +14,12 @@
     
 
     <?php include_once '../includes/header.php'; ?>
-    <section class="heropagina">
-        <div class="overlay"></div>
-        <div class="hero-text">
-            <h2>Donatie</h2>
-            <br>
-            <p> Elke donatie helpt ons om essentiële hulp te bieden.   </p>
-        </div>
-    </section>
-
 
     <div class="donatie-achtergrond">
         <div class="donatie-container">
             <br>
             <div class="donatie donatie--1">
-                <h1>Mijn Donatie</h1>
+                <h1>Doneren</h1>
                 <br>
                 <p>Samen kunnen we helpen armoede te bestrijden! Doneer en steun ons bij het helpen van gezinnen in
                     nood.
