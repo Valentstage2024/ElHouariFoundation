@@ -47,7 +47,7 @@
                         <a href="https://www.youtube.com" target="_blank">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://www.instagram.com" target="_blank">
+                        <a href="https://www.instagram.com/elhouarifoundation/" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="https://www.facebook.com" target="_blank">

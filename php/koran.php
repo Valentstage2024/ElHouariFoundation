@@ -36,7 +36,7 @@
 
     
     <div class="sura-container">
-    <h2>Soera's</h2>
+    
     
     <div class="sura">
         
