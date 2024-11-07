@@ -17,7 +17,7 @@
     <section class="mission">
     <div class="content-wrapper">
         <h2>Onze Missie</h2>
-        <p>Bij el Houari Foundation is onze missie om de waarden van medeleven, zorgzaamheid en hulpvaardigheid, die onze vader Hassan el Houari belichaamde, voort te zetten. Wij streven ernaar om, net zoals hij, kinderen, volwassenen en ouderen te ondersteunen die hulp nodig hebben. Met elk project dat we realiseren, hopen we de wereld een stukje beter te maken en de erfenis van onze vader levend te houden. In naam van Allah willen we zoveel mogelijk mensen bereiken, door middel van onze gezamenlijke inspanningen en de steun van onze donateurs en volgers.</p>
+        <p>Bij El Houari Foundation is onze missie om de waarden van medeleven, zorgzaamheid en hulpvaardigheid, die onze vader Hassan El Houari belichaamde, voort te zetten. Wij streven ernaar om, net zoals hij, kinderen, volwassenen en ouderen te ondersteunen die hulp nodig hebben. Met elk project dat we realiseren, hopen we de wereld een stukje beter te maken en de erfenis van onze vader levend te houden. In naam van Allah willen we zoveel mogelijk mensen bereiken, door middel van onze gezamenlijke inspanningen en de steun van onze donateurs en volgers.</p>
     </div>
 </section>
 

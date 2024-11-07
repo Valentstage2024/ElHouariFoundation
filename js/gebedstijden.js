@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let prayerTimes = {};
 
-    // Fetch prayer times based on latitude and longitude
+    // Fetch prayer times based on hardcoded latitude and longitude
     function fetchPrayerTimes(lat, lon) {
         const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
         const apiUrl = `https://api.aladhan.com/v1/timings/${today}?latitude=${lat}&longitude=${lon}&method=2`;
@@ -32,23 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(error => console.error('Error fetching prayer times:', error));
     }
 
-    // Get user's location and fetch prayer times
-    function requestLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                position => {
-                    const { latitude, longitude } = position.coords;
-                    fetchPrayerTimes(latitude, longitude);
-                },
-                error => {
-                    console.error('Geolocation access denied or failed:', error);
-                    alert('Location access is required to show accurate prayer times.');
-                }
-            );
-        } else {
-            alert('Geolocation is not supported by your browser.');
-        }
-    }
+    // Call fetchPrayerTimes with hardcoded coordinates (for example, for Mecca)
+    const latitude = 21.4225;
+    const longitude = 39.8262;
+    fetchPrayerTimes(latitude, longitude);
 
     // Calculate the next prayer time
     function getNextPrayer() {
@@ -99,7 +86,4 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('countdown').innerText =
             `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     }
-
-    // Start the process by requesting the user's location
-    requestLocation();
 });
