@@ -40,6 +40,7 @@
 </li>
 
                     </ul>
+<<<<<<< Updated upstream
                     <div class="social-icons">
                         <a href="https://www.tiktok.com" target="_blank">
                             <i class="fab fa-tiktok"></i>
@@ -56,6 +57,8 @@
                         </a>
                         
                     </div>
+=======
+>>>>>>> Stashed changes
                     
                 </div>
             </div>

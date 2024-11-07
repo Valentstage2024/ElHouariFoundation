@@ -65,13 +65,13 @@ echo "
             <a href='https://www.instagram.com/elhouarifoundation/' target='_blank'>
                 <i class='fab fa-instagram social-icon'></i>
             </a>
-            <a href='https://www.tiktok.com' target='_blank'>
+            <a href='https://www.tiktok.com/@elhouarifoundation' target='_blank'>
                 <i class='fab fa-tiktok social-icon'></i>
             </a>
-            <a href='https://www.youtube.com' target='_blank'>
+            <a href='https://www.youtube.com/channel/UCdoLXRlW4tfK4yL4OYEQjaA' target='_blank'>
                 <i class='fab fa-youtube social-icon'></i>
             </a>
-            <a href='https://www.facebook.com' target='_blank'>
+            <a href='https://www.facebook.com/profile.php?id=61568426848799' target='_blank'>
                 <i class='fab fa-facebook social-icon'></i>
             </a>
         </div>
