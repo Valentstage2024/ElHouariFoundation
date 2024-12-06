@@ -68,7 +68,7 @@ function CalendarApp(date) {
   /* Start the app */
   this.showView(date);
   this.addEventListeners();
-  this.todayIsSpan.textContent = "Today is " + this.months[date.getMonth()] + " " + date.getDate();  
+  this.todayIsSpan.textContent = "Vandaag is  " + this.months[date.getMonth()] + " " + date.getDate();  
 }
 
 CalendarApp.prototype.addEventListeners = function(){
