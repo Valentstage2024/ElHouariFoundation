@@ -21,4 +21,4 @@ echo '<header>
 </header>';
 ?>
 
-<script src="../js/hamburgerMenu.js"></script>
+    <script src="../js/hamburgerMenu.js"></script>

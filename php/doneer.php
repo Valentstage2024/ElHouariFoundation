@@ -57,7 +57,17 @@
 
                         </div>
 
-                        <button type="submit">Doneren</button>
+                        <a href="https://www.ing.nl/de-ing/payreq?trxid=rWCxdgguRvD75iKdn9spb1UTMRsRkoHs&flow-step=payment-request" target="_blank">
+
+</a>
+<button type="button" onclick="redirectToDonation()">Doneren</button>
+
+<script>
+    function redirectToDonation() {
+        window.location.href = "https://www.ing.nl/de-ing/payreq?trxid=rWCxdgguRvD75iKdn9spb1UTMRsRkoHs&flow-step=payment-request";
+    }
+</script>
+                        
                     </form>
                 </div>
 
@@ -68,7 +78,7 @@
                         <p><strong>Scan onze QR-code!</strong></p>
                     </aside>
 
-                    <img src="https://placehold.co/600x500">
+                    <img src="../img/doneerQR.jpeg">
                 </div>
             </div>
         </div>
